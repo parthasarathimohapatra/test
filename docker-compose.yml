@@ -1,0 +1,16 @@
+version: '2.0'
+
+services:
+  needdeliverdocker:
+    build: ./need_deliver
+    command: bash -c "python3 manage.py makemigrations && python3 manage.py migrate --fake && python3 manage.py runserver 0.0.0.0:80"
+    volumes:
+      - .:/needdeliverdocker
+    ports:
+      - "80:80"
+    
+  needsocketdocker:
+    build: 
+      context: ./needsocket
+    ports:
+      - '8002:8002'

@@ -1,0 +1,1780 @@
+
+Sub==driver_response_check start||body=={"order_id":2125,"longitude":"88.38599064799365","latitude":"22.542559660513287","response_type":false,"supplier_id":271,"driver_id":254,"langC":"en","socket_id":"eKu_h64H2FQ0p-nfAAAA","vehicle_type":"9"}
+
+Sub==driver_response_check start||body=={"order_id":2124,"longitude":"88.38599064799365","latitude":"22.542559660513287","response_type":false,"supplier_id":271,"driver_id":254,"langC":"en","socket_id":"S5Avd9OZ1I-gdGB6AAAA","vehicle_type":"9"}
+
+Sub==change Driver status||body=={"is_online":false,"vehicle_type":9,"driver_id":254,"socket_id":"S5Avd9OZ1I-gdGB6AAAA"}
+
+Sub==change Driver status||body=={"vehicle_type_name":"Moto taxi","is_online":true,"longitude":"88.38599064799365","latitude":"22.542559660513287","vehicle_type":9,"driver_id":254,"socket_id":"S5Avd9OZ1I-gdGB6AAAA","vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png"}
+
+Sub==change Driver status||body=={"is_online":false,"vehicle_type":9,"driver_id":254,"socket_id":"S5Avd9OZ1I-gdGB6AAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"tuStBcCDPxwixzOsAAAE"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"tuStBcCDPxwixzOsAAAE"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"tuStBcCDPxwixzOsAAAE"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"tuStBcCDPxwixzOsAAAE"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"tuStBcCDPxwixzOsAAAE"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"tuStBcCDPxwixzOsAAAE"}
+
+Sub==change Driver status||body=={"vehicle_type_name":"Moto taxi","is_online":true,"longitude":"88.38599064799365","latitude":"22.542559660513287","vehicle_type":9,"driver_id":254,"socket_id":"S5Avd9OZ1I-gdGB6AAAA","vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"tuStBcCDPxwixzOsAAAE"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"tuStBcCDPxwixzOsAAAE"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"tuStBcCDPxwixzOsAAAE"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"tuStBcCDPxwixzOsAAAE"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"tuStBcCDPxwixzOsAAAE"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"tuStBcCDPxwixzOsAAAE"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"271","latitude":"22.533705018329186","longitude":"88.3903195336461","socket_id":"t0B5LJCjwlGkp6dCAAAN"}
+
+Sub==2126||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"S5Avd9OZ1I-gdGB6AAAA","latitude":"22.542559660513287","longitude":"88.38599064799365","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"3.5","estimated_time":711}}
+
+Sub==distance||body=={"latitude":"22.533705018329186","longitude":"88.3903195336461"}@@@{"latitude":"22.542559660513287","longitude":"88.38599064799365"}####1.080313591596081
+
+Sub==2126||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2126||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{"254~9":{"vehicle_type_name":"Moto taxi","driver_id":254,"longitude":"88.38599064799365","distance":3502,"estimated_time":711,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","socket_id":"S5Avd9OZ1I-gdGB6AAAA","latitude":"22.542559660513287","vehicle_type":9}}}
+
+Sub==2126||Driver details check Part 4 -- NeedLog||body=={"device_token":"cq6LzFa8EFw:APA91bF-1JkVA-cQLkulc7KZUX3xxCw9AS0JbvspE0I6HaZg_IE8XO7qebsyL7agVpWwCULvxhugawho1VtrGze9_JZdsdKnzeIKHLCeePEe-8cnf1oTA33PSk0MJ2CprAF5Nwo6ONZT","id":254,"first_name":"Arijit","last_name":"Chandra"}
+
+Sub==2126||Push send data Part5 -- NeedLog||body==true
+
+Sub==2126||Push send data Part5 -- NeedLog||body==true
+
+Sub==2126||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"S5Avd9OZ1I-gdGB6AAAA","latitude":"22.542559660513287","longitude":"88.38599064799365","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":1.080313591596081,"estimated_time":711}},"request_data":{"socket_id":"t0B5LJCjwlGkp6dCAAAN","retry":false,"order_uid":"ND5887829","order_id":"2126","tried_drivers":[],"vehicle_type":"9","latitude":"22.533705018329186","longitude":"88.3903195336461","supplier_id":"271","booking_cost":"0.04"},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==2126||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"S5Avd9OZ1I-gdGB6AAAA","latitude":"22.542559660513287","longitude":"88.38599064799365","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":1.080313591596081,"estimated_time":711}},"request_data":{"socket_id":"t0B5LJCjwlGkp6dCAAAN","retry":false,"order_uid":"ND5887829","order_id":"2126","tried_drivers":[],"vehicle_type":"9","latitude":"22.533705018329186","longitude":"88.3903195336461","supplier_id":"271","booking_cost":"0.04"},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==time to send demo push||body==
+
+Sub==time to send demo push||body==
+
+Sub==time to send demo push||body==
+
+Sub==time to send demo push||body==
+
+Sub==change Driver status||body=={"vehicle_type_name":"Moto taxi","is_online":true,"longitude":"88.38599875311273","latitude":"22.542557740573837","vehicle_type":9,"driver_id":254,"socket_id":"qIcYquf4GRN8TjE_AAAZ","vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"LVrjd4n0ghaLtt65AAAa"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"LVrjd4n0ghaLtt65AAAa"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"LVrjd4n0ghaLtt65AAAa"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"LVrjd4n0ghaLtt65AAAa"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"LVrjd4n0ghaLtt65AAAa"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"LVrjd4n0ghaLtt65AAAa"}
+
+Sub==driver_response_check start||body=={"order_id":2126,"longitude":"88.38601673482658","latitude":"22.542564761116346","response_type":false,"supplier_id":271,"driver_id":254,"langC":"en","socket_id":"AJuOm9o-jkVTN9WKAAAC","vehicle_type":"9"}
+
+Sub==2127||Socket on started Part1 -- NeedLog||body=={}
+
+Sub==2127||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2127||Filter driver by api response Part3 -- NeedLog||body=={"status":false,"data":{}}
+
+Sub==2127||Data comming from choose vehicle api Not True Part 9 -- NeedLog||body=={"status":false,"data":{}}
+
+Sub==change Driver status||body=={"is_online":false,"vehicle_type":9,"driver_id":254,"socket_id":"AJuOm9o-jkVTN9WKAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"jKI93IvKQllQKR4jAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"jKI93IvKQllQKR4jAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"jKI93IvKQllQKR4jAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"jKI93IvKQllQKR4jAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"jKI93IvKQllQKR4jAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"jKI93IvKQllQKR4jAAAA"}
+
+Sub==change Driver status||body=={"vehicle_type_name":"Moto taxi","is_online":true,"longitude":"88.38601673482658","latitude":"22.542564761116346","vehicle_type":9,"driver_id":254,"socket_id":"AJuOm9o-jkVTN9WKAAAC","vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"jKI93IvKQllQKR4jAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"jKI93IvKQllQKR4jAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"jKI93IvKQllQKR4jAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"jKI93IvKQllQKR4jAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"jKI93IvKQllQKR4jAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"jKI93IvKQllQKR4jAAAA"}
+
+Sub==2127||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"AJuOm9o-jkVTN9WKAAAC","latitude":"22.542564761116346","longitude":"88.38601673482658","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5431021,"longitude":88.3853287}@@@{"latitude":"22.542564761116346","longitude":"88.38601673482658"}####0.09253582230101544
+
+Sub==2127||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2127||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{"254~9":{"vehicle_type_name":"Moto taxi","driver_id":254,"longitude":"88.38601673482658","distance":385,"estimated_time":115,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","socket_id":"AJuOm9o-jkVTN9WKAAAC","latitude":"22.542564761116346","vehicle_type":9}}}
+
+Sub==2127||Driver details check Part 4 -- NeedLog||body=={"device_token":"cq6LzFa8EFw:APA91bF-1JkVA-cQLkulc7KZUX3xxCw9AS0JbvspE0I6HaZg_IE8XO7qebsyL7agVpWwCULvxhugawho1VtrGze9_JZdsdKnzeIKHLCeePEe-8cnf1oTA33PSk0MJ2CprAF5Nwo6ONZT","id":254,"first_name":"Arijit","last_name":"Chandra"}
+
+Sub==2127||Push send data Part5 -- NeedLog||body==true
+
+Sub==2127||Push send data Part5 -- NeedLog||body==true
+
+Sub==2127||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"AJuOm9o-jkVTN9WKAAAC","latitude":"22.542564761116346","longitude":"88.38601673482658","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.4","estimated_time":119}},"request_data":{"socket_id":"jKI93IvKQllQKR4jAAAA","supplier_id":261,"latitude":22.5431021,"longitude":88.3853287,"vehicle_type":9,"order_id":2127,"order_uid":"ND4713986","retry":true,"booking_cost":"0.75","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==2127||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"AJuOm9o-jkVTN9WKAAAC","latitude":"22.542564761116346","longitude":"88.38601673482658","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.4","estimated_time":119}},"request_data":{"socket_id":"jKI93IvKQllQKR4jAAAA","supplier_id":261,"latitude":22.5431021,"longitude":88.3853287,"vehicle_type":9,"order_id":2127,"order_uid":"ND4713986","retry":true,"booking_cost":"0.75","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==time to send demo push||body==
+
+Sub==time to send demo push||body==
+
+Sub==time to send demo push||body==
+
+Sub==time to send demo push||body==
+
+Sub==change Driver status||body=={"is_online":false,"vehicle_type":9,"driver_id":254,"socket_id":"QAPtHeI6PPQUMP7SAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"91_FVnirBiMf6-dlAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"91_FVnirBiMf6-dlAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"91_FVnirBiMf6-dlAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"91_FVnirBiMf6-dlAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"91_FVnirBiMf6-dlAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"91_FVnirBiMf6-dlAAAA"}
+
+Sub==change Driver status||body=={"vehicle_type_name":"Moto taxi","is_online":true,"longitude":"88.38601673482658","latitude":"22.542564761116346","vehicle_type":9,"driver_id":254,"socket_id":"QAPtHeI6PPQUMP7SAAAC","vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png"}
+
+Sub==driver_response_check start||body=={"order_id":2127,"longitude":"88.38601673482658","latitude":"22.542564761116346","response_type":false,"supplier_id":261,"driver_id":254,"langC":"en","socket_id":"QAPtHeI6PPQUMP7SAAAC","vehicle_type":"9"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"91_FVnirBiMf6-dlAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"91_FVnirBiMf6-dlAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"91_FVnirBiMf6-dlAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"91_FVnirBiMf6-dlAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"91_FVnirBiMf6-dlAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"91_FVnirBiMf6-dlAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427813","longitude":"88.3859279","vehicle_type":1,"socket_id":"91_FVnirBiMf6-dlAAAA"}
+
+Sub==2128||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"QAPtHeI6PPQUMP7SAAAC","latitude":"22.542564761116346","longitude":"88.38601673482658","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5431021,"longitude":88.3853287}@@@{"latitude":"22.542564761116346","longitude":"88.38601673482658"}####0.09253582230101544
+
+Sub==2128||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2128||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{"254~9":{"vehicle_type_name":"Moto taxi","driver_id":254,"longitude":"88.38601673482658","distance":385,"estimated_time":115,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","socket_id":"QAPtHeI6PPQUMP7SAAAC","latitude":"22.542564761116346","vehicle_type":9}}}
+
+Sub==2128||Driver details check Part 4 -- NeedLog||body=={"device_token":"cq6LzFa8EFw:APA91bF-1JkVA-cQLkulc7KZUX3xxCw9AS0JbvspE0I6HaZg_IE8XO7qebsyL7agVpWwCULvxhugawho1VtrGze9_JZdsdKnzeIKHLCeePEe-8cnf1oTA33PSk0MJ2CprAF5Nwo6ONZT","id":254,"first_name":"Arijit","last_name":"Chandra"}
+
+Sub==2128||Push send data Part5 -- NeedLog||body==true
+
+Sub==2128||Push send data Part5 -- NeedLog||body==true
+
+Sub==2128||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"QAPtHeI6PPQUMP7SAAAC","latitude":"22.542564761116346","longitude":"88.38601673482658","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.09253582230101544,"estimated_time":0}},"request_data":{"socket_id":"91_FVnirBiMf6-dlAAAA","supplier_id":261,"latitude":22.5431021,"longitude":88.3853287,"vehicle_type":9,"order_id":2128,"order_uid":"ND6668922","retry":false,"booking_cost":"0.36","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==2128||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"QAPtHeI6PPQUMP7SAAAC","latitude":"22.542564761116346","longitude":"88.38601673482658","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.09253582230101544,"estimated_time":0}},"request_data":{"socket_id":"91_FVnirBiMf6-dlAAAA","supplier_id":261,"latitude":22.5431021,"longitude":88.3853287,"vehicle_type":9,"order_id":2128,"order_uid":"ND6668922","retry":false,"booking_cost":"0.36","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==2128||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"QAPtHeI6PPQUMP7SAAAC","latitude":"22.542564761116346","longitude":"88.38601673482658","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.09253582230101544,"estimated_time":0}}
+
+Sub==2128||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"QAPtHeI6PPQUMP7SAAAC","latitude":"22.542564761116346","longitude":"88.38601673482658","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.09253582230101544,"estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5431021,"longitude":88.3853287}@@@{"latitude":"22.542564761116346","longitude":"88.38601673482658"}####0.09253582230101544
+
+Sub==2128||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==distance||body=={"latitude":22.5431021,"longitude":88.3853287}@@@{"latitude":"22.542564761116346","longitude":"88.38601673482658"}####0.09253582230101544
+
+Sub==2128||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2128||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{}}
+
+Sub==2128||Sorted Driver Empty Part 8 -- NeedLog||body==null
+
+Sub==2128||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{}}
+
+Sub==2128||Sorted Driver Empty Part 8 -- NeedLog||body==null
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427693","longitude":"88.3859308","vehicle_type":1}
+
+Sub==change Driver status||body=={"is_online":false,"vehicle_type":9,"driver_id":254,"socket_id":"9WxPrLors6X07G9kAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"WCf7Uc-RvqzTvlPWAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"WCf7Uc-RvqzTvlPWAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"WCf7Uc-RvqzTvlPWAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"WCf7Uc-RvqzTvlPWAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"WCf7Uc-RvqzTvlPWAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"WCf7Uc-RvqzTvlPWAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427813","longitude":"88.3859279","vehicle_type":1,"socket_id":"WCf7Uc-RvqzTvlPWAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427693","longitude":"88.3859308","vehicle_type":1,"socket_id":"WCf7Uc-RvqzTvlPWAAAA"}
+
+Sub==change Driver status||body=={"vehicle_type_name":"Moto taxi","is_online":true,"longitude":"88.38601673482658","latitude":"22.542564761116346","vehicle_type":9,"driver_id":254,"socket_id":"9WxPrLors6X07G9kAAAC","vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"WCf7Uc-RvqzTvlPWAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"WCf7Uc-RvqzTvlPWAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"WCf7Uc-RvqzTvlPWAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"WCf7Uc-RvqzTvlPWAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"WCf7Uc-RvqzTvlPWAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"WCf7Uc-RvqzTvlPWAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427813","longitude":"88.3859279","vehicle_type":1,"socket_id":"WCf7Uc-RvqzTvlPWAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427693","longitude":"88.3859308","vehicle_type":1,"socket_id":"WCf7Uc-RvqzTvlPWAAAA"}
+
+Sub==2129||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"9WxPrLors6X07G9kAAAC","latitude":"22.542564761116346","longitude":"88.38601673482658","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5431021,"longitude":88.3853287}@@@{"latitude":"22.542564761116346","longitude":"88.38601673482658"}####0.09253582230101544
+
+Sub==2129||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2129||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{"254~9":{"vehicle_type_name":"Moto taxi","driver_id":254,"longitude":"88.38601673482658","distance":385,"estimated_time":115,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","socket_id":"9WxPrLors6X07G9kAAAC","latitude":"22.542564761116346","vehicle_type":9}}}
+
+Sub==2129||Driver details check Part 4 -- NeedLog||body=={"device_token":"cq6LzFa8EFw:APA91bF-1JkVA-cQLkulc7KZUX3xxCw9AS0JbvspE0I6HaZg_IE8XO7qebsyL7agVpWwCULvxhugawho1VtrGze9_JZdsdKnzeIKHLCeePEe-8cnf1oTA33PSk0MJ2CprAF5Nwo6ONZT","id":254,"first_name":"Arijit","last_name":"Chandra"}
+
+Sub==2129||Push send data Part5 -- NeedLog||body==true
+
+Sub==2129||Push send data Part5 -- NeedLog||body==true
+
+Sub==2129||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"9WxPrLors6X07G9kAAAC","latitude":"22.542564761116346","longitude":"88.38601673482658","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.09253582230101544,"estimated_time":0}},"request_data":{"socket_id":"WCf7Uc-RvqzTvlPWAAAA","supplier_id":261,"latitude":22.5431021,"longitude":88.3853287,"vehicle_type":9,"order_id":2129,"order_uid":"ND1729458","retry":false,"booking_cost":"0.77","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==2129||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"9WxPrLors6X07G9kAAAC","latitude":"22.542564761116346","longitude":"88.38601673482658","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.09253582230101544,"estimated_time":0}},"request_data":{"socket_id":"WCf7Uc-RvqzTvlPWAAAA","supplier_id":261,"latitude":22.5431021,"longitude":88.3853287,"vehicle_type":9,"order_id":2129,"order_uid":"ND1729458","retry":false,"booking_cost":"0.77","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==2129||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"9WxPrLors6X07G9kAAAC","latitude":"22.542564761116346","longitude":"88.38601673482658","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.09253582230101544,"estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5431021,"longitude":88.3853287}@@@{"latitude":"22.542564761116346","longitude":"88.38601673482658"}####0.09253582230101544
+
+Sub==2129||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"9WxPrLors6X07G9kAAAC","latitude":"22.542564761116346","longitude":"88.38601673482658","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.09253582230101544,"estimated_time":0}}
+
+Sub==2129||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==distance||body=={"latitude":22.5431021,"longitude":88.3853287}@@@{"latitude":"22.542564761116346","longitude":"88.38601673482658"}####0.09253582230101544
+
+Sub==2129||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2129||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{}}
+
+Sub==2129||Sorted Driver Empty Part 8 -- NeedLog||body==null
+
+Sub==2129||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{}}
+
+Sub==2129||Sorted Driver Empty Part 8 -- NeedLog||body==null
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427777","longitude":"88.3859184","vehicle_type":1}
+
+Sub==change Driver status||body=={"is_online":false,"vehicle_type":9,"driver_id":254,"socket_id":"xkFpDcyGdxKu_0aMAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"TH9aZ7Ocw9rPk5nYAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"TH9aZ7Ocw9rPk5nYAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"TH9aZ7Ocw9rPk5nYAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"TH9aZ7Ocw9rPk5nYAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"TH9aZ7Ocw9rPk5nYAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"TH9aZ7Ocw9rPk5nYAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427813","longitude":"88.3859279","vehicle_type":1,"socket_id":"TH9aZ7Ocw9rPk5nYAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427693","longitude":"88.3859308","vehicle_type":1,"socket_id":"TH9aZ7Ocw9rPk5nYAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427777","longitude":"88.3859184","vehicle_type":1,"socket_id":"TH9aZ7Ocw9rPk5nYAAAB"}
+
+Sub==change Driver status||body=={"vehicle_type_name":"Moto taxi","is_online":true,"longitude":"88.38601673482658","latitude":"22.542564761116346","vehicle_type":9,"driver_id":254,"socket_id":"xkFpDcyGdxKu_0aMAAAC","vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"TH9aZ7Ocw9rPk5nYAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"TH9aZ7Ocw9rPk5nYAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"TH9aZ7Ocw9rPk5nYAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"TH9aZ7Ocw9rPk5nYAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"TH9aZ7Ocw9rPk5nYAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"TH9aZ7Ocw9rPk5nYAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427813","longitude":"88.3859279","vehicle_type":1,"socket_id":"TH9aZ7Ocw9rPk5nYAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427693","longitude":"88.3859308","vehicle_type":1,"socket_id":"TH9aZ7Ocw9rPk5nYAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427777","longitude":"88.3859184","vehicle_type":1,"socket_id":"TH9aZ7Ocw9rPk5nYAAAB"}
+
+Sub==2130||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"xkFpDcyGdxKu_0aMAAAC","latitude":"22.542564761116346","longitude":"88.38601673482658","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5431021,"longitude":88.3853287}@@@{"latitude":"22.542564761116346","longitude":"88.38601673482658"}####0.09253582230101544
+
+Sub==2130||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2130||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{"254~9":{"vehicle_type_name":"Moto taxi","driver_id":254,"longitude":"88.38601673482658","distance":385,"estimated_time":115,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","socket_id":"xkFpDcyGdxKu_0aMAAAC","latitude":"22.542564761116346","vehicle_type":9}}}
+
+Sub==2130||Driver details check Part 4 -- NeedLog||body=={"device_token":"cq6LzFa8EFw:APA91bF-1JkVA-cQLkulc7KZUX3xxCw9AS0JbvspE0I6HaZg_IE8XO7qebsyL7agVpWwCULvxhugawho1VtrGze9_JZdsdKnzeIKHLCeePEe-8cnf1oTA33PSk0MJ2CprAF5Nwo6ONZT","id":254,"first_name":"Arijit","last_name":"Chandra"}
+
+Sub==2130||Push send data Part5 -- NeedLog||body==true
+
+Sub==2130||Push send data Part5 -- NeedLog||body==true
+
+Sub==2130||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"xkFpDcyGdxKu_0aMAAAC","latitude":"22.542564761116346","longitude":"88.38601673482658","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.09253582230101544,"estimated_time":0}},"request_data":{"socket_id":"TH9aZ7Ocw9rPk5nYAAAB","supplier_id":261,"latitude":22.5431021,"longitude":88.3853287,"vehicle_type":9,"order_id":2130,"order_uid":"ND9838494","retry":false,"booking_cost":"0.29","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==2130||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"xkFpDcyGdxKu_0aMAAAC","latitude":"22.542564761116346","longitude":"88.38601673482658","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.09253582230101544,"estimated_time":0}},"request_data":{"socket_id":"TH9aZ7Ocw9rPk5nYAAAB","supplier_id":261,"latitude":22.5431021,"longitude":88.3853287,"vehicle_type":9,"order_id":2130,"order_uid":"ND9838494","retry":false,"booking_cost":"0.29","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==2130||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"xkFpDcyGdxKu_0aMAAAC","latitude":"22.542564761116346","longitude":"88.38601673482658","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.09253582230101544,"estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5431021,"longitude":88.3853287}@@@{"latitude":"22.542564761116346","longitude":"88.38601673482658"}####0.09253582230101544
+
+Sub==2130||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"xkFpDcyGdxKu_0aMAAAC","latitude":"22.542564761116346","longitude":"88.38601673482658","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.09253582230101544,"estimated_time":0}}
+
+Sub==2130||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==distance||body=={"latitude":22.5431021,"longitude":88.3853287}@@@{"latitude":"22.542564761116346","longitude":"88.38601673482658"}####0.09253582230101544
+
+Sub==2130||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2130||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{}}
+
+Sub==2130||Sorted Driver Empty Part 8 -- NeedLog||body==null
+
+Sub==2130||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{}}
+
+Sub==2130||Sorted Driver Empty Part 8 -- NeedLog||body==null
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542786","longitude":"88.385943","vehicle_type":1,"socket_id":"s0J1FcLxAEc5DNR3AAAB"}
+
+Sub==change Driver status||body=={"is_online":false,"vehicle_type":9,"driver_id":254,"socket_id":"el-K_UurBn-EXFZtAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"s0J1FcLxAEc5DNR3AAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"s0J1FcLxAEc5DNR3AAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"s0J1FcLxAEc5DNR3AAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"s0J1FcLxAEc5DNR3AAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"s0J1FcLxAEc5DNR3AAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"s0J1FcLxAEc5DNR3AAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427813","longitude":"88.3859279","vehicle_type":1,"socket_id":"s0J1FcLxAEc5DNR3AAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427693","longitude":"88.3859308","vehicle_type":1,"socket_id":"s0J1FcLxAEc5DNR3AAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427777","longitude":"88.3859184","vehicle_type":1,"socket_id":"s0J1FcLxAEc5DNR3AAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542786","longitude":"88.385943","vehicle_type":1,"socket_id":"s0J1FcLxAEc5DNR3AAAB"}
+
+Sub==change Driver status||body=={"vehicle_type_name":"Moto taxi","is_online":true,"longitude":"88.38601673482658","latitude":"22.542564761116346","vehicle_type":9,"driver_id":254,"socket_id":"el-K_UurBn-EXFZtAAAC","vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"s0J1FcLxAEc5DNR3AAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"s0J1FcLxAEc5DNR3AAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"s0J1FcLxAEc5DNR3AAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"s0J1FcLxAEc5DNR3AAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"s0J1FcLxAEc5DNR3AAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"s0J1FcLxAEc5DNR3AAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427813","longitude":"88.3859279","vehicle_type":1,"socket_id":"s0J1FcLxAEc5DNR3AAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427693","longitude":"88.3859308","vehicle_type":1,"socket_id":"s0J1FcLxAEc5DNR3AAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427777","longitude":"88.3859184","vehicle_type":1,"socket_id":"s0J1FcLxAEc5DNR3AAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542786","longitude":"88.385943","vehicle_type":1,"socket_id":"s0J1FcLxAEc5DNR3AAAB"}
+
+Sub==2131||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"el-K_UurBn-EXFZtAAAC","latitude":"22.542564761116346","longitude":"88.38601673482658","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5431021,"longitude":88.3853287}@@@{"latitude":"22.542564761116346","longitude":"88.38601673482658"}####0.09253582230101544
+
+Sub==2131||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2131||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{"254~9":{"vehicle_type_name":"Moto taxi","driver_id":254,"longitude":"88.38601673482658","distance":385,"estimated_time":115,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","socket_id":"el-K_UurBn-EXFZtAAAC","latitude":"22.542564761116346","vehicle_type":9}}}
+
+Sub==2131||Driver details check Part 4 -- NeedLog||body=={"device_token":"cq6LzFa8EFw:APA91bF-1JkVA-cQLkulc7KZUX3xxCw9AS0JbvspE0I6HaZg_IE8XO7qebsyL7agVpWwCULvxhugawho1VtrGze9_JZdsdKnzeIKHLCeePEe-8cnf1oTA33PSk0MJ2CprAF5Nwo6ONZT","id":254,"first_name":"Arijit","last_name":"Chandra"}
+
+Sub==2131||Push send data Part5 -- NeedLog||body==true
+
+Sub==2131||Push send data Part5 -- NeedLog||body==true
+
+Sub==2131||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"el-K_UurBn-EXFZtAAAC","latitude":"22.542564761116346","longitude":"88.38601673482658","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.09253582230101544,"estimated_time":0}},"request_data":{"socket_id":"DotClXF8ecCZIQQ5AAAE","supplier_id":261,"latitude":22.5431021,"longitude":88.3853287,"vehicle_type":9,"order_id":2131,"order_uid":"ND1618156","retry":false,"booking_cost":"0.19","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==2131||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"el-K_UurBn-EXFZtAAAC","latitude":"22.542564761116346","longitude":"88.38601673482658","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.09253582230101544,"estimated_time":0}},"request_data":{"socket_id":"DotClXF8ecCZIQQ5AAAE","supplier_id":261,"latitude":22.5431021,"longitude":88.3853287,"vehicle_type":9,"order_id":2131,"order_uid":"ND1618156","retry":false,"booking_cost":"0.19","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==2131||Socket on started Part1 -- NeedLog||body=={}
+
+Sub==2131||Socket on started Part1 -- NeedLog||body=={}
+
+Sub==2131||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2131||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2131||Filter driver by api response Part3 -- NeedLog||body=={"status":false,"data":{}}
+
+Sub==2131||Data comming from choose vehicle api Not True Part 9 -- NeedLog||body=={"status":false,"data":{}}
+
+Sub==2131||Filter driver by api response Part3 -- NeedLog||body=={"status":false,"data":{}}
+
+Sub==2131||Data comming from choose vehicle api Not True Part 9 -- NeedLog||body=={"status":false,"data":{}}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427864","longitude":"88.3859315","vehicle_type":1,"socket_id":"PZOhUgYfUTBsnJ-CAAAB"}
+
+Sub==change Driver status||body=={"is_online":false,"vehicle_type":9,"driver_id":254,"socket_id":"fz70r8j6JrulvwS0AAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427813","longitude":"88.3859279","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427693","longitude":"88.3859308","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427777","longitude":"88.3859184","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542786","longitude":"88.385943","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427864","longitude":"88.3859315","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==change Driver status||body=={"vehicle_type_name":"Moto taxi","is_online":true,"longitude":"88.38596251294503","latitude":"22.542552340170037","vehicle_type":9,"driver_id":254,"socket_id":"fz70r8j6JrulvwS0AAAA","vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427813","longitude":"88.3859279","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427693","longitude":"88.3859308","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427777","longitude":"88.3859184","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542786","longitude":"88.385943","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427864","longitude":"88.3859315","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==change Driver status||body=={"is_online":false,"vehicle_type":9,"driver_id":254,"socket_id":"fz70r8j6JrulvwS0AAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427813","longitude":"88.3859279","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427693","longitude":"88.3859308","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427777","longitude":"88.3859184","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542786","longitude":"88.385943","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427864","longitude":"88.3859315","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==change Driver status||body=={"vehicle_type_name":"Moto taxi","is_online":true,"longitude":"88.38596251294503","latitude":"22.542552340170037","vehicle_type":9,"driver_id":254,"socket_id":"fz70r8j6JrulvwS0AAAA","vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427813","longitude":"88.3859279","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427693","longitude":"88.3859308","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427777","longitude":"88.3859184","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542786","longitude":"88.385943","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427864","longitude":"88.3859315","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==change Driver status||body=={"is_online":false,"vehicle_type":9,"driver_id":254,"socket_id":"fz70r8j6JrulvwS0AAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427813","longitude":"88.3859279","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427693","longitude":"88.3859308","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427777","longitude":"88.3859184","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542786","longitude":"88.385943","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427864","longitude":"88.3859315","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==change Driver status||body=={"vehicle_type_name":"Moto taxi","is_online":true,"longitude":"88.38596251294503","latitude":"22.542552340170037","vehicle_type":9,"driver_id":254,"socket_id":"fz70r8j6JrulvwS0AAAA","vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427813","longitude":"88.3859279","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427693","longitude":"88.3859308","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427777","longitude":"88.3859184","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542786","longitude":"88.385943","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427864","longitude":"88.3859315","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==change Driver status||body=={"is_online":true,"vehicle_type":9,"socket_id":"tOeSP_efyHUXcEUWAAAD","vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","driver_id":257,"longitude":"88.3860405294843","vehicle_type_name":"Moto taxi","latitude":"22.5426102208869"}
+
+Sub==update_driver_location||body=={"254~9":{"socket_id":"fz70r8j6JrulvwS0AAAA","latitude":"22.542552340170037","longitude":"88.38596251294503","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0},"257~9":{"socket_id":"tOeSP_efyHUXcEUWAAAD","latitude":"22.542643360888587","longitude":"88.38585330337546","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":257}}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427813","longitude":"88.3859279","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427693","longitude":"88.3859308","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427777","longitude":"88.3859184","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542786","longitude":"88.385943","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427864","longitude":"88.3859315","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427813","longitude":"88.3859279","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427693","longitude":"88.3859308","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427777","longitude":"88.3859184","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542786","longitude":"88.385943","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427864","longitude":"88.3859315","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==change Driver status||body=={"is_online":false,"vehicle_type":9,"socket_id":"tOeSP_efyHUXcEUWAAAD","driver_id":257}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427813","longitude":"88.3859279","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427693","longitude":"88.3859308","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427777","longitude":"88.3859184","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542786","longitude":"88.385943","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427864","longitude":"88.3859315","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==change Driver status||body=={"is_online":true,"vehicle_type":9,"socket_id":"tOeSP_efyHUXcEUWAAAD","vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","driver_id":257,"longitude":"88.38600697484078","vehicle_type_name":"Moto taxi","latitude":"22.54260712486617"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427813","longitude":"88.3859279","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427693","longitude":"88.3859308","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427777","longitude":"88.3859184","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542786","longitude":"88.385943","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427864","longitude":"88.3859315","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==2134||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"fz70r8j6JrulvwS0AAAA","latitude":"22.542552340170037","longitude":"88.38596251294503","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0},"257~9":{"socket_id":"tOeSP_efyHUXcEUWAAAD","latitude":"22.54260712486617","longitude":"88.38600697484078","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":257,"distance":"0.0","estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5431021,"longitude":88.3853287}@@@{"latitude":"22.542552340170037","longitude":"88.38596251294503"}####0.08929664832751083
+
+Sub==distance||body=={"latitude":22.5431021,"longitude":88.3853287}@@@{"latitude":"22.54260712486617","longitude":"88.38600697484078"}####0.08877784363479917
+
+Sub==2134||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2134||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{"254~9":{"vehicle_type_name":"Moto taxi","driver_id":254,"longitude":"88.38596251294503","distance":385,"estimated_time":115,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","socket_id":"fz70r8j6JrulvwS0AAAA","latitude":"22.542552340170037","vehicle_type":9},"257~9":{"vehicle_type_name":"Moto taxi","driver_id":257,"longitude":"88.38600697484078","distance":385,"estimated_time":115,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","socket_id":"tOeSP_efyHUXcEUWAAAD","latitude":"22.54260712486617","vehicle_type":9}}}
+
+Sub==2134||Driver details check Part 4 -- NeedLog||body=={"device_token":"cq6LzFa8EFw:APA91bF-1JkVA-cQLkulc7KZUX3xxCw9AS0JbvspE0I6HaZg_IE8XO7qebsyL7agVpWwCULvxhugawho1VtrGze9_JZdsdKnzeIKHLCeePEe-8cnf1oTA33PSk0MJ2CprAF5Nwo6ONZT","id":254,"first_name":"Arijit","last_name":"Chandra"}
+
+Sub==2134||Push send data Part5 -- NeedLog||body==true
+
+Sub==2134||Push send data Part5 -- NeedLog||body==true
+
+Sub==2134||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"fz70r8j6JrulvwS0AAAA","latitude":"22.542552340170037","longitude":"88.38596251294503","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.08929664832751083,"estimated_time":0},"257~9":{"socket_id":"tOeSP_efyHUXcEUWAAAD","latitude":"22.54260712486617","longitude":"88.38600697484078","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":257,"distance":0.08877784363479917,"estimated_time":0}},"request_data":{"socket_id":"-VBGaEoVm_LleSJaAAAC","supplier_id":261,"latitude":22.5431021,"longitude":88.3853287,"vehicle_type":9,"order_id":2134,"order_uid":"ND2386879","retry":false,"booking_cost":"0.36","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==2134||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"fz70r8j6JrulvwS0AAAA","latitude":"22.542552340170037","longitude":"88.38596251294503","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.08929664832751083,"estimated_time":0},"257~9":{"socket_id":"tOeSP_efyHUXcEUWAAAD","latitude":"22.54260712486617","longitude":"88.38600697484078","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":257,"distance":0.08877784363479917,"estimated_time":0}},"request_data":{"socket_id":"-VBGaEoVm_LleSJaAAAC","supplier_id":261,"latitude":22.5431021,"longitude":88.3853287,"vehicle_type":9,"order_id":2134,"order_uid":"ND2386879","retry":false,"booking_cost":"0.36","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427557","longitude":"88.3859338","vehicle_type":1,"socket_id":"-VBGaEoVm_LleSJaAAAC"}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427742","longitude":"88.3859666","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","socket_id":"Npz6rgkbOfBxX6tZAAAB","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"5kT0f1zsrZm2aERKAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"5kT0f1zsrZm2aERKAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"5kT0f1zsrZm2aERKAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"5kT0f1zsrZm2aERKAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"5kT0f1zsrZm2aERKAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"5kT0f1zsrZm2aERKAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427813","longitude":"88.3859279","vehicle_type":1,"socket_id":"5kT0f1zsrZm2aERKAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427693","longitude":"88.3859308","vehicle_type":1,"socket_id":"5kT0f1zsrZm2aERKAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427777","longitude":"88.3859184","vehicle_type":1,"socket_id":"5kT0f1zsrZm2aERKAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542786","longitude":"88.385943","vehicle_type":1,"socket_id":"5kT0f1zsrZm2aERKAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427864","longitude":"88.3859315","vehicle_type":1,"socket_id":"5kT0f1zsrZm2aERKAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427557","longitude":"88.3859338","vehicle_type":1,"socket_id":"5kT0f1zsrZm2aERKAAAA"}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427742","longitude":"88.3859666","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","socket_id":"oFRltOgzvdiSBNDlAAAC","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"5kT0f1zsrZm2aERKAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"5kT0f1zsrZm2aERKAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"5kT0f1zsrZm2aERKAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"5kT0f1zsrZm2aERKAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"5kT0f1zsrZm2aERKAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"5kT0f1zsrZm2aERKAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427813","longitude":"88.3859279","vehicle_type":1,"socket_id":"5kT0f1zsrZm2aERKAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427693","longitude":"88.3859308","vehicle_type":1,"socket_id":"5kT0f1zsrZm2aERKAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427777","longitude":"88.3859184","vehicle_type":1,"socket_id":"5kT0f1zsrZm2aERKAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542786","longitude":"88.385943","vehicle_type":1,"socket_id":"5kT0f1zsrZm2aERKAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427864","longitude":"88.3859315","vehicle_type":1,"socket_id":"5kT0f1zsrZm2aERKAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427557","longitude":"88.3859338","vehicle_type":1,"socket_id":"5kT0f1zsrZm2aERKAAAA"}
+
+Sub==2135||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"oFRltOgzvdiSBNDlAAAC","latitude":"22.5427742","longitude":"88.3859666","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.4","estimated_time":119}}
+
+Sub==distance||body=={"latitude":22.5425145,"longitude":88.3858288}@@@{"latitude":"22.5427742","longitude":"88.3859666"}####0.03215861814792618
+
+Sub==2135||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2135||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{"254~9":{"vehicle_type_name":"Moto taxi","driver_id":254,"longitude":"88.3859666","distance":356,"estimated_time":114,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","socket_id":"oFRltOgzvdiSBNDlAAAC","latitude":"22.5427742","vehicle_type":9}}}
+
+Sub==2135||Driver details check Part 4 -- NeedLog||body=={"device_token":"fkaafFegIQY:APA91bEjKBsZ_pUlITRU0YFaZ73Qxy41jYfueps8yC2VnOARj2usKLM7Fhu28uIhsAoDCTA8IqhHSPp7NSYTbKBQJ28OHNRZO6d6joGNco5x5mq-0DntBxc04oT4obgSsl3CKJq7l80-","id":254,"first_name":"Arijit","last_name":"Chandra"}
+
+Sub==2135||Push send data Part5 -- NeedLog||body==true
+
+Sub==2135||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"oFRltOgzvdiSBNDlAAAC","latitude":"22.5427742","longitude":"88.3859666","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.03215861814792618,"estimated_time":119}},"request_data":{"socket_id":"5kT0f1zsrZm2aERKAAAA","supplier_id":261,"latitude":22.5425145,"longitude":88.3858288,"vehicle_type":9,"order_id":2135,"order_uid":"ND8894247","retry":false,"booking_cost":"0.21","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==2135||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"oFRltOgzvdiSBNDlAAAC","latitude":"22.5427742","longitude":"88.3859666","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.03215861814792618,"estimated_time":119}}
+
+Sub==distance||body=={"latitude":22.5425145,"longitude":88.3858288}@@@{"latitude":"22.5427742","longitude":"88.3859666"}####0.03215861814792618
+
+Sub==2135||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2135||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{}}
+
+Sub==2135||Sorted Driver Empty Part 8 -- NeedLog||body==null
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427726","longitude":"88.3859093","vehicle_type":1,"socket_id":"GJus9VolPd7s67LgAAAB"}
+
+Sub==change Driver status||body=={"driver_id":254,"socket_id":"upHfe3VN3Q1mZ7rnAAAA","is_online":false,"vehicle_type":9}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427725","longitude":"88.3859245","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","socket_id":"upHfe3VN3Q1mZ7rnAAAA","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"-U9ULoeHAozuVLbjAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"-U9ULoeHAozuVLbjAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"-U9ULoeHAozuVLbjAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"-U9ULoeHAozuVLbjAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"-U9ULoeHAozuVLbjAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"-U9ULoeHAozuVLbjAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427813","longitude":"88.3859279","vehicle_type":1,"socket_id":"-U9ULoeHAozuVLbjAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427693","longitude":"88.3859308","vehicle_type":1,"socket_id":"-U9ULoeHAozuVLbjAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427777","longitude":"88.3859184","vehicle_type":1,"socket_id":"-U9ULoeHAozuVLbjAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542786","longitude":"88.385943","vehicle_type":1,"socket_id":"-U9ULoeHAozuVLbjAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427864","longitude":"88.3859315","vehicle_type":1,"socket_id":"-U9ULoeHAozuVLbjAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427557","longitude":"88.3859338","vehicle_type":1,"socket_id":"-U9ULoeHAozuVLbjAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427726","longitude":"88.3859093","vehicle_type":1,"socket_id":"-U9ULoeHAozuVLbjAAAB"}
+
+Sub==2136||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"upHfe3VN3Q1mZ7rnAAAA","latitude":"22.5427725","longitude":"88.3859245","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5431021,"longitude":88.3853287}@@@{"latitude":"22.5427725","longitude":"88.3859245"}####0.07132444120440978
+
+Sub==2136||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2136||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{"254~9":{"vehicle_type_name":"Moto taxi","driver_id":254,"longitude":"88.3859245","distance":385,"estimated_time":115,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","socket_id":"upHfe3VN3Q1mZ7rnAAAA","latitude":"22.5427725","vehicle_type":9}}}
+
+Sub==2136||Driver details check Part 4 -- NeedLog||body=={"device_token":"fkaafFegIQY:APA91bEjKBsZ_pUlITRU0YFaZ73Qxy41jYfueps8yC2VnOARj2usKLM7Fhu28uIhsAoDCTA8IqhHSPp7NSYTbKBQJ28OHNRZO6d6joGNco5x5mq-0DntBxc04oT4obgSsl3CKJq7l80-","id":254,"first_name":"Arijit","last_name":"Chandra"}
+
+Sub==2136||Push send data Part5 -- NeedLog||body==true
+
+Sub==2136||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"upHfe3VN3Q1mZ7rnAAAA","latitude":"22.5427725","longitude":"88.3859245","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.07132444120440978,"estimated_time":0}},"request_data":{"socket_id":"-U9ULoeHAozuVLbjAAAB","supplier_id":261,"latitude":22.5431021,"longitude":88.3853287,"vehicle_type":9,"order_id":2136,"order_uid":"ND3777213","retry":false,"booking_cost":"1.12","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==time to send demo push||body==
+
+Sub==time to send demo push||body==
+
+Sub==2136||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"upHfe3VN3Q1mZ7rnAAAA","latitude":"22.5427725","longitude":"88.3859245","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.07132444120440978,"estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5431021,"longitude":88.3853287}@@@{"latitude":"22.5427725","longitude":"88.3859245"}####0.07132444120440978
+
+Sub==2136||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2136||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{}}
+
+Sub==2136||Sorted Driver Empty Part 8 -- NeedLog||body==null
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427724","longitude":"88.3859488","vehicle_type":1,"socket_id":"-U9ULoeHAozuVLbjAAAB"}
+
+Sub==2137||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"upHfe3VN3Q1mZ7rnAAAA","latitude":"22.5427725","longitude":"88.3859245","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5431021,"longitude":88.3853287}@@@{"latitude":"22.5427725","longitude":"88.3859245"}####0.07132444120440978
+
+Sub==2137||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2137||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{"254~9":{"vehicle_type_name":"Moto taxi","driver_id":254,"longitude":"88.3859245","distance":385,"estimated_time":115,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","socket_id":"upHfe3VN3Q1mZ7rnAAAA","latitude":"22.5427725","vehicle_type":9}}}
+
+Sub==2137||Driver details check Part 4 -- NeedLog||body=={"device_token":"fkaafFegIQY:APA91bEjKBsZ_pUlITRU0YFaZ73Qxy41jYfueps8yC2VnOARj2usKLM7Fhu28uIhsAoDCTA8IqhHSPp7NSYTbKBQJ28OHNRZO6d6joGNco5x5mq-0DntBxc04oT4obgSsl3CKJq7l80-","id":254,"first_name":"Arijit","last_name":"Chandra"}
+
+Sub==2137||Push send data Part5 -- NeedLog||body==true
+
+Sub==2137||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"upHfe3VN3Q1mZ7rnAAAA","latitude":"22.5427725","longitude":"88.3859245","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.07132444120440978,"estimated_time":0}},"request_data":{"socket_id":"-U9ULoeHAozuVLbjAAAB","supplier_id":261,"latitude":22.5431021,"longitude":88.3853287,"vehicle_type":9,"order_id":2137,"order_uid":"ND7578987","retry":false,"booking_cost":"1.32","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==time to send demo push||body==
+
+Sub==time to send demo push||body==
+
+Sub==2137||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"upHfe3VN3Q1mZ7rnAAAA","latitude":"22.5427725","longitude":"88.3859245","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.07132444120440978,"estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5431021,"longitude":88.3853287}@@@{"latitude":"22.5427725","longitude":"88.3859245"}####0.07132444120440978
+
+Sub==2137||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2137||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{}}
+
+Sub==2137||Sorted Driver Empty Part 8 -- NeedLog||body==null
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427904","longitude":"88.3859737","vehicle_type":1,"socket_id":"-U9ULoeHAozuVLbjAAAB"}
+
+Sub==2138||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"upHfe3VN3Q1mZ7rnAAAA","latitude":"22.5427725","longitude":"88.3859245","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5431021,"longitude":88.3853287}@@@{"latitude":"22.5427725","longitude":"88.3859245"}####0.07132444120440978
+
+Sub==2138||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2138||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{"254~9":{"vehicle_type_name":"Moto taxi","driver_id":254,"longitude":"88.3859245","distance":385,"estimated_time":115,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","socket_id":"upHfe3VN3Q1mZ7rnAAAA","latitude":"22.5427725","vehicle_type":9}}}
+
+Sub==2138||Driver details check Part 4 -- NeedLog||body=={"device_token":"fkaafFegIQY:APA91bEjKBsZ_pUlITRU0YFaZ73Qxy41jYfueps8yC2VnOARj2usKLM7Fhu28uIhsAoDCTA8IqhHSPp7NSYTbKBQJ28OHNRZO6d6joGNco5x5mq-0DntBxc04oT4obgSsl3CKJq7l80-","id":254,"first_name":"Arijit","last_name":"Chandra"}
+
+Sub==2138||Push send data Part5 -- NeedLog||body==true
+
+Sub==2138||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"upHfe3VN3Q1mZ7rnAAAA","latitude":"22.5427725","longitude":"88.3859245","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.07132444120440978,"estimated_time":0}},"request_data":{"socket_id":"-U9ULoeHAozuVLbjAAAB","supplier_id":261,"latitude":22.5431021,"longitude":88.3853287,"vehicle_type":9,"order_id":2138,"order_uid":"ND2786581","retry":false,"booking_cost":"0.7","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==time to send demo push||body==
+
+Sub==time to send demo push||body==
+
+Sub==2138||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"upHfe3VN3Q1mZ7rnAAAA","latitude":"22.5427725","longitude":"88.3859245","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.07132444120440978,"estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5431021,"longitude":88.3853287}@@@{"latitude":"22.5427725","longitude":"88.3859245"}####0.07132444120440978
+
+Sub==2138||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2138||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{}}
+
+Sub==2138||Sorted Driver Empty Part 8 -- NeedLog||body==null
+
+Sub==change Driver status||body=={"driver_id":257,"latitude":"22.5337","vehicle_type":9,"longitude":"88.3902","vehicle_type_name":"Moto taxi","is_online":true,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","socket_id":"aOC18Ta2fOTtcRAfAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427813","longitude":"88.3859279","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427693","longitude":"88.3859308","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427777","longitude":"88.3859184","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542786","longitude":"88.385943","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427864","longitude":"88.3859315","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427557","longitude":"88.3859338","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427726","longitude":"88.3859093","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427724","longitude":"88.3859488","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427904","longitude":"88.3859737","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==change Driver status||body=={"driver_id":257,"latitude":"22.5337","vehicle_type":9,"longitude":"88.3902","vehicle_type_name":"Moto taxi","is_online":true,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","socket_id":"aOC18Ta2fOTtcRAfAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427813","longitude":"88.3859279","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427693","longitude":"88.3859308","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427777","longitude":"88.3859184","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542786","longitude":"88.385943","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427864","longitude":"88.3859315","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427557","longitude":"88.3859338","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427726","longitude":"88.3859093","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427724","longitude":"88.3859488","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427904","longitude":"88.3859737","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==change Driver status||body=={"is_online":true,"vehicle_type":9,"driver_id":257,"longitude":"88.3902","latitude":"22.5337","socket_id":"aStqonwu8DYerGEMAAAD","vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427813","longitude":"88.3859279","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427693","longitude":"88.3859308","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427777","longitude":"88.3859184","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542786","longitude":"88.385943","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427864","longitude":"88.3859315","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427557","longitude":"88.3859338","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427726","longitude":"88.3859093","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427724","longitude":"88.3859488","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427904","longitude":"88.3859737","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==change Driver status||body=={"is_online":true,"vehicle_type":9,"driver_id":257,"longitude":"88.3902","latitude":"22.5337","socket_id":"aStqonwu8DYerGEMAAAD","vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427813","longitude":"88.3859279","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427693","longitude":"88.3859308","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427777","longitude":"88.3859184","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542786","longitude":"88.385943","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427864","longitude":"88.3859315","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427557","longitude":"88.3859338","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427726","longitude":"88.3859093","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427724","longitude":"88.3859488","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427904","longitude":"88.3859737","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==change Driver status||body=={"latitude":"22.5337","vehicle_type":9,"driver_id":257,"socket_id":"7Urt7GiXRLdY0SCBAAAE","longitude":"88.3902","vehicle_type_name":"Moto taxi","is_online":true,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427762","longitude":"88.3859813","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427712","longitude":"88.3859009","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428219","longitude":"88.3859399","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427917","longitude":"88.3859913","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427778","longitude":"88.3858661","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427688","longitude":"88.3859232","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427813","longitude":"88.3859279","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427693","longitude":"88.3859308","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427777","longitude":"88.3859184","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542786","longitude":"88.385943","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427864","longitude":"88.3859315","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427557","longitude":"88.3859338","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427726","longitude":"88.3859093","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427724","longitude":"88.3859488","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427904","longitude":"88.3859737","vehicle_type":1,"socket_id":"uIZdF7RM8QBFYGyvAAAB"}
+
+Sub==change Driver status||body=={"latitude":"22.5337","vehicle_type":9,"driver_id":257,"socket_id":"7Urt7GiXRLdY0SCBAAAE","longitude":"88.3902","vehicle_type_name":"Moto taxi","is_online":true,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png"}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427513","longitude":"88.3859515","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","socket_id":"CiMIPJ3jJnWbDRi2AAAB","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428492","longitude":"88.385976","vehicle_type":1,"socket_id":"VahwskaSrrw6hjBKAAAQ"}
+
+Sub==change Driver status||body=={"driver_id":254,"socket_id":"DYH0ivd-xNMQqGfDAAAP","is_online":false,"vehicle_type":9}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428492","longitude":"88.385976","vehicle_type":1,"socket_id":"VahwskaSrrw6hjBKAAAQ"}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427498","longitude":"88.3859609","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","socket_id":"DYH0ivd-xNMQqGfDAAAP","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428492","longitude":"88.385976","vehicle_type":1,"socket_id":"VahwskaSrrw6hjBKAAAQ"}
+
+Sub==2150||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"DYH0ivd-xNMQqGfDAAAP","latitude":"22.5427498","longitude":"88.3859609","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5431021,"longitude":88.3853287}@@@{"latitude":"22.5427498","longitude":"88.3859609"}####0.07582881903428085
+
+Sub==2150||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2150||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{"254~9":{"estimated_time":115,"longitude":"88.3859609","vehicle_type":9,"distance":385,"vehicle_type_name":"Moto taxi","vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","latitude":"22.5427498","driver_id":254,"socket_id":"DYH0ivd-xNMQqGfDAAAP"}}}
+
+Sub==2150||Driver details check Part 4 -- NeedLog||body=={"device_token":"crIf60HOqQE:APA91bEN3cTI_RC9Cr5V4v6fQWOjJMrSSg9mmKaPoONji-rXgjpRVKuufvcoH3tAsoNsE_CQIKnjo-tFz-Dk0h_vFTeh3rEArHYXBOEFoLhOPAXfZIZ-k0nSFRhDBixJ4x_EG8jvcadJ","id":254,"first_name":"Arijit","last_name":"Chandra"}
+
+Sub==2150||Push send data Part5 -- NeedLog||body==true
+
+Sub==2150||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"DYH0ivd-xNMQqGfDAAAP","latitude":"22.5427498","longitude":"88.3859609","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.07582881903428085,"estimated_time":0}},"request_data":{"socket_id":"VahwskaSrrw6hjBKAAAQ","supplier_id":261,"latitude":22.5431021,"longitude":88.3853287,"vehicle_type":9,"order_id":2150,"order_uid":"ND4299918","retry":false,"booking_cost":"0.26","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==time to send demo push||body==
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427426","longitude":"88.3859639","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","socket_id":"DYH0ivd-xNMQqGfDAAAP","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428492","longitude":"88.385976","vehicle_type":1,"socket_id":"VahwskaSrrw6hjBKAAAQ"}
+
+Sub==time to send demo push||body==
+
+Sub==driver_response_check start||body=={"langC":"en","driver_id":254,"response_type":true,"order_id":2150,"supplier_id":261,"latitude":"22.5431021","longitude":"88.3853287","location":"86B/2, Seal Lane, Tangra, Kolkata, West Bengal 700046, India  India","socket_id":"DYH0ivd-xNMQqGfDAAAP","vehicle_type":9}
+
+Sub==driver_arrived_status||body=={"order_id":"2150","supplier_id":"261","arrived_location":0}
+
+Sub==driver_arrived_status||body=={"order_id":"2150","supplier_id":"261","arrived_location":1}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427555","longitude":"88.3859454","vehicle_type":1,"socket_id":"2mByeFkxZQc2NFXMAAAq"}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427513","longitude":"88.3859522","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","socket_id":"W6aj5OsWGMK_BPyWAAAr","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427555","longitude":"88.3859454","vehicle_type":1,"socket_id":"2mByeFkxZQc2NFXMAAAq"}
+
+Sub==2162||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"W6aj5OsWGMK_BPyWAAAr","latitude":"22.5427513","longitude":"88.3859522","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5425145,"longitude":88.3858288}@@@{"latitude":"22.5427513","longitude":"88.3859522"}####0.02922200928417146
+
+Sub==2162||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2162||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{"254~9":{"vehicle_type":9,"estimated_time":114,"vehicle_type_name":"Moto taxi","driver_id":254,"socket_id":"W6aj5OsWGMK_BPyWAAAr","latitude":"22.5427513","vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","longitude":"88.3859522","distance":356}}}
+
+Sub==2162||Driver details check Part 4 -- NeedLog||body=={"device_token":"crIf60HOqQE:APA91bEN3cTI_RC9Cr5V4v6fQWOjJMrSSg9mmKaPoONji-rXgjpRVKuufvcoH3tAsoNsE_CQIKnjo-tFz-Dk0h_vFTeh3rEArHYXBOEFoLhOPAXfZIZ-k0nSFRhDBixJ4x_EG8jvcadJ","id":254,"first_name":"Arijit","last_name":"Chandra"}
+
+Sub==2162||Push send data Part5 -- NeedLog||body==true
+
+Sub==2162||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"W6aj5OsWGMK_BPyWAAAr","latitude":"22.5427513","longitude":"88.3859522","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.02922200928417146,"estimated_time":0}},"request_data":{"socket_id":"Z8dzMlzIxgOL9JDKAAAv","supplier_id":261,"latitude":22.5425145,"longitude":88.3858288,"vehicle_type":9,"order_id":2162,"order_uid":"ND7175863","retry":false,"booking_cost":"1.15","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==time to send demo push||body==
+
+Sub==time to send demo push||body==
+
+Sub==2162||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"W6aj5OsWGMK_BPyWAAAr","latitude":"22.5427513","longitude":"88.3859522","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.02922200928417146,"estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5425145,"longitude":88.3858288}@@@{"latitude":"22.5427513","longitude":"88.3859522"}####0.02922200928417146
+
+Sub==2162||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2162||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{}}
+
+Sub==2162||Sorted Driver Empty Part 8 -- NeedLog||body==null
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427511","longitude":"88.3859514","vehicle_type":1,"socket_id":"Z8dzMlzIxgOL9JDKAAAv"}
+
+Sub==2168||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"W6aj5OsWGMK_BPyWAAAr","latitude":"22.5427513","longitude":"88.3859522","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5425145,"longitude":88.3858288}@@@{"latitude":"22.5427513","longitude":"88.3859522"}####0.02922200928417146
+
+Sub==2168||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2168||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{"254~9":{"vehicle_type":9,"estimated_time":114,"vehicle_type_name":"Moto taxi","driver_id":254,"socket_id":"W6aj5OsWGMK_BPyWAAAr","latitude":"22.5427513","vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","longitude":"88.3859522","distance":356}}}
+
+Sub==2168||Driver details check Part 4 -- NeedLog||body=={"device_token":"crIf60HOqQE:APA91bEN3cTI_RC9Cr5V4v6fQWOjJMrSSg9mmKaPoONji-rXgjpRVKuufvcoH3tAsoNsE_CQIKnjo-tFz-Dk0h_vFTeh3rEArHYXBOEFoLhOPAXfZIZ-k0nSFRhDBixJ4x_EG8jvcadJ","id":254,"first_name":"Arijit","last_name":"Chandra"}
+
+Sub==2168||Push send data Part5 -- NeedLog||body==true
+
+Sub==2168||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"W6aj5OsWGMK_BPyWAAAr","latitude":"22.5427513","longitude":"88.3859522","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.02922200928417146,"estimated_time":0}},"request_data":{"socket_id":"ebt31O-RsEkloB5qAAAw","supplier_id":261,"latitude":22.5425145,"longitude":88.3858288,"vehicle_type":9,"order_id":2168,"order_uid":"ND6942383","retry":false,"booking_cost":"0.72","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427513","longitude":"88.3859518","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","socket_id":"cGQL4gmv0bwTGoRCAAAu","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427555","longitude":"88.3859454","vehicle_type":1,"socket_id":"ebt31O-RsEkloB5qAAAw"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427511","longitude":"88.3859514","vehicle_type":1,"socket_id":"ebt31O-RsEkloB5qAAAw"}
+
+Sub==time to send demo push||body==
+
+Sub==time to send demo push||body==
+
+Sub==driver_response_check start||body=={"langC":"en","driver_id":254,"response_type":true,"order_id":2168,"supplier_id":261,"latitude":"22.5425145","longitude":"88.3858288","location":"86B/2, Seal Lane, Tangra, Kolkata, West Bengal 700046, India  India","socket_id":"cGQL4gmv0bwTGoRCAAAu","vehicle_type":9}
+
+Sub==driver_arrived_status||body=={"order_id":"2168","supplier_id":"261","arrived_location":0}
+
+Sub==driver_arrived_status||body=={"order_id":"2168","supplier_id":"261","arrived_location":1}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427429","longitude":"88.3859412","vehicle_type":1,"socket_id":"ebt31O-RsEkloB5qAAAw"}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427503","longitude":"88.3859522","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/moto-taxi.png","socket_id":"zmsCRm91BCtSTPvFAAAx","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427555","longitude":"88.3859454","vehicle_type":1,"socket_id":"ebt31O-RsEkloB5qAAAw"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427511","longitude":"88.3859514","vehicle_type":1,"socket_id":"ebt31O-RsEkloB5qAAAw"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427429","longitude":"88.3859412","vehicle_type":1,"socket_id":"ebt31O-RsEkloB5qAAAw"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"260","latitude":"22.5427593","longitude":"88.3859117","vehicle_type":1,"socket_id":"dq27YQQwCzKQ34vGAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"260","latitude":"22.5427165","longitude":"88.3859045","vehicle_type":1,"socket_id":"dq27YQQwCzKQ34vGAAAB"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"260","latitude":"22.5427375","longitude":"88.385908","vehicle_type":1,"socket_id":"MF5zmvS1eOXAZjMKAAAD"}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427509","longitude":"88.3859924","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"GCiOfbhxiI1yvj1CAAAJ","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==change Driver status||body=={"driver_id":254,"socket_id":"GCiOfbhxiI1yvj1CAAAJ","is_online":false,"vehicle_type":9}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427385","longitude":"88.3859984","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"GCiOfbhxiI1yvj1CAAAJ","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427426","longitude":"88.385952","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"nAazjY4HiI_qTBs7AACS","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==change Driver status||body=={"driver_id":254,"socket_id":"nAazjY4HiI_qTBs7AACS","is_online":false,"vehicle_type":9}
+
+Sub==change Driver status||body=={"driver_id":300,"latitude":"22.5427426","longitude":"88.3859419","vehicle_type":11,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Rickshaw.png","socket_id":"YQDQZbWoFwHDYR8yAADH","is_online":true,"vehicle_type_name":"Rickshaw"}
+
+Sub==change Driver status||body=={"driver_id":300,"socket_id":"YQDQZbWoFwHDYR8yAADH","is_online":false,"vehicle_type":11}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427429","longitude":"88.3859271","vehicle_type":1,"socket_id":"kEw-ySK_1ZGRu6_QAAAA"}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427509","longitude":"88.3859509","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"7OFxm-ld9TtVzVs8AAAB","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427429","longitude":"88.3859271","vehicle_type":1,"socket_id":"kEw-ySK_1ZGRu6_QAAAA"}
+
+Sub==2532||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"7OFxm-ld9TtVzVs8AAAB","latitude":"22.5427509","longitude":"88.3859509","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5425145,"longitude":88.3858288}@@@{"latitude":"22.5427509","longitude":"88.3859509"}####0.029124206536684294
+
+Sub==2532||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2532||Filter driver by api response Part3 -- NeedLog||body=={"data":{"254~9":{"socket_id":"7OFxm-ld9TtVzVs8AAAB","vehicle_type":9,"vehicle_type_name":"Moto taxi","estimated_time":106,"latitude":"22.5427509","distance":356,"driver_id":254,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","longitude":"88.3859509"}},"status":true}
+
+Sub==2532||Driver details check Part 4 -- NeedLog||body=={"device_token":"ew1wjRI22TM:APA91bGwBHMUOfe11NeIPphZyA1wvWlQPPb4JJRgBJ4ztrujK0YnyF3KURTgu7JWbM64SStqjt5uNaqFMsxCXaXLNcP14MT4vbjBFn6uuV0BZfFOeCJBZClWN-fUnkQ7SneMtIDDYBM7","id":254,"first_name":"Arijit","last_name":"Chandra"}
+
+Sub==2532||Push send data Part5 -- NeedLog||body==true
+
+Sub==2532||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"7OFxm-ld9TtVzVs8AAAB","latitude":"22.5427509","longitude":"88.3859509","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.029124206536684294,"estimated_time":0}},"request_data":{"socket_id":"2doSMJNNA8KB1Yi0AAAV","supplier_id":261,"latitude":22.5425145,"longitude":88.3858288,"vehicle_type":9,"order_id":2532,"order_uid":"ND4167798","retry":false,"booking_cost":"3000","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==time to send demo push||body==
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.542751","longitude":"88.3859515","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"aXJ1A1NbyQ3b-Wz-AAAW","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427429","longitude":"88.3859271","vehicle_type":1,"socket_id":"2doSMJNNA8KB1Yi0AAAV"}
+
+Sub==time to send demo push||body==
+
+Sub==driver_response_check start||body=={"langC":"en","driver_id":254,"response_type":true,"order_id":2532,"supplier_id":261,"latitude":"22.5425145","longitude":"88.3858288","location":"86B/2, Seal Lane, Tangra, Kolkata, West Bengal 700046, India  India","socket_id":"aXJ1A1NbyQ3b-Wz-AAAW","vehicle_type":9}
+
+Sub==driver_arrived_status||body=={"order_id":"2532","supplier_id":"261","arrived_location":0}
+
+Sub==driver_arrived_status||body=={"order_id":"2532","supplier_id":"261","arrived_location":1}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427512","longitude":"88.3859525","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"vmsP18bejLovTb4HAAAf","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427429","longitude":"88.3859271","vehicle_type":1,"socket_id":"sHmTvOHjWYkpZb6tAAAg"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427509","longitude":"88.3859094","vehicle_type":1,"socket_id":"sHmTvOHjWYkpZb6tAAAg"}
+
+Sub==2533||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"vmsP18bejLovTb4HAAAf","latitude":"22.5427512","longitude":"88.3859525","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5425145,"longitude":88.3858288}@@@{"latitude":"22.5427512","longitude":"88.3859525"}####0.029225369669865775
+
+Sub==2533||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2533||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{"254~9":{"longitude":"88.3859525","vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type":9,"driver_id":254,"estimated_time":106,"socket_id":"vmsP18bejLovTb4HAAAf","vehicle_type_name":"Moto taxi","distance":356,"latitude":"22.5427512"}}}
+
+Sub==2533||Driver details check Part 4 -- NeedLog||body=={"device_token":"ew1wjRI22TM:APA91bGwBHMUOfe11NeIPphZyA1wvWlQPPb4JJRgBJ4ztrujK0YnyF3KURTgu7JWbM64SStqjt5uNaqFMsxCXaXLNcP14MT4vbjBFn6uuV0BZfFOeCJBZClWN-fUnkQ7SneMtIDDYBM7","id":254,"first_name":"Arijit","last_name":"Chandra"}
+
+Sub==2533||Push send data Part5 -- NeedLog||body==true
+
+Sub==2533||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"vmsP18bejLovTb4HAAAf","latitude":"22.5427512","longitude":"88.3859525","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.029225369669865775,"estimated_time":0}},"request_data":{"socket_id":"sHmTvOHjWYkpZb6tAAAg","supplier_id":261,"latitude":22.5425145,"longitude":88.3858288,"vehicle_type":9,"order_id":2533,"order_uid":"ND3716262","retry":false,"booking_cost":"3000","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==time to send demo push||body==
+
+Sub==time to send demo push||body==
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.542742","longitude":"88.3859415","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"xnqCegP5iwd-POBIAAAh","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427429","longitude":"88.3859271","vehicle_type":1,"socket_id":"sHmTvOHjWYkpZb6tAAAg"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427509","longitude":"88.3859094","vehicle_type":1,"socket_id":"sHmTvOHjWYkpZb6tAAAg"}
+
+Sub==driver_response_check start||body=={"langC":"en","driver_id":254,"response_type":true,"order_id":2533,"supplier_id":261,"latitude":"22.5425145","longitude":"88.3858288","location":"86B/2, Seal Lane, Tangra, Kolkata, West Bengal 700046, India  India","socket_id":"xnqCegP5iwd-POBIAAAh","vehicle_type":9}
+
+Sub==driver_arrived_status||body=={"order_id":"2533","supplier_id":"261","arrived_location":0}
+
+Sub==driver_arrived_status||body=={"order_id":"2533","supplier_id":"261","arrived_location":1}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427428","longitude":"88.3859416","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"oxuI9jheENRbPe-dAAAm","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427429","longitude":"88.3859271","vehicle_type":1,"socket_id":"qrZDgdRm98eTRE56AAAl"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427509","longitude":"88.3859094","vehicle_type":1,"socket_id":"qrZDgdRm98eTRE56AAAl"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427509","longitude":"88.3859513","vehicle_type":1,"socket_id":"0RQhGBo7pv5MYyyvAAAn"}
+
+Sub==2535||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"oxuI9jheENRbPe-dAAAm","latitude":"22.5427428","longitude":"88.3859416","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5425145,"longitude":88.3858288}@@@{"latitude":"22.5427428","longitude":"88.3859416"}####0.027904093305818403
+
+Sub==2535||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2535||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{"254~9":{"driver_id":254,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","estimated_time":106,"vehicle_type":9,"vehicle_type_name":"Moto taxi","socket_id":"oxuI9jheENRbPe-dAAAm","latitude":"22.5427428","distance":356,"longitude":"88.3859416"}}}
+
+Sub==2535||Driver details check Part 4 -- NeedLog||body=={"device_token":"ew1wjRI22TM:APA91bGwBHMUOfe11NeIPphZyA1wvWlQPPb4JJRgBJ4ztrujK0YnyF3KURTgu7JWbM64SStqjt5uNaqFMsxCXaXLNcP14MT4vbjBFn6uuV0BZfFOeCJBZClWN-fUnkQ7SneMtIDDYBM7","id":254,"first_name":"Arijit","last_name":"Chandra"}
+
+Sub==2535||Push send data Part5 -- NeedLog||body==true
+
+Sub==2535||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"oxuI9jheENRbPe-dAAAm","latitude":"22.5427428","longitude":"88.3859416","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.027904093305818403,"estimated_time":0}},"request_data":{"socket_id":"0RQhGBo7pv5MYyyvAAAn","supplier_id":261,"latitude":22.5425145,"longitude":88.3858288,"vehicle_type":9,"order_id":2535,"order_uid":"ND5475784","retry":false,"booking_cost":"3000","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==time to send demo push||body==
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427587","longitude":"88.3859141","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"oxuI9jheENRbPe-dAAAm","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427509","longitude":"88.3859513","vehicle_type":1,"socket_id":"0RQhGBo7pv5MYyyvAAAn"}
+
+Sub==time to send demo push||body==
+
+Sub==driver_response_check start||body=={"langC":"en","driver_id":254,"response_type":true,"order_id":2535,"supplier_id":261,"latitude":"22.5425145","longitude":"88.3858288","location":"86B/2, Seal Lane, Tangra, Kolkata, West Bengal 700046, India  India","socket_id":"oxuI9jheENRbPe-dAAAm","vehicle_type":9}
+
+Sub==driver_arrived_status||body=={"order_id":"2535","supplier_id":"261","arrived_location":0}
+
+Sub==driver_arrived_status||body=={"order_id":"2535","supplier_id":"261","arrived_location":1}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427427","longitude":"88.3859418","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"tiOdTOVL_XVR-PVEAAAu","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427509","longitude":"88.3859513","vehicle_type":1,"socket_id":"sHBB1rriqzK04ZjNAAAt"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542743","longitude":"88.3859418","vehicle_type":1,"socket_id":"vnVl_ZurvxFu0U1nAAAv"}
+
+Sub==2536||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"tiOdTOVL_XVR-PVEAAAu","latitude":"22.5427427","longitude":"88.3859418","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5425145,"longitude":88.3858288}@@@{"latitude":"22.5427427","longitude":"88.3859418"}####0.027902514207789265
+
+Sub==2536||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2536||Filter driver by api response Part3 -- NeedLog||body=={"data":{"254~9":{"estimated_time":106,"distance":356,"vehicle_type":9,"socket_id":"tiOdTOVL_XVR-PVEAAAu","driver_id":254,"longitude":"88.3859418","vehicle_type_name":"Moto taxi","latitude":"22.5427427","vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png"}},"status":true}
+
+Sub==2536||Driver details check Part 4 -- NeedLog||body=={"device_token":"ew1wjRI22TM:APA91bGwBHMUOfe11NeIPphZyA1wvWlQPPb4JJRgBJ4ztrujK0YnyF3KURTgu7JWbM64SStqjt5uNaqFMsxCXaXLNcP14MT4vbjBFn6uuV0BZfFOeCJBZClWN-fUnkQ7SneMtIDDYBM7","id":254,"first_name":"Arijit","last_name":"Chandra"}
+
+Sub==2536||Push send data Part5 -- NeedLog||body==true
+
+Sub==2536||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"tiOdTOVL_XVR-PVEAAAu","latitude":"22.5427427","longitude":"88.3859418","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.027902514207789265,"estimated_time":0}},"request_data":{"socket_id":"vnVl_ZurvxFu0U1nAAAv","supplier_id":261,"latitude":22.5425145,"longitude":88.3858288,"vehicle_type":9,"order_id":2536,"order_uid":"ND1239769","retry":false,"booking_cost":"3000","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==time to send demo push||body==
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427509","longitude":"88.3859508","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"tiOdTOVL_XVR-PVEAAAu","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542743","longitude":"88.3859418","vehicle_type":1,"socket_id":"vnVl_ZurvxFu0U1nAAAv"}
+
+Sub==time to send demo push||body==
+
+Sub==driver_response_check start||body=={"langC":"en","driver_id":254,"response_type":true,"order_id":2536,"supplier_id":261,"latitude":"22.5425145","longitude":"88.3858288","location":"86B/2, Seal Lane, Tangra, Kolkata, West Bengal 700046, India  India","socket_id":"tiOdTOVL_XVR-PVEAAAu","vehicle_type":9}
+
+Sub==driver_arrived_status||body=={"order_id":"2536","supplier_id":"261","arrived_location":0}
+
+Sub==driver_arrived_status||body=={"order_id":"2536","supplier_id":"261","arrived_location":1}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427431","longitude":"88.3859415","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"tiOdTOVL_XVR-PVEAAAu","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542743","longitude":"88.3859418","vehicle_type":1,"socket_id":"vnVl_ZurvxFu0U1nAAAv"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542751","longitude":"88.3859513","vehicle_type":1,"socket_id":"2sFcCg-fOPs7NmkvAAAw"}
+
+Sub==2537||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"tiOdTOVL_XVR-PVEAAAu","latitude":"22.5427431","longitude":"88.3859415","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5425145,"longitude":88.3858288}@@@{"latitude":"22.5427431","longitude":"88.3859415"}####0.027930187293625112
+
+Sub==2537||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2537||Filter driver by api response Part3 -- NeedLog||body=={"data":{"254~9":{"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"tiOdTOVL_XVR-PVEAAAu","vehicle_type":9,"estimated_time":106,"distance":356,"vehicle_type_name":"Moto taxi","latitude":"22.5427431","driver_id":254,"longitude":"88.3859415"}},"status":true}
+
+Sub==2537||Driver details check Part 4 -- NeedLog||body=={"device_token":"ew1wjRI22TM:APA91bGwBHMUOfe11NeIPphZyA1wvWlQPPb4JJRgBJ4ztrujK0YnyF3KURTgu7JWbM64SStqjt5uNaqFMsxCXaXLNcP14MT4vbjBFn6uuV0BZfFOeCJBZClWN-fUnkQ7SneMtIDDYBM7","id":254,"first_name":"Arijit","last_name":"Chandra"}
+
+Sub==2537||Push send data Part5 -- NeedLog||body==true
+
+Sub==2537||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"tiOdTOVL_XVR-PVEAAAu","latitude":"22.5427431","longitude":"88.3859415","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.027930187293625112,"estimated_time":0}},"request_data":{"socket_id":"2sFcCg-fOPs7NmkvAAAw","supplier_id":261,"latitude":22.5425145,"longitude":88.3858288,"vehicle_type":9,"order_id":2537,"order_uid":"ND4612985","retry":false,"booking_cost":"3000","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==time to send demo push||body==
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427512","longitude":"88.3859349","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"tiOdTOVL_XVR-PVEAAAu","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542751","longitude":"88.3859513","vehicle_type":1,"socket_id":"2sFcCg-fOPs7NmkvAAAw"}
+
+Sub==time to send demo push||body==
+
+Sub==driver_response_check start||body=={"langC":"en","driver_id":254,"response_type":true,"order_id":2537,"supplier_id":261,"latitude":"22.5425145","longitude":"88.3858288","location":"86B/2, Seal Lane, Tangra, Kolkata, West Bengal 700046, India  India","socket_id":"tiOdTOVL_XVR-PVEAAAu","vehicle_type":9}
+
+Sub==driver_arrived_status||body=={"order_id":"2537","supplier_id":"261","arrived_location":0}
+
+Sub==driver_arrived_status||body=={"order_id":"2537","supplier_id":"261","arrived_location":1}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427514","longitude":"88.3859515","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"Rn14CHoQeY9IlYmHAAAx","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427514","longitude":"88.3859515","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"uabqwJd4i68JFzCGAAAy","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==change Driver status||body=={"driver_id":254,"socket_id":"uabqwJd4i68JFzCGAAAy","is_online":false,"vehicle_type":9}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427509","longitude":"88.3859517","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"uabqwJd4i68JFzCGAAAy","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427426","longitude":"88.385941","vehicle_type":1,"socket_id":"qg-BBziAlb3IAt0pAAAz"}
+
+Sub==2538||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"uabqwJd4i68JFzCGAAAy","latitude":"22.5427509","longitude":"88.3859517","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5425145,"longitude":88.3858288}@@@{"latitude":"22.5427509","longitude":"88.3859517"}####0.029159674827432643
+
+Sub==2538||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2538||Filter driver by api response Part3 -- NeedLog||body=={"data":{"254~9":{"socket_id":"uabqwJd4i68JFzCGAAAy","driver_id":254,"vehicle_type":9,"longitude":"88.3859517","latitude":"22.5427509","vehicle_type_name":"Moto taxi","vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","distance":356,"estimated_time":106}},"status":true}
+
+Sub==2538||Driver details check Part 4 -- NeedLog||body=={"device_token":"ew1wjRI22TM:APA91bGwBHMUOfe11NeIPphZyA1wvWlQPPb4JJRgBJ4ztrujK0YnyF3KURTgu7JWbM64SStqjt5uNaqFMsxCXaXLNcP14MT4vbjBFn6uuV0BZfFOeCJBZClWN-fUnkQ7SneMtIDDYBM7","id":254,"first_name":"Arijit","last_name":"Chandra"}
+
+Sub==2538||Push send data Part5 -- NeedLog||body==true
+
+Sub==2538||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"uabqwJd4i68JFzCGAAAy","latitude":"22.5427509","longitude":"88.3859517","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.029159674827432643,"estimated_time":0}},"request_data":{"socket_id":"qg-BBziAlb3IAt0pAAAz","supplier_id":261,"latitude":22.5425145,"longitude":88.3858288,"vehicle_type":9,"order_id":2538,"order_uid":"ND6598589","retry":false,"booking_cost":"3000","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==time to send demo push||body==
+
+Sub==time to send demo push||body==
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427421","longitude":"88.3859411","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"uabqwJd4i68JFzCGAAAy","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427426","longitude":"88.385941","vehicle_type":1,"socket_id":"qg-BBziAlb3IAt0pAAAz"}
+
+Sub==driver_response_check start||body=={"langC":"en","driver_id":254,"response_type":true,"order_id":2538,"supplier_id":261,"latitude":"22.5425145","longitude":"88.3858288","location":"86B/2, Seal Lane, Tangra, Kolkata, West Bengal 700046, India  India","socket_id":"uabqwJd4i68JFzCGAAAy","vehicle_type":9}
+
+Sub==driver_arrived_status||body=={"order_id":"2538","supplier_id":"261","arrived_location":0}
+
+Sub==driver_arrived_status||body=={"order_id":"2538","supplier_id":"261","arrived_location":1}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427427","longitude":"88.3859413","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"uabqwJd4i68JFzCGAAAy","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427426","longitude":"88.385941","vehicle_type":1,"socket_id":"qg-BBziAlb3IAt0pAAAz"}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427503","longitude":"88.3859512","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"nzKrHMDswGT4A2srAAA1","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542751","longitude":"88.3859516","vehicle_type":1,"socket_id":"owdkxV2M87fnwGSxAAA0"}
+
+Sub==2539||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"nzKrHMDswGT4A2srAAA1","latitude":"22.5427503","longitude":"88.3859512","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5425145,"longitude":88.3858288}@@@{"latitude":"22.5427503","longitude":"88.3859512"}####0.02907731038665116
+
+Sub==2539||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2539||Filter driver by api response Part3 -- NeedLog||body=={"data":{"254~9":{"longitude":"88.3859512","vehicle_type":9,"latitude":"22.5427503","driver_id":254,"socket_id":"nzKrHMDswGT4A2srAAA1","distance":356,"vehicle_type_name":"Moto taxi","estimated_time":106,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png"}},"status":true}
+
+Sub==2539||Driver details check Part 4 -- NeedLog||body=={"device_token":"ew1wjRI22TM:APA91bGwBHMUOfe11NeIPphZyA1wvWlQPPb4JJRgBJ4ztrujK0YnyF3KURTgu7JWbM64SStqjt5uNaqFMsxCXaXLNcP14MT4vbjBFn6uuV0BZfFOeCJBZClWN-fUnkQ7SneMtIDDYBM7","id":254,"first_name":"Arijit","last_name":"Chandra"}
+
+Sub==2539||Push send data Part5 -- NeedLog||body==true
+
+Sub==2539||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"nzKrHMDswGT4A2srAAA1","latitude":"22.5427503","longitude":"88.3859512","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.02907731038665116,"estimated_time":0}},"request_data":{"socket_id":"owdkxV2M87fnwGSxAAA0","supplier_id":261,"latitude":22.5425145,"longitude":88.3858288,"vehicle_type":9,"order_id":2539,"order_uid":"ND7893767","retry":false,"booking_cost":"3000","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==time to send demo push||body==
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427431","longitude":"88.3859283","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"nzKrHMDswGT4A2srAAA1","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542751","longitude":"88.3859516","vehicle_type":1,"socket_id":"owdkxV2M87fnwGSxAAA0"}
+
+Sub==time to send demo push||body==
+
+Sub==driver_response_check start||body=={"langC":"en","driver_id":254,"response_type":true,"order_id":2539,"supplier_id":261,"latitude":"22.5425145","longitude":"88.3858288","location":"86B/2, Seal Lane, Tangra, Kolkata, West Bengal 700046, India  India","socket_id":"nzKrHMDswGT4A2srAAA1","vehicle_type":9}
+
+Sub==driver_arrived_status||body=={"order_id":"2539","supplier_id":"261","arrived_location":0}
+
+Sub==driver_arrived_status||body=={"order_id":"2539","supplier_id":"261","arrived_location":1}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427426","longitude":"88.3859404","vehicle_type":1,"socket_id":"XUvIjRDWDvKlXVdGAAA3"}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427426","longitude":"88.3859409","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"tXcxadqH3pdONwlMAAA2","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427426","longitude":"88.3859404","vehicle_type":1,"socket_id":"XUvIjRDWDvKlXVdGAAA3"}
+
+Sub==change Driver status||body=={"driver_id":254,"socket_id":"tXcxadqH3pdONwlMAAA2","is_online":false,"vehicle_type":9}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427426","longitude":"88.3859404","vehicle_type":1,"socket_id":"XUvIjRDWDvKlXVdGAAA3"}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427479","longitude":"88.3859444","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"tXcxadqH3pdONwlMAAA2","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427426","longitude":"88.3859404","vehicle_type":1,"socket_id":"XUvIjRDWDvKlXVdGAAA3"}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427415","longitude":"88.3859421","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"wTkbLQsIaHAy3zt6AABS","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==change Driver status||body=={"driver_id":254,"socket_id":"wTkbLQsIaHAy3zt6AABS","is_online":false,"vehicle_type":9}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427428","longitude":"88.3859287","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"wTkbLQsIaHAy3zt6AABS","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==change Driver status||body=={"driver_id":254,"socket_id":"wTkbLQsIaHAy3zt6AABS","is_online":false,"vehicle_type":9}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.542743","longitude":"88.3859313","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"wTkbLQsIaHAy3zt6AABS","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427432","longitude":"88.3859283","vehicle_type":1,"socket_id":"ACk-bG4bx4FM9odHAABT"}
+
+Sub==2542||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"wTkbLQsIaHAy3zt6AABS","latitude":"22.542743","longitude":"88.3859313","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5425145,"longitude":88.3858288}@@@{"latitude":"22.542743","longitude":"88.3859313"}####0.027502343610416934
+
+Sub==2542||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2542||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{"254~9":{"latitude":"22.542743","longitude":"88.3859313","estimated_time":106,"socket_id":"wTkbLQsIaHAy3zt6AABS","vehicle_type_name":"Moto taxi","vehicle_type":9,"distance":356,"driver_id":254,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png"}}}
+
+Sub==2542||Driver details check Part 4 -- NeedLog||body=={"device_token":"ew1wjRI22TM:APA91bGwBHMUOfe11NeIPphZyA1wvWlQPPb4JJRgBJ4ztrujK0YnyF3KURTgu7JWbM64SStqjt5uNaqFMsxCXaXLNcP14MT4vbjBFn6uuV0BZfFOeCJBZClWN-fUnkQ7SneMtIDDYBM7","id":254,"first_name":"Arijit","last_name":"Chandra"}
+
+Sub==2542||Push send data Part5 -- NeedLog||body==true
+
+Sub==2542||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"wTkbLQsIaHAy3zt6AABS","latitude":"22.542743","longitude":"88.3859313","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.027502343610416934,"estimated_time":0}},"request_data":{"socket_id":"ACk-bG4bx4FM9odHAABT","supplier_id":261,"latitude":22.5425145,"longitude":88.3858288,"vehicle_type":9,"order_id":2542,"order_uid":"ND5147261","retry":false,"booking_cost":"3000","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==time to send demo push||body==
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427499","longitude":"88.3859232","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"wTkbLQsIaHAy3zt6AABS","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427432","longitude":"88.3859283","vehicle_type":1,"socket_id":"ACk-bG4bx4FM9odHAABT"}
+
+Sub==time to send demo push||body==
+
+Sub==driver_response_check start||body=={"langC":"en","driver_id":254,"response_type":true,"order_id":2542,"supplier_id":261,"latitude":"22.5425145","longitude":"88.3858288","location":"86B/2, Seal Lane, Tangra, Kolkata, West Bengal 700046, India  India","socket_id":"wTkbLQsIaHAy3zt6AABS","vehicle_type":9}
+
+Sub==driver_arrived_status||body=={"order_id":"2542","supplier_id":"261","arrived_location":0}
+
+Sub==driver_arrived_status||body=={"order_id":"2542","supplier_id":"261","arrived_location":1}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427423","longitude":"88.3859266","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"wTkbLQsIaHAy3zt6AABS","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427466","longitude":"88.3859176","vehicle_type":1,"socket_id":"CNL95cG3nGOWqvi-AABU"}
+
+Sub==2543||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"wTkbLQsIaHAy3zt6AABS","latitude":"22.5427423","longitude":"88.3859266","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5425145,"longitude":88.3858288}@@@{"latitude":"22.5427423","longitude":"88.3859266"}####0.027248862054926225
+
+Sub==2543||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2543||Filter driver by api response Part3 -- NeedLog||body=={"data":{"254~9":{"socket_id":"wTkbLQsIaHAy3zt6AABS","vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","vehicle_type":9,"latitude":"22.5427423","distance":356,"longitude":"88.3859266","estimated_time":106,"driver_id":254}},"status":true}
+
+Sub==2543||Driver details check Part 4 -- NeedLog||body=={"device_token":"ew1wjRI22TM:APA91bGwBHMUOfe11NeIPphZyA1wvWlQPPb4JJRgBJ4ztrujK0YnyF3KURTgu7JWbM64SStqjt5uNaqFMsxCXaXLNcP14MT4vbjBFn6uuV0BZfFOeCJBZClWN-fUnkQ7SneMtIDDYBM7","id":254,"first_name":"Arijit","last_name":"Chandra"}
+
+Sub==2543||Push send data Part5 -- NeedLog||body==true
+
+Sub==2543||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"wTkbLQsIaHAy3zt6AABS","latitude":"22.5427423","longitude":"88.3859266","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.027248862054926225,"estimated_time":0}},"request_data":{"socket_id":"CNL95cG3nGOWqvi-AABU","supplier_id":261,"latitude":22.5425145,"longitude":88.3858288,"vehicle_type":9,"order_id":2543,"order_uid":"ND9271212","retry":false,"booking_cost":"3000","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==time to send demo push||body==
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427427","longitude":"88.3859275","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"wTkbLQsIaHAy3zt6AABS","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427466","longitude":"88.3859176","vehicle_type":1,"socket_id":"CNL95cG3nGOWqvi-AABU"}
+
+Sub==time to send demo push||body==
+
+Sub==driver_response_check start||body=={"langC":"en","driver_id":254,"response_type":true,"order_id":2543,"supplier_id":261,"latitude":"22.5425145","longitude":"88.3858288","location":"86B/2, Seal Lane, Tangra, Kolkata, West Bengal 700046, India  India","socket_id":"wTkbLQsIaHAy3zt6AABS","vehicle_type":9}
+
+Sub==driver_arrived_status||body=={"order_id":"2543","supplier_id":"261","arrived_location":0}
+
+Sub==driver_arrived_status||body=={"order_id":"2543","supplier_id":"261","arrived_location":1}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427505","longitude":"88.3859521","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"wTkbLQsIaHAy3zt6AABS","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427466","longitude":"88.3859176","vehicle_type":1,"socket_id":"CNL95cG3nGOWqvi-AABU"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427505","longitude":"88.3859154","vehicle_type":1,"socket_id":"EtMYP6QqTttsbHbgAABV"}
+
+Sub==2544||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"wTkbLQsIaHAy3zt6AABS","latitude":"22.5427505","longitude":"88.3859521","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5425145,"longitude":88.3858288}@@@{"latitude":"22.5427505","longitude":"88.3859521"}####0.029137415011460843
+
+Sub==2544||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2544||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{"254~9":{"estimated_time":106,"driver_id":254,"distance":356,"longitude":"88.3859521","vehicle_type":9,"latitude":"22.5427505","socket_id":"wTkbLQsIaHAy3zt6AABS","vehicle_type_name":"Moto taxi","vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png"}}}
+
+Sub==2544||Driver details check Part 4 -- NeedLog||body=={"device_token":"ew1wjRI22TM:APA91bGwBHMUOfe11NeIPphZyA1wvWlQPPb4JJRgBJ4ztrujK0YnyF3KURTgu7JWbM64SStqjt5uNaqFMsxCXaXLNcP14MT4vbjBFn6uuV0BZfFOeCJBZClWN-fUnkQ7SneMtIDDYBM7","id":254,"first_name":"Arijit","last_name":"Chandra"}
+
+Sub==2544||Push send data Part5 -- NeedLog||body==true
+
+Sub==2544||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"wTkbLQsIaHAy3zt6AABS","latitude":"22.5427505","longitude":"88.3859521","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.029137415011460843,"estimated_time":0}},"request_data":{"socket_id":"EtMYP6QqTttsbHbgAABV","supplier_id":261,"latitude":22.5425145,"longitude":88.3858288,"vehicle_type":9,"order_id":2544,"order_uid":"ND8944687","retry":false,"booking_cost":"3000","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==time to send demo push||body==
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.542738","longitude":"88.3859299","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"wTkbLQsIaHAy3zt6AABS","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427505","longitude":"88.3859154","vehicle_type":1,"socket_id":"EtMYP6QqTttsbHbgAABV"}
+
+Sub==time to send demo push||body==
+
+Sub==2544||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"wTkbLQsIaHAy3zt6AABS","latitude":"22.542738","longitude":"88.3859299","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5425145,"longitude":88.3858288}@@@{"latitude":"22.542738","longitude":"88.3859299"}####0.026933793286570477
+
+Sub==2544||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427508","longitude":"88.3859023","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"wTkbLQsIaHAy3zt6AABS","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427505","longitude":"88.3859154","vehicle_type":1,"socket_id":"EtMYP6QqTttsbHbgAABV"}
+
+Sub==2544||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{}}
+
+Sub==2544||Sorted Driver Empty Part 8 -- NeedLog||body==null
+
+Sub==2544||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"wTkbLQsIaHAy3zt6AABS","latitude":"22.5427508","longitude":"88.3859023","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5425145,"longitude":88.3858288}@@@{"latitude":"22.5427508","longitude":"88.3859023"}####0.02733811663265036
+
+Sub==2544||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2544||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{}}
+
+Sub==2544||Sorted Driver Empty Part 8 -- NeedLog||body==null
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427421","longitude":"88.3859162","vehicle_type":1,"socket_id":"EtMYP6QqTttsbHbgAABV"}
+
+Sub==2547||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"wTkbLQsIaHAy3zt6AABS","latitude":"22.5427508","longitude":"88.3859023","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5425145,"longitude":88.3858288}@@@{"latitude":"22.5427508","longitude":"88.3859023"}####0.02733811663265036
+
+Sub==2547||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2547||Filter driver by api response Part3 -- NeedLog||body=={"data":{"254~9":{"latitude":"22.5427508","vehicle_type":9,"estimated_time":106,"driver_id":254,"socket_id":"wTkbLQsIaHAy3zt6AABS","vehicle_type_name":"Moto taxi","distance":356,"longitude":"88.3859023","vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png"}},"status":true}
+
+Sub==2547||Driver details check Part 4 -- NeedLog||body=={"device_token":"ew1wjRI22TM:APA91bGwBHMUOfe11NeIPphZyA1wvWlQPPb4JJRgBJ4ztrujK0YnyF3KURTgu7JWbM64SStqjt5uNaqFMsxCXaXLNcP14MT4vbjBFn6uuV0BZfFOeCJBZClWN-fUnkQ7SneMtIDDYBM7","id":254,"first_name":"Arijit","last_name":"Chandra"}
+
+Sub==2547||Push send data Part5 -- NeedLog||body==true
+
+Sub==2547||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"wTkbLQsIaHAy3zt6AABS","latitude":"22.5427508","longitude":"88.3859023","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.02733811663265036,"estimated_time":0}},"request_data":{"socket_id":"EtMYP6QqTttsbHbgAABV","supplier_id":261,"latitude":22.5425145,"longitude":88.3858288,"vehicle_type":9,"order_id":2547,"order_uid":"ND6548676","retry":false,"booking_cost":"3000","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==time to send demo push||body==
+
+Sub==time to send demo push||body==
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427424","longitude":"88.3859271","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"wTkbLQsIaHAy3zt6AABS","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427505","longitude":"88.3859154","vehicle_type":1,"socket_id":"EtMYP6QqTttsbHbgAABV"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427421","longitude":"88.3859162","vehicle_type":1,"socket_id":"EtMYP6QqTttsbHbgAABV"}
+
+Sub==driver_response_check start||body=={"langC":"en","driver_id":254,"response_type":true,"order_id":2547,"supplier_id":261,"latitude":"22.5425145","longitude":"88.3858288","location":"86B/2, Seal Lane, Tangra, Kolkata, West Bengal 700046, India  India","socket_id":"wTkbLQsIaHAy3zt6AABS","vehicle_type":9}
+
+Sub==driver_arrived_status||body=={"order_id":"2547","supplier_id":"261","arrived_location":0}
+
+Sub==driver_arrived_status||body=={"order_id":"2547","supplier_id":"261","arrived_location":1}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427587","longitude":"88.3859002","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"CV2ZhPvyBEM88gQXAABW","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427505","longitude":"88.3859154","vehicle_type":1,"socket_id":"EtMYP6QqTttsbHbgAABV"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427421","longitude":"88.3859162","vehicle_type":1,"socket_id":"EtMYP6QqTttsbHbgAABV"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427427","longitude":"88.385941","vehicle_type":1,"socket_id":"qtc8u5dxOP9X2xKAAABX"}
+
+Sub==change Driver status||body=={"driver_id":254,"socket_id":"CV2ZhPvyBEM88gQXAABW","is_online":false,"vehicle_type":9}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427427","longitude":"88.385941","vehicle_type":1,"socket_id":"qtc8u5dxOP9X2xKAAABX"}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.542742","longitude":"88.3859253","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"CV2ZhPvyBEM88gQXAABW","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427427","longitude":"88.385941","vehicle_type":1,"socket_id":"qtc8u5dxOP9X2xKAAABX"}
+
+Sub==2549||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"CV2ZhPvyBEM88gQXAABW","latitude":"22.542742","longitude":"88.3859253","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5425145,"longitude":88.3858288}@@@{"latitude":"22.542742","longitude":"88.3859253"}####0.027168871020670733
+
+Sub==2549||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2549||Filter driver by api response Part3 -- NeedLog||body=={"status":true,"data":{"254~9":{"driver_id":254,"socket_id":"CV2ZhPvyBEM88gQXAABW","estimated_time":106,"vehicle_type":9,"distance":356,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","latitude":"22.542742","vehicle_type_name":"Moto taxi","longitude":"88.3859253"}}}
+
+Sub==2549||Driver details check Part 4 -- NeedLog||body=={"device_token":"ew1wjRI22TM:APA91bGwBHMUOfe11NeIPphZyA1wvWlQPPb4JJRgBJ4ztrujK0YnyF3KURTgu7JWbM64SStqjt5uNaqFMsxCXaXLNcP14MT4vbjBFn6uuV0BZfFOeCJBZClWN-fUnkQ7SneMtIDDYBM7","id":254,"first_name":"Arijit","last_name":"Chandra"}
+
+Sub==2549||Push send data Part5 -- NeedLog||body==true
+
+Sub==2549||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"CV2ZhPvyBEM88gQXAABW","latitude":"22.542742","longitude":"88.3859253","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.027168871020670733,"estimated_time":0}},"request_data":{"socket_id":"qtc8u5dxOP9X2xKAAABX","supplier_id":261,"latitude":22.5425145,"longitude":88.3858288,"vehicle_type":9,"order_id":2549,"order_uid":"ND5552418","retry":false,"booking_cost":"3000","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==time to send demo push||body==
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427463","longitude":"88.3859365","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"CV2ZhPvyBEM88gQXAABW","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427427","longitude":"88.385941","vehicle_type":1,"socket_id":"qtc8u5dxOP9X2xKAAABX"}
+
+Sub==time to send demo push||body==
+
+Sub==driver_response_check start||body=={"langC":"en","driver_id":254,"response_type":true,"order_id":2549,"supplier_id":261,"latitude":"22.5425145","longitude":"88.3858288","location":"86B/2, Seal Lane, Tangra, Kolkata, West Bengal 700046, India  India","socket_id":"CV2ZhPvyBEM88gQXAABW","vehicle_type":9}
+
+Sub==driver_arrived_status||body=={"order_id":"2549","supplier_id":"261","arrived_location":0}
+
+Sub==driver_arrived_status||body=={"order_id":"2549","supplier_id":"261","arrived_location":1}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427424","longitude":"88.3859277","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"7u04BRoZv9wOtmWlAABY","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427427","longitude":"88.385941","vehicle_type":1,"socket_id":"qtc8u5dxOP9X2xKAAABX"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427555","longitude":"88.3859447","vehicle_type":1,"socket_id":"0N8zGA-fTXyGVhigAABn"}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427427","longitude":"88.3859414","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==change Driver status||body=={"driver_id":254,"is_online":false,"vehicle_type":9}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427474","longitude":"88.3859202","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==change Driver status||body=={"driver_id":254,"socket_id":"eOJjcL4YU_LY861EAACJ","is_online":false,"vehicle_type":9}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427477","longitude":"88.3859463","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"eOJjcL4YU_LY861EAACJ","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542743","longitude":"88.3859294","vehicle_type":1}
+
+Sub==change Driver status||body=={"driver_id":254,"socket_id":"eOJjcL4YU_LY861EAACJ","is_online":false,"vehicle_type":9}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542743","longitude":"88.3859294","vehicle_type":1,"socket_id":"FKQ1Hbcgy_OQYHaQAACK"}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427475","longitude":"88.3859394","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"eOJjcL4YU_LY861EAACJ","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542743","longitude":"88.3859294","vehicle_type":1,"socket_id":"FKQ1Hbcgy_OQYHaQAACK"}
+
+Sub==2554||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"eOJjcL4YU_LY861EAACJ","latitude":"22.5427475","longitude":"88.3859394","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5425145,"longitude":88.3858288}@@@{"latitude":"22.5427475","longitude":"88.3859394"}####0.02828890105050718
+
+Sub==2554||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2554||Filter driver by api response Part3 -- NeedLog||body=={"data":{"254~9":{"socket_id":"eOJjcL4YU_LY861EAACJ","vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","vehicle_type":9,"longitude":"88.3859394","latitude":"22.5427475","driver_id":254,"estimated_time":106,"distance":356}},"status":true}
+
+Sub==2554||Driver details check Part 4 -- NeedLog||body=={"device_token":"ew1wjRI22TM:APA91bGwBHMUOfe11NeIPphZyA1wvWlQPPb4JJRgBJ4ztrujK0YnyF3KURTgu7JWbM64SStqjt5uNaqFMsxCXaXLNcP14MT4vbjBFn6uuV0BZfFOeCJBZClWN-fUnkQ7SneMtIDDYBM7","id":254,"first_name":"Arijit","last_name":"Chandra"}
+
+Sub==2554||Push send data Part5 -- NeedLog||body==true
+
+Sub==2554||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"eOJjcL4YU_LY861EAACJ","latitude":"22.5427475","longitude":"88.3859394","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.02828890105050718,"estimated_time":0}},"request_data":{"socket_id":"FKQ1Hbcgy_OQYHaQAACK","supplier_id":261,"latitude":22.5425145,"longitude":88.3858288,"vehicle_type":9,"order_id":2554,"order_uid":"ND4291255","retry":false,"booking_cost":"3000","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==time to send demo push||body==
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427425","longitude":"88.3859273","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"eOJjcL4YU_LY861EAACJ","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==time to send demo push||body==
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542743","longitude":"88.3859294","vehicle_type":1,"socket_id":"FKQ1Hbcgy_OQYHaQAACK"}
+
+Sub==driver_response_check start||body=={"langC":"en","driver_id":254,"response_type":true,"order_id":2554,"supplier_id":261,"latitude":"22.5425145","longitude":"88.3858288","location":"86B/2, Seal Lane, Tangra, Kolkata, West Bengal 700046, India  India","socket_id":"eOJjcL4YU_LY861EAACJ","vehicle_type":9}
+
+Sub==driver_arrived_status||body=={"order_id":"2554","supplier_id":"261","arrived_location":0}
+
+Sub==driver_arrived_status||body=={"order_id":"2554","supplier_id":"261","arrived_location":1}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427429","longitude":"88.3859167","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"eOJjcL4YU_LY861EAACJ","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.542743","longitude":"88.3859294","vehicle_type":1,"socket_id":"FKQ1Hbcgy_OQYHaQAACK"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428076","longitude":"88.386008","vehicle_type":1}
+
+Sub==2681||Socket on started Part1 -- NeedLog||body=={}
+
+Sub==2681||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2681||Filter driver by api response Part3 -- NeedLog||body=={"data":{},"status":false}
+
+Sub==2681||Data comming from choose vehicle api Not True Part 9 -- NeedLog||body=={"data":{},"status":false}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427442","longitude":"88.3859293","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428076","longitude":"88.386008","vehicle_type":1,"socket_id":"bikiXmRmR88NfhKvAAAA"}
+
+Sub==change Driver status||body=={"driver_id":254,"socket_id":"ys1ORhncWGxP7DhjAAAB","is_online":false,"vehicle_type":9}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428076","longitude":"88.386008","vehicle_type":1,"socket_id":"bikiXmRmR88NfhKvAAAA"}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427569","longitude":"88.3858889","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"ys1ORhncWGxP7DhjAAAB","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5428076","longitude":"88.386008","vehicle_type":1,"socket_id":"bikiXmRmR88NfhKvAAAA"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427569","longitude":"88.3858889","vehicle_type":1,"socket_id":"mql_K8IQ7xsRUXRKAAAC"}
+
+Sub==2682||Socket on started Part1 -- NeedLog||body=={"254~9":{"socket_id":"ys1ORhncWGxP7DhjAAAB","latitude":"22.5427569","longitude":"88.3858889","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":"0.0","estimated_time":0}}
+
+Sub==distance||body=={"latitude":22.5431021,"longitude":88.3853287}@@@{"latitude":"22.5427569","longitude":"88.3858889"}####0.06916129776410632
+
+Sub==2682||Choose cars before searching Part2 -- NeedLog||body==test
+
+Sub==2682||Filter driver by api response Part3 -- NeedLog||body=={"data":{"254~9":{"distance":36,"driver_id":254,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","socket_id":"ys1ORhncWGxP7DhjAAAB","vehicle_type":9,"longitude":"88.3858889","latitude":"22.5427569","estimated_time":13}},"status":true}
+
+Sub==2682||Driver details check Part 4 -- NeedLog||body=={"device_token":"csRoeLYVzPU:APA91bE_TZB5jS1UyiRkfUvX-NDqa3lFhF8dXFmNzooHOeNNAJQWbem9oIoJXCxrHg_i7p05UXWNaJND1QObSKIg_ygRk5Hx8HdIytdF8eiJX4NHvFQUlmc_xDVbGBUpuEOcykJ1bjhL","id":254,"first_name":"Arijit","last_name":"Chandra"}
+
+Sub==2682||Push send data Part5 -- NeedLog||body==true
+
+Sub==2682||Booking Api Successfully called Part6 -- NeedLog||body=={"url":"http://192.168.0.164:8000/supplierAppApi/closest_vehicle_selection/","method":"POST"}@@@{"drivers_data":{"254~9":{"socket_id":"ys1ORhncWGxP7DhjAAAB","latitude":"22.5427569","longitude":"88.3858889","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","vehicle_type_name":"Moto taxi","driver_id":254,"distance":0.06916129776410632,"estimated_time":0}},"request_data":{"socket_id":"mql_K8IQ7xsRUXRKAAAC","supplier_id":261,"latitude":22.5431021,"longitude":88.3853287,"vehicle_type":9,"order_id":2682,"order_uid":"ND5291981","retry":false,"booking_cost":"4000","tried_drivers":[]},"radius":20}@@@wait 30 min punch with next array254~9
+
+Sub==time to send demo push||body==
+
+Sub==time to send demo push||body==
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427422","longitude":"88.3859636","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"U42MpGc7653Y3vM8AAAD","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==closest_vehicle_list_generate||body=={"supplier_id":"261","latitude":"22.5427569","longitude":"88.3858889","vehicle_type":1,"socket_id":"mql_K8IQ7xsRUXRKAAAC"}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5428226","longitude":"88.3859108","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"dCEh4L6Lt19hEhL1AAAG","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5428193","longitude":"88.3858929","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"dCEh4L6Lt19hEhL1AAAG","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5428492","longitude":"88.3859213","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"dCEh4L6Lt19hEhL1AAAG","is_online":true,"vehicle_type_name":"Moto taxi"}
+
+Sub==change Driver status||body=={"driver_id":254,"latitude":"22.5427793","longitude":"88.3858964","vehicle_type":9,"vehicle_image":"https://diaxrbad0p1f6.cloudfront.net/static/vehicles/type/Moto-Taxi.png","socket_id":"dCEh4L6Lt19hEhL1AAAG","is_online":true,"vehicle_type_name":"Moto taxi"}

@@ -1,0 +1,8 @@
+vehicle_location = {}
+orderUsersIds = {}
+BOOKING_STATUS_PROCESSING = 1
+BOOKING_STATUS_PLACED = 2
+BOOKING_STATUS_CANCELLED = 3
+BOOKING_STATUS_COMPLETED = 4
+MAX_BOOKING_RADIUS = 5000000
+// module.exports = constants;

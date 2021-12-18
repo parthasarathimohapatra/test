@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    {% block title %}
+
+    {% endblock title %}
+    {% load staticfiles %}
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700" rel="stylesheet">
+  <link rel="icon" type="{% static 'image/x-icon'%}" href="favicon.ico">
+  <link rel="icon" href="{% static 'images/favicon.png'%}" type="image/x-icon">
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.css'%}" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="{% static 'css/mdb.css'%}" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="{% static 'css/style.css'%}" rel="stylesheet">
+
+    <script type="text/javascript" src="{% static 'js/jquery-3.2.1.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/main.js'%}"></script>
+    {% block scripts %}
+      
+  {% endblock scripts %}
+  {% block css %}
+      
+  {% endblock css %}
+</head>
+
+<body>
+  {% block content %}
+            
+  {% endblock content %}
+  
+    
+    <!-- SCRIPTS -->
+    
+    <script type="text/javascript" src="{% static 'js/popper.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/mdb.js'%}"></script>
+</body>
+
+</html>

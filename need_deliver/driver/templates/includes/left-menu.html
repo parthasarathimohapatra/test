@@ -1,0 +1,9 @@
+<section class="left-part">
+	<div class="mCustomScrollbar content fluid light" data-mcs-theme="inset-2-dark">
+		<ul>
+			<li {% if 'dashboard' in current_url_segments  %} class="active" {% endif %}><a href="{% url 'dashboard' %}" class="{% if 'dashboard' in current_url_segments %} active {% endif %}waves-effect waves-light menu-left-btn">Dashboard</a></li>
+			<li {% if 'cust-list' in current_url_segments  %} class="active" {% endif %}><a href="{% url 'cust-list' %}" class="{% if 'cust-list' in current_url_segments %} active {% endif %}waves-effect waves-light menu-left-btn">Customer</a>{{current_url_segments}}</li>
+			<li {% if 'driver-list' in current_url_segments  %} class="active" {% endif %}><a href="{% url 'driver-list' %}" class="{% if 'driver-list' in current_url_segments %} active {% endif %}waves-effect waves-light menu-left-btn">Driver</a></li>
+		</ul>
+	</div>
+</section>

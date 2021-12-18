@@ -1,0 +1,20 @@
+[
+  {
+    "model": "webAdmin.NdCurrencies",
+    "pk": 1,
+    "fields": {
+      "currency_name": "Cambodian Riel(KHR)",
+      "conversion_rate": 1,
+      "default_currency": False
+    }
+  },
+  {
+    "model": "webAdmin.NdCurrencies",
+    "pk": 2,
+    "fields": {
+      "currency_name": "US Dollar(USD)",
+      "conversion_rate": 0.00025,
+      "default_currency": False
+    }
+  }
+]

@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+/env/
+/node_modules/
+envData.json

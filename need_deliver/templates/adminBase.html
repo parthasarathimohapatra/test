@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="Pragma" content="no-cache">
+    {% block title %}
+
+    {% endblock title %}
+    {% load staticfiles %}
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700" rel="stylesheet">
+    <link rel="icon" type="{% static 'image/x-icon'%}" href="favicon.ico">
+    <link rel="icon" href="{% static 'images/favicon.png'%}" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <link href="{% static 'css/bootstrap.css'%}" rel="stylesheet">
+    
+    <link href="{% static 'css/mdb.css'%}" rel="stylesheet">
+    
+    <link href="{% static 'css/jquery.mCustomScrollbar.css'%}" rel="stylesheet">
+    <link href="{% static 'css/style.css'%}" rel="stylesheet">
+    
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    
+
+    <script type="text/javascript" src="{% static 'js/main.js'%}"></script>
+    <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js'%}" type="text/javascript" ></script> 
+    
+
+    <script type="text/javascript" src="{% static 'js/popper.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.js'%}"></script>
+
+
+    {% block scripts %}
+        
+    {% endblock scripts %}
+    {% block css %}
+        
+    {% endblock css %}
+</head>
+ <body>
+    
+
+ <!-- <div id="map"></div> -->
+    <div class="mainc">
+
+        {% include "includes/header.html" %}
+        {% include "includes/left-menu.html" %}
+         
+        {% block body %}
+                        
+        {% endblock body %}
+    </div>
+    
+
+
+    
+    <script type="text/javascript" src="{% static 'js/mdb.js'%}"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $(".content").mCustomScrollbar();
+            $('[data-toggle="tooltip"]').tooltip();
+            // $('input#input_text, textarea#textarea1').characterCounter();
+        });
+    </script>
+
+
+{% block popup %}
+     
+ {% endblock popup %} 
+
+ <div class="modal fade" id="upRecords" tabindex="-1"  data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+            <p id="popup_title"> Would you like to delete all selected records? </p>
+      </div>
+      <div class="modal-footer">
+          <input type="hidden" name="data-action">
+          <input type="hidden" name="data-value">
+          <img src="{% static 'images/loader.gif'%}" class="btn-loader updateloader">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+          <button type="button" id="delete-btn" class="action-btn btn green">Yes</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="changePasswordModal" tabindex="-1" role="dialog" aria-labelledby="modal_label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal_label">Change Password</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form class="change_password_popupForm" method="POST" id="change_password_popupForm">
+          {% csrf_token %}
+          <div id="msg-res-change_pass" class=""><span class="formResponse"></span></div>
+          <div class="modal-body" id="modal_content">
+              <div class="fixed-width">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="box">
+                              <div class="md-form">
+                                  <input type="password" id="old_password" name="old_password" class="form-control">
+                                  <label for="old_password" >Old Password</label>
+                              </div>
+                              <div class="md-form">
+                                  <input type="password" id="new_password" name="new_password" class="form-control" data-validation="password">
+                                  <label for="new_password" >New Password</label>
+                              </div>
+                              <div class="md-form">
+                                  <input type="password" id="confirm_password" name="confirm_password" class="form-control" data-validation="password">
+                                  <label for="confirm_password" >Confirm Password</label>
+                              </div>
+                          </div>  
+                      </div>
+                  </div>  
+              </div>
+          </div>
+          <div class="modal-footer">
+            <input type="hidden" name="id">
+            <img src="{% static 'images/loader.gif'%}" class="btn-loader formloader">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="Submit" class="btn btn-primary" id="Submit-btn">Save</button>
+          </div>
+    </form>
+    </div>
+  </div>
+</div> 
+
+<script type="text/javascript">
+    $(function(){
+            $( document ).on("click", "#change_password", function(){
+        // clearFormData('change_password_popupForm');
+        $('#changePasswordModal').modal('show'); 
+    });
+    $('body').on('submit', '#change_password_popupForm', function (e) { 
+        $("#change_password_popupForm").find('.eq-ui-input').removeClass('eq-ui-input invalid')
+        $("#change_password_popupForm").find('#msg-res-change_pass').removeClass('alert').removeClass('alert-success').removeClass('alert-danger');
+        var thisVal =  $( this );
+        thisVal.find('[type=submit]').prop('disabled', true);
+
+        if(formValidationChangePass("change_password_popupForm") == false){
+            thisVal.find('[type=submit]').prop('disabled', false);
+            return false;
+        }
+        $('.error-input').remove();
+        var csrftoken = $("input[name=csrfmiddlewaretoken]").val();
+        $('#change_password_popupForm').find('.formResponse').removeClass('success-msg').removeClass('error-input').html("");
+        var url = "changePassword";
+        var method = 'post';
+     
+        var formData = new FormData(this);
+        formData.append('csrfmiddlewaretoken', csrftoken);
+        serverCall(url, formData, "post", true, 'formloader', null, true, function (res) {
+            thisVal.find('[type=submit]').prop('disabled', false);
+            if (res.length>0) {
+                // var resp = $.parseJSON(data);alert(1);
+                $.each(res, function(key, val){
+                    $.each(val, function(key1, val1){
+                        if(key1 == 'status' && val1 == true){
+                            $("#change_password_popupForm").find('#msg-res-change_pass').addClass('alert alert-success');
+                            $('#change_password_popupForm').find('.formResponse').addClass('success-msg').html(res[key].msg);
+                            setTimeout(function(){
+                                clearFormDataChangePass('change_password_popupForm');
+                                $('#changePasswordModal').modal('hide'); 
+                            },2000);
+                        } else if(key1 == 'status' && val1 == false){
+                            $("#change_password_popupForm").find('#msg-res-change_pass').addClass('alert alert-danger');
+                            if( res[key].field != 'mainError'){  
+                                $('#change_password_popupForm').find('[name=' + res[key].field + ']').addClass('eq-ui-input invalid')
+                                $('#change_password_popupForm').find('.formResponse').addClass('error-msg').html("Please fill up all required fields")
+                                $('#change_password_popupForm').find('[name=' + res[key].field + ']').after("<span class='error-input'>" + res[key].msg + "</span>");
+                            }else{
+                                $('#change_password_popupForm').find('.formResponse').addClass('error-msg').html(res[key].msg);
+                            }
+                        }
+                    });    
+                });
+            }
+              
+        });
+
+        e.preventDefault();
+        });
+   });
+  function formValidationChangePass( idVal ){
+      $( "#" + idVal ).find('.eq-ui-input').removeClass('eq-ui-input invalid');
+      $("#" + idVal).find('#msg-res').removeClass('alert').removeClass('alert-success').removeClass('alert-danger');
+      var errorFields = {
+          'old_password' : 'Old Password',
+          'new_password' : 'New Password',
+          'confirm_password' : 'Confirm Password'
+      }
+      $("#" + idVal).find(".error-input").remove();
+      var flag = false;
+      $( "#" + idVal ).find("input, select").not(":hidden").each(function( value){
+
+          var fieldName = $(this).attr("name");
+          
+          
+          var fieldVal = $(this).val();
+          if(fieldName && (fieldVal == "" || fieldVal == 0) ){
+              $( "#" + idVal ).find('[name=' + fieldName + ']').addClass('eq-ui-input invalid');
+              $( "#" + idVal ).find("[name="+ fieldName +"]").after("<span class='error-input'>" + errorFields[fieldName] + " can not be blank.<span>");
+              flag = true;
+
+          }
+          if( $(this).attr("data-validation") == "password" && fieldVal!= '' ){
+          
+              if(passwordRestrict(fieldVal) == false){
+
+                  $( "#" + idVal ).find('[name=' + fieldName + ']').addClass('eq-ui-input invalid');
+                  $( "#" + idVal ).find("[name="+ fieldName +"]").after("<span class='error-input'>Password must contain one upper case, one lower case, one digit, one special character and 8 - 20 chanracters.</span>");
+                  flag = true;
+              }
+          }
+
+      });
+     
+      if(flag){
+          $( "#" + idVal ).find('#msg-res-change_pass').addClass('alert alert-danger');
+          $( "#" + idVal ).find('.formResponse').addClass('error-msg').html("Please fill up all fields correctly");
+          return false;
+      } else{
+          $( "#" + idVal ).find('.formResponse').removeClass('error-msg').html("");
+          return true;
+      }
+  }
+
+function clearFormDataChangePass( formId ){
+    $( "#" + formId ).find('.eq-ui-input').removeClass('eq-ui-input invalid');
+    $("#" + formId).find('#msg-res-change_pass').removeClass('alert').removeClass('alert-success').removeClass('alert-danger');
+    $('#changePasswordModal').find('#modal_label').html("Change Password");
+    $( "#" + formId ).find("input,textarea").val('').trigger('change');
+    $( "#" + formId ).find("select").val(0).trigger('change');
+    $('.error-input').remove();
+    $('#change_password_popupForm').find('.formResponse').removeClass('success-msg').removeClass('error-input').html("");
+    $("#change_password_popupForm").find('input,select').prop('disabled', false);
+    $("#change_password_popupForm").find('#Submit-btn').show();
+    $("#change_password_popupForm").find('[type=submit]').prop('disabled', false);
+}
+</script> 
+
+
+   
+
+
+ {% block footercontent %}
+     
+ {% endblock footercontent %} 
+
+  </body>
+</html>

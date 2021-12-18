@@ -1,0 +1,121 @@
+{% extends 'adminBase.html' %}
+{% load staticfiles %}
+{% block title %}
+<title> {{ title }} </title> 
+{% endblock title %}
+{% block body %}
+
+<section class="right-part  ">
+            <div class="row justify-content-between align-items-center mb-3 animated fadeIn">
+                <div class="col-md-auto">
+                    <h2>{{ page_title }}</h2>
+                </div>
+                
+            </div>
+            <div class="animated fadeInRight">
+                <div class="mCustomScrollbar content fluid light">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="table-box">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="hidden" id="no_of_students_reg" >
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="row">
+                                                    <div class="col-md-auto">
+                                                        <div id="no_of_supplier_reg_range" class="form-control">
+                                                            <i class="fa fa-calendar"></i>&nbsp;
+                                                            <span></span> <i class="fa fa-caret-down"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-auto">
+                                                        <div class="custom-control custom-radio custom-control-inline"> 
+                                                            <input type="radio" class="custom-control-input" id="user_filter_teacher" name="user_filter" value="2"  checked="">
+                                                            <label class="custom-control-label" for="user_filter_teacher">Supplier</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" class="custom-control-input" id="user_filter_student" name="user_filter" value="3" >
+                                                            <label class="custom-control-label" for="user_filter_student" >Driver</label>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="no_of_supplier_reg_range_hidden" id="no_of_supplier_reg_range_hidden">
+                                <div class="loader-container no_of_students_reg_loader">
+                                    <img src="{% static 'images/loader.gif'%}" class="payLoader">
+                                </div>
+                                <div id="no_of_users_reg_graph" style="min-width: 310px; height: 400px; margin: 0 auto;"></div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                		<!-- <div class="col-md-6"> -->
+                        <div class="col-md-12">
+                            <div class="table-box chart-2col-height ">
+
+                            
+                                <div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+                               
+
+                            </div>
+                		</div>
+                       <!--  <div class="col-md-6">
+                            <div class="table-box chart-2col-height">
+                                <div class="row">
+                                    <div class="col-md-auto">
+                                        <div class="form-control">
+                                            <input type="hidden" id="daterange_pie" >
+                                            <div class="col-md-auto">
+                                                <div id="reportrange_pie">
+                                                  <i class="fa fa-calendar"></i>&nbsp;
+                                                  <span></span> <i class="fa fa-caret-down"></i>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loader-container no_of_call_graph_loader">
+                                    <img src="{% static 'images/loader.gif'%}" class="payLoader">
+                                </div>
+                               
+                                
+                                <div id="no_of_call_graph" style="min-width: 310px; height: 400px; margin: 0 auto;"></div>
+                                
+                            </div>
+                        </div>   -->
+                    </div>
+                    <!-- <div class="row">
+                        <div class="col-md-6">
+                            <div class="table-box">
+                                <div class="loader-container no_of_call_graph_payment_loader">
+                                    <img src="{% static 'images/loader.gif'%}" class="payLoader">
+                                </div>
+                                <div id="persentage_payment_each_gateway" style="min-width: 310px; height: 400px; margin: 0 auto;"></div>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                </div>
+            </div>
+                
+        </section>
+<script type="text/javascript">
+    {% include './dashboard.js' %}
+</script>
+{% endblock %}{% block css %}
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+{% endblock css %}
+{% block scripts %}
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script> -->
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+{% endblock scripts %}
+

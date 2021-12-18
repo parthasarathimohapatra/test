@@ -1,0 +1,47 @@
+{% extends 'adminBase.html' %}
+{% load staticfiles %}
+{% block title %}
+<title> {{ title }} </title> 
+{% endblock title %}
+{% block body %}
+<section class="right-part  ">
+            <div class="row justify-content-between align-items-center mb-3 animated fadeIn">
+                <div class="col-md-auto">
+                    <h2>{{ page_title }}</h2>
+                </div>
+              
+                
+            </div>
+            
+            <script src="https://code.highcharts.com/highcharts.js"></script>
+            <script src="https://code.highcharts.com/modules/exporting.js"></script>
+            <script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+            <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>  
+
+                         
+            </section>
+
+       
+<script type="text/javascript">
+
+  {% include './driver_joining_report.js' %}
+
+</script>
+{% endblock %}
+
+{% block css %}
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css" rel="stylesheet">
+  <link href="{% static 'css/jcrop.css'%}" rel="stylesheet">
+  <link href="https://cdn.datatables.net/responsive/2.0.2/css/responsive.bootstrap.css" rel="stylesheet">
+  
+{% endblock css %}
+{% block scripts %}
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="{% static 'js/jcrop.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.dataTables.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/dataTables.bootstrap.js'%}"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.0.2/js/dataTables.responsive.js"></script>
+    
+{% endblock scripts %}

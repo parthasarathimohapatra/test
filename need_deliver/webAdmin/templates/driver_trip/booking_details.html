@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+{% load staticfiles %}
+<body>
+	<div id="booking-details">
+
+		{% if data %} 
+			<div class="fixed-width">
+                <div class="row">
+                    <div class="col-lg-4 text-center">
+                    	<div class="user-pop-details">
+                    		<figure>
+								{% if data.student.profile_img %}
+								 	<img class="rounded-circle z-depth-1-half avatar-pic big-img-loader" src="{{base_url}}{{data.student.profile_img}}" >	
+				                {% else %}
+									<img class="rounded-circle z-depth-1-half avatar-pic big-img-loader" src="{% static 'images/avatar.jpg' %}" >	
+				                {% endif %}	
+			                </figure>
+			                <div>
+	                		     <p><strong>Student Name: </strong><br><a href="javascript:void(0);" data-id="{{data.student.id}}" data-user="std" class="profile_details">{{data.student.first_name}} {{data.student.last_name}}</a> </p>
+	                		</div>
+                		</div>
+                	</div>
+                	<div class="col-lg-4 text-center">
+                    	<div class="user-pop-details">
+                    		<figure>
+								{% if data.payment_status == 1 %}
+								 	<img class="big-img-loader" src="{{settings.BASE_URL}}/static/images/paid-big.jpg" >	
+								{% elif not data.booking_status %}
+									<img class="big-img-loader" src="{{settings.BASE_URL}}/static/images/failed-big.png	" >	
+				                {% else %}
+									<img class="big-img-loader" src="{{settings.BASE_URL}}/static/images/unpaid-big.jpg" >	
+				                {% endif %}	
+			                </figure>
+                		</div>
+                	</div>
+                    <div class="col-lg-4 text-center">
+                    	<div class="user-pop-details">
+                    		<figure>
+								{% if data.teacher.profile_img %}
+								 	<img class="rounded-circle z-depth-1-half avatar-pic big-img-loader" src="{{base_url}}{{data.teacher.profile_img}}" >	
+				                {% else %}
+									<img class="rounded-circle z-depth-1-half avatar-pic big-img-loader" src="{% static 'images/avatar.jpg' %}" >	
+				                {% endif %}	
+			                </figure>
+			                <div>
+			                	<p><strong>Teacher Name: </strong><br><a href="javascript:void(0);" data-id="{{data.teacher.id}}"  data-user="tech" class="profile_details">{{data.teacher.first_name}} {{data.teacher.last_name}}</a> </p>
+			                </div>
+		                </div>
+					</div>
+				</div>
+			</div>
+			<table class="table table-bordered ">
+            
+	            <tbody>
+	                <tr>
+	                    <td>UID</td>
+	                    <td><code>{{data.booking_uid}}</code></td>
+	                </tr>
+	                <tr>
+	                    <td>Learning Language</td>
+	                    <td><code>{{data.lang.lang_name}}</code></td>
+	                </tr>
+	                <tr>
+	                    <td>Booking Date</td>
+	                    <td><code>{{ data.call_date }}</code></td>
+	                </tr>
+	                <tr>
+	                    <td>Start Time</td>
+	                    <td><code>{{ data.start_time }}</code></td>
+	                </tr>
+	                <tr>
+	                    <td>End Time</td>
+	                    <td><code>{{ data.end_time }}</code></td>
+	                </tr>
+	                <tr>
+	                    <td>Duration</td>
+	                    <td><code>{{data.total_call_duration}}</code></td>
+	                </tr>
+
+	                
+	                {% if data.amount|floatformat > "0" and data.surge_price %}
+	                <tr>
+	                    <td>Normal Charge</td>
+	                    <td><code>{{data.normal_charge}}</code></td>
+	                </tr>
+	                <tr>
+	                    <td>Surge Amount</td>
+	                    <td><code>{{data.surge_price.cross_type}}x [{{data.surge_price.surge_amount}}]</code></td>
+	                </tr>
+	                
+	                {% endif %}	
+	                <tr>
+	                    <td>Total Charge</td>
+	                    <td><code>{{data.amount}}</code></td>
+	                </tr>
+	                <tr>
+	                    <td>Gateway</td>
+	                    <td><code>{{data.gateway_name}}</code></td>
+	                </tr>
+	           
+	                <tr>
+	                    <td>Payment Time</td>
+	                    <td><code>{{data.payment_time}}</code></td>
+	                </tr>
+	            </tbody>
+        </table>
+		
+		{% endif %}	
+
+	</div>
+    <!-- <p>Dear {{data}},</p> -->
+
+</body>
+
+</html>

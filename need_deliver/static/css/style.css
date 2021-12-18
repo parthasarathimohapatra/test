@@ -1,0 +1,331 @@
+/* Your custom styles */
+*{border: none;outline: none; text-decoration: none;}
+html,body{padding: 0; margin: 0;background: #f0f1f5; font-size: 16px;font-family: 'Muli', sans-serif;}
+.mainc{min-height:calc(100vh - 1.25rem);width: 100%; overflow-x: hidden; position: relative;z-index: 1;padding-top: 5.75rem; background: #f0f1f5;}
+.p-10{padding: 0.625rem!important;}
+.pb-20{padding-bottom:1.25rem;}
+.px-45{padding-top: 2.8125rem; padding-bottom:2.8125rem;}
+.pb-45{padding-bottom:2.8125rem;}
+.pt-45{padding-top:2.8125rem;}
+.px-60{padding-top: 3.75rem; padding-bottom: 3.75rem;}
+.same-height [class^="col-"],.same-height [class*=" col-"]{display: flex;flex: 1 auto;flex-direction: column;}
+.same-height [class^="col-"] .box,.same-height [class*=" col-"] .box{flex:auto;}
+
+.row.gutter-20{margin-left: -0.625rem;margin-right:-0.625rem;}
+.gutter-20>[class^="col-"],.gutter-20>.col{padding-left: 0.625rem;padding-right: 0.625rem;}
+
+.row.gutter-60{margin-left: -1.85rem;margin-right:-1.85rem;}
+.gutter-60>[class^="col-"],.gutter-60>.col{padding-left: 1.85rem;padding-right: 1.85rem;}
+
+.btn + .counter{background-color: #fe1212; color: #fff; font-size: 0.75rem; text-align: center; margin-left: -1rem;z-index: 2;position: relative;padding:0.125rem 0.25rem;border-radius: 50%;}
+.btn-icon{width: 2.5rem; height: 2.5rem;border-radius: 50%;padding: 0 !important; margin: 0!important; text-align: center;}
+.btn-icon.btn-lg{width: 3.5rem; height: 3.5rem; line-height: 3.5rem; font-size: 2rem}
+.btn-icon .fa{font-size:1.125rem;line-height: 2.5rem;}
+.btn-transparent{color: #333;background-color: transparent;box-shadow: none}
+.btn-transparent.waves-effect.waves-light .waves-ripple {
+    background: rgba(80,182,104, 0.4);
+    background: -webkit-radial-gradient(rgba(80,182,104, 0.2) 0, rgba(80,182,104, 0.3) 40%, rgba(80,182,104, 0.4) 50%, rgba(80,182,104, 0.5) 60%, rgba(80,182,104, 0) 70%);
+    background: -o-radial-gradient(rgba(80,182,104, 0.2) 0, rgba(80,182,104, 0.3) 40%, rgba(80,182,104, 0.4) 50%, rgba(80,182,104, 0.5) 60%, rgba(80,182,104, 0) 70%);
+    background: radial-gradient(rgba(80,182,104, 0.2) 0, rgba(80,182,104, 0.3) 40%, rgba(80,182,104, 0.4) 50%, rgba(80,182,104, 0.5) 60%, rgba(80,182,104, 0) 70%); }
+
+
+
+
+
+
+.checkbox {color:#444; font-size:14px; padding:2px 10px 2px 20px;  line-height:20px; position:relative; cursor:pointer;display: inline-block; margin:10px 0 !important;}
+.checkbox span.check{position:absolute; width:15px; height:15px; border:rgba(0,0,0, .5) solid 1px; left:0px; top:calc(50% - 8px); transition: all .3s; -webkit-transition: all .3s; border-radius: 2px;}
+.checkbox.block{display:block;}
+.checkbox span.check:before{content:''; width:0; height:0;position:absolute; top:50%;left:50%;-webkit-border-radius:50%; border-radius:50%; transition:all .1s; -webkit-transition:all .1s;pointer-events: none;background: rgba(80,182,104,.4);}
+.checkbox span.check:after{position:absolute; color:#fff; font-family:'icomoon';content:'';line-height:0px; font-size:12px; width:0;height:0; text-align:center;right:0;bottom:0; left:50%; top:50%; overflow:hidden; transition:all .3s;background: rgba(80,182,104,0);border-radius:50%;}
+.checkbox input[type="checkbox"]:checked + span.check:after, .checkbox.checked span.check:after{width:100%;height:100%;left:0; top:0px; right:0;bottom:0;background: #025fb7 ;line-height:13px;content:'\f00c ';font-family: "FontAwesome";border-radius:0%;}
+
+.checkbox input{display:none;}
+.checkbox input[type="checkbox"]:checked + span.check, .checkbox.checked span.check{border:#025fb7   solid 1px;}
+
+.checkbox:active span.check:before  {width:40px;height:40px; left:-13px; top:-13px;}
+
+
+.checkbox span.radio{position:absolute; width:16px; height:16px; border:rgba(0,0,0, .5) solid 1px; left:0px; top:calc(50% - 8px); transition: all .3s; -webkit-transition: all .3s; -webkit-border-radius:50%;border-radius:50%; margin:0; background:#fff}
+.checkbox span.radio:before{content:''; width:0; height:0;position:absolute; top:50%;left:50%; -webkit-border-radius:50%; border-radius:50%; transition:all .1s; -webkit-transition:all .1s;pointer-events: none;background: rgba(80,182,104,.4);}
+.checkbox span.radio:after{ display:none; position:absolute;content:'';left: calc(50% - 4px);top: calc(50% - 4px);width: 8px;height: 8px;background: #fff;-webkit-border-radius: 50%;border-radius: 50%;}
+.checkbox input[type="radio"]:checked + span.radio, .checkbox.checked span.radio{border:rgba(80,182,104,1)  solid 1px;background: rgb(80,182,104); }
+.checkbox input[type="radio"]:checked + span.radio:after, .checkbox.checked span.radio:after{display:block;}
+.checkbox:active span.radio:before  {width:40px;height:40px; left:-13px; top:-13px;}
+.checkbox input[type="radio"]:checked + span.radio +span.text{color: #025fb7 ;}
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~ Login ~~~~~~~~~~~~~~~~~~~~~~~~*/
+.login-bg{position: absolute; left: 0; top: 0; width: 100%; height: 100%;z-index: 1;background-color: #025fb7;background-position: center; background-size: cover;display: flex;align-content: center;align-items: center;justify-content: center;}
+.login-bg:before{background-color: #0082feb3; position: absolute;left: 0; top: 0; width: 100%; height: 100%;z-index: 1;content: '';}
+.login-box{width: 100%;max-width: 32rem;padding: 1.25rem;background-color: #fff;position: relative;z-index: 1;box-shadow: rgba(0,0,0,.3) 0 .5rem 2.5rem}
+
+.logo{width:12.5rem; margin-bottom: 1.75rem;}
+.logo img{width: 100%;height: auto}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~ Login ~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~~~~~~~~~~*/
+header{width: 100%; height: 5rem; background: #fff;padding: 0.625rem 1rem;box-shadow: rgba(0,0,0,.1) 0 0.25rem 0.5rem;position: fixed; left: 0;top: 0;display: flex;z-index: 10;justify-content: space-between;}
+header .brand{height: 3.75rem; width: auto;display: inline-block;}
+header .brand a{width: 100%; height: 100%;display: block}
+header .brand a img,header .brand img{width: auto; height: auto;max-height: 100%; max-width: 100%;}
+header .search-box{margin: 0.625rem 0.625rem 0.625rem 1.25rem;padding-left: 1.25rem;border-left: #ddd solid 0.0625rem;flex: auto 1;position: relative;} 
+header .search-box:before{content: "\f002";font-family: "FontAwesome";position: absolute;font-size:1.25rem;line-height: 2.5rem;left:2rem; color: #999}
+header .search-box input{background-color: #f6f6f6;border-radius: 0.25rem;padding: 0.625rem; padding-left:3rem;  line-height: 1.25rem;font-size: 0.875rem;width: 100%; color: #666;}
+header .top-nav{padding:0.625rem 0 0.625rem 1.25rem;}
+header .top-nav > ul{list-style: none; padding: 0; margin: 0;}
+header .top-nav > ul li{padding: 0; margin: 0;float: left; margin-left: 0.5rem; line-height: 2.5rem;}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~ Nav ~~~~~~~~~~~~~~~~~~~~~~~~*/
+section.left-part{position: fixed;left: 0;width: 20rem;top: 0;padding-top: 5.1rem;height: 100%;background: #138cff;z-index: 9}
+section.left-part ul{position: relative;list-style: none; padding: 0; margin: 0;}
+section.left-part ul li{position: relative;display: block;font-size: 0.875rem;line-height: 1.125rem; }
+/*section.left-part ul li + li{border-top:#348748 solid 0.0625rem;}*/
+section.left-part ul li  a{color: #fff;padding: 1rem 1.25rem;display: block;position: relative;z-index: 1;font-size: 16px;font-weight: 700;}
+section.left-part ul li a:before{background-color: transparent;width: 0%; height: 100%;left: 0;top: 0; content: '';position: absolute;-webkit-transition: all .3s;transition: all .3s;z-index: -1;}
+section.left-part ul li a:hover:before{background-color: #025fb7;width: 100%;}
+section.left-part ul li a span{position: relative; z-index: 1}
+section.left-part ul li ul{height: 0; overflow: hidden;transition: all 3s ease;}
+section.left-part ul li ul li a {padding-left: 2.6rem;}
+section.left-part ul li.active > ul{height: auto;transition: all 2s ease;}
+/*~~~~~~~~~~~~~~~~~~~~~~~~ Nav ~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+section.right-part{padding:1.25rem; width: calc(100% - 20rem);float: right}
+section.right-part .fixed-width{width: 100%; max-width:70rem;}
+.acction{border-top:#ddd solid 0.0625rem; border-bottom: #ddd solid 0.0625rem;padding: 0.5rem 1.25rem; margin-bottom: 1.25rem;background-color: rgba(19, 140, 255, 0.1)}
+.acction .btn{padding:0.5rem 0.84rem;margin: 0}
+.acction .md-form{display: inline-block; margin-top: 0;margin-bottom: 0;margin-left: .25rem}
+.acction .md-form .prefix{font-size: 0.875rem;margin-top: -0.25rem; transform: translateY(50%)}
+.acction .md-form input{margin-left: 1.25rem;margin-bottom: 0;    padding: 0.3rem 0; font-size: 0.875rem;    border-bottom: 1px solid  rgba(80,182,104,0.5);color:  rgba(80,182,104,1)}
+.acction .md-form input::placeholder{color:  rgba(80,182,104,0.8)}
+.box,.table-box{width: 100%;padding: 1.25rem;background-color: #fff;position: relative;z-index: 1;box-shadow: rgba(0,0,0,.1) 0 .5rem 1.5rem; border-radius: 0.25rem; margin-bottom: 1.875rem}
+.box .md-form{margin: 0;padding-bottom:  0.625rem;}
+.table-box{/*height: calc(100vh - 23rem);*/padding-right: 0.625rem}
+.table-box .mCSB_inside > .mCSB_container{padding-right:0.625rem}
+.table-box th{background-color: #025fb7;padding: 0.75rem; color:#fff;}
+.table-box td{padding: 0.75rem;border-bottom: #dfdfdf solid 0.0625rem}
+.table-box tr:nth-child(odd) td{background-color: #f6f6f6}
+.table-box .checkbox{    padding: 0.5rem;margin: 0 !important}
+
+
+/*************** by Arijit ***************************/
+.error-input{color: red;font-size: 12px;display: none;}
+.error-normal{color: red;font-size: 12px;}
+.success-normal{color: #025fb7;font-size: 12px;}
+.material-switch > input[type="checkbox"] { display: none;}
+
+.material-switch > label {cursor: pointer; height: 0px; position: relative; }
+
+.material-switch > label::before {background: rgb(0, 0, 0);box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);border-radius: 8px; content: ''; height: 16px; margin-top: -8px; position:absolute; opacity: 0.3; transition: all 0.4s ease-in-out; width: 40px;}
+.material-switch > label::after { background: rgb(255, 255, 255); border-radius: 16px; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); content: ''; height: 24px; left: -4px; margin-top: -8px;  position: absolute; top: -4px; transition: all 0.3s ease-in-out;  width: 24px;}
+.material-switch > input[type="checkbox"].:checked + label::before { background: inherit;  opacity: 0.5;}
+.material-switch > input[type="checkbox"]:checked + label::after { background: #337ab7; left: 20px;}
+.avatar-pic {width: 150px; height: 150px;}
+.thumb-logo{width: 50px; height: 50px;}
+.btn-loader{width: 67px; display: none;}
+.status-sign{ padding: 3px 10px; font-size: 13px; }
+.dataTables_filter {width: 50%; float: right; text-align: right;}
+.preload-datatable{background-color: inherit !important;}
+.datatable-loader{ display: block; margin-left: auto; margin-right: auto;width: 7%;}
+.edit-data-load-content{text-align: center;}
+
+.edit-data-load-content> img{width: 18%;}
+
+.edit-data-load-content> img{width: 18%;}
+.dataTables_length label, .dataTables_filter label {display: block;}
+.dataTables_length label select {display: inline-block;width: auto;margin-right: 10px;}
+.dataTables_filter label input {display: inline-block;width: auto;margin-left: 10px;}
+section.left-part ul li a.active:before {background: #025fb7;content: "";width: 100%;}
+#call_details{padding: 37px 37px 17px 36px;}
+.star-img{width :103px;}
+.textarea{overflow: visible !important;}
+table.dataTable thead .sorting { background: url('../images/sort_both.png') no-repeat center right; }
+table.dataTable thead .sorting_asc { background: url('../images/sort_asc.png') no-repeat center right; }
+table.dataTable thead .sorting_desc { background: url('../images/sort_desc.png') no-repeat center right; }
+
+table.dataTable thead .sorting_asc_disabled { background: url('../images/sort_asc_disabled.png') no-repeat center right; }
+table.dataTable thead .sorting_desc_disabled { background: url('../images/sort_desc_disabled.png') no-repeat center right; }
+
+table.dataTable thead .sorting {background-color: #025fb7; cursor: pointer;}
+table.dataTable thead .sorting_asc {background-color: #025fb7; cursor: pointer;}
+table.dataTable thead .sorting_desc {background-color: #025fb7; cursor: pointer;}
+
+table.dataTable thead .sorting_asc_disabled {background-color: #025fb7; cursor: pointer;}
+table.dataTable thead .sorting_desc_disabled {background-color: #025fb7; cursor: pointer;}
+/***************************************** invoice **********************************************/
+.invoice-box {
+        max-width: 800px;
+        margin: auto;
+        padding: 30px;
+        border: 1px solid #eee;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+        font-size: 16px;
+        line-height: 24px;
+        color: #000;
+    }
+    
+    .invoice-box table {
+        width: 100%;
+        line-height: inherit;
+        text-align: left;
+    }
+    
+    .invoice-box table td {
+        padding: 5px;
+        vertical-align: top;
+    }
+    
+    .invoice-box table tr td:nth-child(2){
+        text-align: right;
+    }
+    .payment-details tr td:nth-child(3){
+        text-align: right;
+    }
+    .invoice-box table tr.top table td {
+        padding-bottom: 20px;
+    }
+    
+    .invoice-box table tr.top table td.title {
+        font-size: 45px;
+        line-height: 45px;
+        color: #333;
+
+    }
+    
+    .invoice-box table tr.information table td {
+        padding-bottom: 40px;
+    }
+    
+    .invoice-box table tr.heading td {
+        background: #eee;
+        border-bottom: 1px solid #ddd;
+        font-weight: bold;
+    }
+    
+    .invoice-box table tr.details td {
+        padding-bottom: 20px;
+    }
+    
+    .invoice-box table tr.item td{
+        border-bottom: 1px solid #eee;
+    }
+    
+    .invoice-box table tr.item.last td {
+        border-bottom: none;
+    }
+    
+    .invoice-box table tr.total td:nth-child(2) {
+        border-top: 2px solid #eee;
+        font-weight: bold;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .invoice-box table tr.top table td {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+        
+        .invoice-box table tr.information table td {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+    }
+    
+    /** RTL **/
+    .rtl {
+        direction: rtl;
+        
+    }
+    
+    .rtl table {
+        text-align: right;
+    }
+    
+    .rtl table tr td:nth-child(2) {
+        text-align: left;
+    }
+    .scroll-off{height: 100% !important;}
+    .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+        background-color: #3ca054;
+    }
+/*************************************************/
+/************************************************** By Shamim *******************************************/
+table.table th, table.table td{text-align: center;}
+.material-switch.switch-center{width: 74%;}
+.material-switch.switch-center > label{width: auto;}
+.verification-img{width: 28%;}
+.currencylabel input[type=text] {display: inline-block;}
+.currencylabel .pricelabel {display: inline-block; position: relative; z-index: 1; right:20px;color: black;}
+.currencylabel .pricelabel + .error-input {display: block;}
+#call_details table tr td {text-align: left;}
+.user-pop-details figure {margin-bottom:10px;}
+.user-pop-details figure + div {padding:10px;}
+/***************************************Apurba***************************/
+.form-control {position: relative;}
+.loader-container {position: absolute;display: flex;justify-content: center;align-items: center;top: 0;right: 0;bottom: 0;left: 0;z-index: 2;}
+.loader-container img {background: #fff;padding: 20px;border-radius: 10px;box-shadow: 0px 0px 17px -6px #000;width: 100px;}
+.chart-2col-height {height: 500px;}
+.jcrop-keymgr {visibility: hidden;}
+.file-upload {position: relative;width: auto;}
+.file-upload input[type=file] {position: absolute;top: 0;left: 0;right: 0;bottom: 0;z-index: -1;opacity: 0;}
+.table-scrollable {display: block;width: 100%;overflow-x: auto;-webkit-overflow-scrolling: touch;-ms-overflow-style: -ms-autohiding-scrollbar;}
+.table-box.fix-height {height: calc(100vh - 19rem);}
+table.table.lang-table thead th:nth-child(5) {width: 200px;}
+table.table.surge-table thead th:nth-child(3) {width: 200px;}
+table.table.surge-table .input-group input[type=text] {border-right: none;border: 1px solid #ced4da !important;}
+table.table.surge-table .input-group input[type=text]:focus {box-shadow: none;border: 1px solid #ced4da !important;}
+table.table.surge-table .input-group .input-group-text {border-left: none;background: #fff;}
+table.table.lang-table .input-group input[type=text] {border-right: none;border: 1px solid #ced4da !important;}
+table.table.lang-table .input-group input[type=text]:focus {box-shadow: none;border: 1px solid #ced4da !important;}
+table.table.lang-table .input-group .input-group-text {border-left: none;background: #fff;}
+.custom-control.custom-radio {line-height: 2.5rem;}
+.custom-radio .custom-control-label::before {top: 0.69rem;}
+.custom-radio .custom-control-label::after {top: 0.69rem;}
+table.table.location-table thead tr th:last-child {width: 300px;}
+
+.btn-round-primary {width: 25px;height: 25px;position: relative;z-index: 1;vertical-align: middle;display: inline-block;overflow: hidden;-webkit-transition: all .2s ease-in-out;-o-transition: all .2s ease-in-out;transition: all .2s ease-in-out;-webkit-border-radius: 50%;border-radius: 50%;padding: 0;cursor: pointer;font-size: 14px;color: #fff !important;background: #999;line-height: 25px;-webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);}
+
+/* tabs css */
+/* Style the tab */
+.tab {overflow: hidden; /*border: 1px solid #ccc; background-color: #f1f1f1;*/ border: 1px solid #89c5ff; background-color: #e7f3ff;}
+
+/* Style the buttons inside the tab */
+.tab a {background-color: inherit; float: left; border: none; outline: none; cursor: pointer;  padding: 14px 16px; transition: 0.3s; font-size: 17px; display: block; color: #2a97ff;}
+
+/* Change background color of buttons on hover */
+.tab a:hover {background-color: #89c5ff;}
+
+/* Create an active/current tablink class */
+.tab a.active {/*background-color: #ccc;*/ background-color: #42a3ff; color: #FFF;}
+
+/* Style the tab content */
+.tabcontent {display: none; padding: 6px 12px; /*border: 1px solid #ccc;*/ border: 1px solid #59aeff; border-top: none; height:510px; overflow-y:scroll; overflow-x:hidden;}
+#driver_licence_files .ins_pip, #vehicle_insurance_files .vehicle_ins, #vehicle_reg_files .ins_pip {display: inline-block; width:19%; height: 90px; overflow: hidden; margin-right: 0.75%; border: 1px solid #ccc; position: relative; box-shadow: 2px 2px 2px rgba(211,211,211,0.6);}
+#driver_licence_files .ins_pip:last-child, #vehicle_insurance_files .vehicle_ins:last-child, #vehicle_reg_files .ins_pip:last-child {margin-right: 0px;}
+#driver_licence_files .ins_pip img, #vehicle_insurance_files .vehicle_ins img, #vehicle_reg_files .ins_pip img {max-width: 100%;}
+#driver_licence_files .ins_pip .remove, #vehicle_insurance_files .vehicle_ins .remove, #vehicle_reg_files .ins_pip .remove     {position: absolute; top:0px; right: 0px; width: 25px; height: 25px; background: #000; text-align: center; line-height: 25px; cursor: pointer; color:#FFF; font-weight: 700;}
+
+#driver_licence_existing_files .ins_pip, #vehicle_insurance_existing_files .vehicle_ins, #vehicle_reg_existing_files .ins_pip {display: inline-block; width:19%; height: 90px; overflow: hidden; margin-right: 0.75%; border: 1px solid #ccc; position: relative; box-shadow: 2px 2px 2px rgba(211,211,211,0.6);}
+#driver_licence_existing_files .ins_pip:last-child, #vehicle_insurance_existing_files .vehicle_ins:last-child, #vehicle_reg_existing_files .ins_pip:last-child {margin-right: 0px;}
+#driver_licence_existing_files .ins_pip img, #vehicle_insurance_existing_files .vehicle_ins img, #vehicle_reg_existing_files .ins_pip img {max-width: 100%;}
+#driver_licence_existing_files .ins_pip .remove, #vehicle_insurance_existing_files .vehicle_ins .remove, #vehicle_reg_existing_files .ins_pip .remove     {position: absolute; top:0px; right: 0px; width: 25px; height: 25px; background: #000; text-align: center; line-height: 25px; cursor: pointer; color:#FFF; font-weight: 700;}
+
+
+.homeimageupld {margin-bottom: 10px; padding: 10px;}
+.homeimageupld .imageupload {display:inline-block; width: 120px;}
+.homeimageupld #image-up {display: inline-block;}
+
+.next-prev-div #prev, .next-prev-div #next {display: inline-block; border:1px solid #138cff; color: #138cff; padding: 0.84rem 2.14rem; font-size: 0.81rem;}
+.next-prev-div #next {float: right;}
+.next-prev-div button {float: right;}
+.btntransform {transform: translateY(-6px);}

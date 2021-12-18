@@ -1,0 +1,16 @@
+[
+  {
+    "model": "webAdmin.NdUsers",
+    "pk": 1,
+    "fields": {
+      "first_name": "Super",
+      "last_name": "Admin",
+      "email_id": "master@navsoft.in",
+      "username": "admin",
+      "password": "KKbBXm3/26tf0JUEVqdXug==",
+      "role_id": 1,
+      "is_deleted": false,
+      "is_status": true,
+    }
+  }
+]

@@ -1,0 +1,89 @@
+<section class="left-part">
+	<div class="mCustomScrollbar content fluid light" data-mcs-theme="inset-2-dark">
+		<ul>
+			<li {% if 'dashboard' in current_url_segments  %} class="active" {% endif %}><a href="{% url 'dashboard' %}" class="{% if 'dashboard' in current_url_segments %} active {% endif %}waves-effect waves-light menu-left-btn">Dashboard</a></li>
+
+			
+			<li {% if 'adminuser-list' in current_url_segments  %} class="active" {% endif %}>
+				<a href="javascript:void(0);" class="waves-effect waves-light menu-left-btn">User Management</a>
+				<ul>
+					<li {% if 'adminuser-list' in current_url_segments  %} class="active" {% endif %}><a href="{% url 'adminuser-list' %}" class="{% if 'adminuser-list' in current_url_segments %} active {% endif %}waves-effect waves-light menu-left-btn"> View User</a></li>
+
+				
+					
+					
+				</ul>
+			</li>
+
+
+			<li {% if 'supplier-list' in current_url_segments  or 'promotioncode-list' in current_url_segments or 'completedtrip-list' in current_url_segments or 'order-list' in current_url_segments %} class="active" {% endif %}>
+				<a href="javascript:void(0);" class="waves-effect waves-light menu-left-btn">Supplier Management</a>
+				<ul>
+					<li {% if 'supplier-list' in current_url_segments  %} class="active" {% endif %}><a href="{% url 'supplier-list' %}" class="{% if 'supplier-list' in current_url_segments %} active {% endif %}waves-effect waves-light menu-left-btn"> View Supplier</a></li>
+
+					<li {% if 'promotioncode-list' in current_url_segments  %} class="active" {% endif %}><a href="{% url 'promotioncode-list' %}" class="{% if 'promotioncode-list' in current_url_segments %} active {% endif %}waves-effect waves-light menu-left-btn"> Promotion Management</a></li>
+
+					<li {% if 'completedtrip-list' in current_url_segments  %} class="active" {% endif %}><a href="{% url 'completedtrip-list' %}" class="{% if 'completedtrip-list' in current_url_segments %} active {% endif %}waves-effect waves-light menu-left-btn">Completed Trip</a></li>
+
+					<!-- <li {% if 'order-list' in current_url_segments  %} class="active" {% endif %}><a href="{% url 'order-list' %}" class="{% if 'order-list' in current_url_segments %} active {% endif %}waves-effect waves-light menu-left-btn">View orders</a></li> -->
+					
+					
+				</ul>
+			</li>
+			<li {% if 'driver-list' in current_url_segments or 'vehicletype-list' in current_url_segments or 'drivertrip-list' in current_url_segments or 'vehiclemodel-list' in current_url_segments or 'driver-subscription-list' in current_url_segments %} class="active" {% endif %}>
+				<a href="javascript:void(0);" class="waves-effect waves-light menu-left-btn">Driver Management</a>
+				<ul>
+					<li {% if 'driver-list' in current_url_segments  %} class="active" {% endif %}><a href="{% url 'driver-list' %}" class="{% if 'driver-list' in current_url_segments %} active {% endif %}waves-effect waves-light menu-left-btn">View Driver list</a></li>
+					
+					<li {% if 'driver-subscription-list' in current_url_segments  %} class="active" {% endif %}><a href="{% url 'driver-subscription-list' %}" class="{% if 'driver-subscription-list' in current_url_segments %} active {% endif %}waves-effect waves-light menu-left-btn">Driver Subscription Management</a></li>
+
+					<li {% if 'vehicletype-list' in current_url_segments  %} class="active" {% endif %}><a href="{% url 'vehicletype-list' %}" class="{% if 'vehicletype-list' in current_url_segments %} active {% endif %}waves-effect waves-light menu-left-btn">Vehicle type Management</a></li>
+
+					<li {% if 'vehiclemodel-list' in current_url_segments  %} class="active" {% endif %}><a href="{% url 'vehiclemodel-list' %}" class="{% if 'vehiclemodel-list' in current_url_segments %} active {% endif %}waves-effect waves-light menu-left-btn">Vehicle model Management</a></li>
+
+					<li {% if 'drivertrip-list' in current_url_segments  %} class="active" {% endif %}><a href="{% url 'drivertrip-list' %}" class="{% if 'drivertrip-list' in current_url_segments %} active {% endif %}waves-effect waves-light menu-left-btn">Driver Trip Management</a></li>
+					
+					<li {% if 'drivertrip-list' in current_url_segments  %} class="active" {% endif %}><a href="{% url 'driver-cancelled-trip-list' %}" class="{% if 'drivertrip-list' in current_url_segments %} active {% endif %}waves-effect waves-light menu-left-btn">Driver Cancelled Trip</a></li>
+				</ul>
+			</li>
+
+			<li {% if 'banner-image-list' in current_url_segments or 'splash-screen-list' in current_url_segments or 'cancellation-reason-list' in current_url_segments or 'review-reason-list' in current_url_segments or 'paymentmethod-list' in current_url_segments or 'settings' in current_url_segments or 'push-notification-list' in current_url_segments or 'subscription-plan-list' in current_url_segments %} class="active" {% endif %}>
+				<a href="javascript:void(0);" class="waves-effect waves-light menu-left-btn">Miscellaneous</a>
+				<ul>
+					<li {% if 'banner-image-list' in current_url_segments  %} class="active" {% endif %}><a href="{% url 'banner-image-list' %}" class="{% if 'banner-image-list' in current_url_segments %} active {% endif %}waves-effect waves-light menu-left-btn">Banner Image Management</a></li>
+
+					<li {% if 'splash-screen-list' in current_url_segments  %} class="active" {% endif %}><a href="{% url 'splash-screen-list' %}" class="{% if 'splash-screen-list' in current_url_segments %} active {% endif %}waves-effect waves-light menu-left-btn">Splash Screen Management</a></li>
+
+					
+
+					<li {% if 'cancellation-reason-list' in current_url_segments  %} class="active" {% endif %}><a href="{% url 'cancellation-reason-list' %}" class="{% if 'cancellation-reason-list' in current_url_segments %} active {% endif %}waves-effect waves-light menu-left-btn">Reason of Cancellations</a></li>
+
+					<li {% if 'review-reason-list' in current_url_segments  %} class="active" {% endif %}><a href="{% url 'review-reason-list' %}" class="{% if 'review-reason-list' in current_url_segments %} active {% endif %}waves-effect waves-light menu-left-btn">Review Reason Management</a></li>
+
+					<li {% if 'paymentmethod-list' in current_url_segments  %} class="active" {% endif %}><a href="{% url 'paymentmethod-list' %}" class="{% if 'paymentmethod-list' in current_url_segments %} active {% endif %}waves-effect waves-light menu-left-btn">Payment Methods</a></li>
+
+					<li {% if 'settings' in current_url_segments  %} class="active" {% endif %}><a href="{% url 'settings' %}" class="{% if 'settings' in current_url_segments %} active {% endif %}waves-effect waves-light menu-left-btn">Settings</a></li>
+
+					<li {% if 'push-notification-list' in current_url_segments  %} class="active" {% endif %}><a href="{% url 'push-notification-list' %}" class="{% if 'push-notification-list' in current_url_segments %} active {% endif %}waves-effect waves-light menu-left-btn">Push notification</a></li>
+					
+					<li {% if 'subscription-plan-list' in current_url_segments  %} class="active" {% endif %}><a href="{% url 'subscription-plan-list' %}" class="{% if 'subscription-plan-list' in current_url_segments %} active {% endif %}waves-effect waves-light menu-left-btn">Subscription Plan Management</a></li>
+				</ul>
+			</li>
+
+
+
+
+
+
+			<li {% if 'language-list' in current_url_segments or 'currency-list' in current_url_segments %} class="active" {% endif %}>
+				<a href="javascript:void(0);" class="waves-effect waves-light menu-left-btn">Manage Localization</a>
+				<ul>
+					<li><a href="{% url 'language-list' %}" class="{% if 'language-list' in current_url_segments %} active {% endif %}waves-effect waves-light menu-left-btn">Language Settings</a></li>
+					<li><a href="{% url 'currency-list' %}" class="{% if 'currency-list' in current_url_segments %} active {% endif %}waves-effect waves-light menu-left-btn">Currency Settings</a></li>
+					
+					
+				</ul>
+			</li>
+		</ul>
+	</div>
+</section>

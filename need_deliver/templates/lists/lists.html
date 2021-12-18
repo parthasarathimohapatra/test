@@ -1,0 +1,635 @@
+{% extends 'adminBase.html' %}
+{% load staticfiles %}
+{% block title %}
+<title> {{ title }} </title> 
+{% endblock title %}
+{% block body %}
+<section class="right-part  ">
+            <div class="row justify-content-between align-items-center mb-3 animated fadeIn">
+                <div class="col-md-auto">
+                    <h2>{{ page_title }}</h2>
+                </div>
+              
+                <div class="col-md-auto">
+                   {%  if app_name == "driver" or app_name == "admin" %}
+                    <button type="button" data-operation="create_user" data-toggle="modal" class="btn-add-new btn btn-icon btn-lg btn-primary" data-placement="bottom" title="Add New">+</button>         
+                    {% endif %}           
+                </div>
+            </div>
+            <div class="acction">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-md-auto">
+                        <span class="text-primary">( <span id="selected_records">0</span> Selected of <span class="all-users">{{ allTeacher }}</span> items) </span><span class="text-primary mx-3 ">|</span>
+                        <label class="checkbox text-primary " for="groupCheck">
+                          <input  name="groupCheck" value="5" id="groupCheck" type="checkbox">
+                          <span class="check"></span>  Check All
+                        </label>
+                        
+                        {%  if app_name != "driver" %}
+                        <button type="button" class="btn text-primary btn-transparent single_action action editView" data-action='view' style="display: none;" id="pro_details"><i class="fa fa-eye" aria-hidden="true"></i> View</button>  
+                        {% endif %}  
+                        {%  if app_name == "driver" or app_name == "admin" %}
+                        <button type="button" class="btn text-primary btn-transparent single_action action editView" data-action='edit' style="display: none;"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</button>
+                        {% endif %}  
+                       <!--  <button type="button" class="btn text-primary btn-transparent multi_action action" style="display: none;" data-action="send_cred"  data-title="Would you like to send credentials to all selected records?" data-target="#upRecords" data-toggle="modal" data-value="1"><i class="fa fa-envelope" aria-hidden="true"></i> Send Credential</button>  -->
+                        <button type="button" class="btn text-primary btn-transparent multi_action action" style="display: none;" data-action="is_status"  data-title="Would you like to activate all selected records?" data-target="#upRecords" data-toggle="modal" data-value="1"><i class="fa fa-check" aria-hidden="true"></i> Active</button> 
+
+                        <button type="button" class="btn text-primary btn-transparent multi_action action" style="display: none;" data-action="is_status" data-title="Would you like to block all selected records?" data-target="#upRecords" data-toggle="modal" data-value="0"><i class="fa fa-ban"  aria-hidden="true"></i> Block</button> 
+
+                        <button type="button" class="btn text-primary btn-transparent multi_action action" style="display: none;" data-action="rm" data-value="1" data-title="Would you like to delete all selected records?" data-target="#upRecords" data-toggle="modal"><i class="fa fa-trash" aria-hidden="true"></i> Delete</button>
+                        {%  if app_name != "driver" %}
+                        <button type="button" class="btn text-primary btn-transparent multi_action action" style="display: none;" data-action="assign_coupon" data-value="1" data-title="Would you want to assign the coupon?" data-target="#assignCoupon" data-toggle="modal"><i class="fa fa-trash" aria-hidden="true"></i> Assign Coupon</button>
+                        {% endif %}
+                    </div>
+                    <!-- <div class="col-md-auto">
+                        <span class="h6">Active Member </span> <span class="text-success h4 all-active-member">{{ totalActive }}</span>
+                        <span class="h4 mx-3">|</span>
+                        <span class="h6">Blocked Member </span> <span class="text-danger h4 all-deactive-member">{{ totalDeactive }}</span>
+                    </div> -->
+                </div>
+            </div>   
+
+            <div class="table-box animated fadeInRight fix-height">
+                <div class="mCustomScrollbar content fluid light" data-mcs-theme="inset-2-dark">
+                    <table class="table dataTable table-striped table-bordered table-hover" id="tblCustomer">
+                    <thead>
+                        <tr>
+                            <th>
+                              
+                            </th> 
+                            {%  if app_name == "driver" or app_name == "supplier" %}
+                              <th>Profile Picture</th>
+                            {% endif %}
+                            <th>Name</th>
+                            <th>Email ID</th>
+                            <th>Phone</th>
+                            {%  if app_name == "driver" %}
+                            <th>Plate number</th>
+                            {% endif %}
+                            {%  if app_name == "supplier" %}
+                            <th>Promo Code</th>
+                            {% endif %}
+                            <th>Status</th>
+                            {%  if app_name == "driver" %}
+                            <th>View</th>
+                            {% endif %}
+                        </tr>
+                    </thead>
+                </table>                
+                </div>
+            </div>            
+        </section>
+
+{% if app_name == "driver" %}       
+  <script type="text/javascript">
+    {% include './driver_lists.js' %}
+  </script>
+{% elif app_name == "supplier" %}
+  <script type="text/javascript">  
+    {% include './supplier_lists.js' %}
+  </script>
+{% elif app_name == "admin" %}
+  <script type="text/javascript">  
+    {% include './admin_lists.js' %}
+  </script>
+{% endif %}
+{% endblock %}
+{% block popup %}
+<div class="modal fade" id="assignCoupon" tabindex="-1"  data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+            <p> Assign Coupon</p>
+      </div>
+      <div class="fixed-width">
+        <div id="msg-res-assign" class=""><span class="formResponseAssign"></span></div>
+          <div class="box">
+              <div class="row">
+                  <div class="col-lg-6">
+                  <label for="first_name" >Coupons</label>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="md-form">
+                        <select name="assign_coupon" id="assign_coupon" class="form-control"> 
+                              <option value="0">-- Select Promo Code --</option>
+                              {% if promotion_codes %}
+                              {% for data in promotion_codes %}
+                                  <option value={{data.id}}>{{ data.promotion_code }} (Discount: {{ data.discount }})</option>
+                              {% endfor %}
+                              {% endif %}
+                        </select>
+                      </div>
+                  </div>
+               </div>
+            </div>
+          </div>
+      <div class="modal-footer">
+          <input type="hidden" name="data-action">
+          <input type="hidden" name="data-value">
+          <img src="{% static 'images/loader.gif'%}" class="btn-loader assign_coupon_loader">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+          <button type="button" id="assign_coupon_btn" class="assign_coupon_btn btn green">Yes</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<div class="modal fade bd-example-modal-lg" id="createModal" tabindex="-1" role="dialog" aria-labelledby="modal_label" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document"> 
+        <div class="modal-content shadow-none">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal_label"></h5> 
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close-window">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+           
+            <form class="add_popupForm" method="POST" enctype="multipart/form-data" autocomplete="on">
+            {% csrf_token %}
+                <div id="msg-res" class=""><span class="formResponse"></span></div>
+                <div class="edit-data-load-content"><img src="{% static 'images/edit-data-load.gif'%}"></div>
+                <div class="modal-body" id="modal_content" style="display: none;">
+                    <div class="fixed-width">
+                        
+                      <div class="tab">
+                        <a href="javascript:void(0);" class="tablinks active" id="basicinfo_tab">Basic Information</a>
+                        {%  if app_name == "driver" %}
+                        <a href="javascript:void(0)" class="tablinks" id="driverinfo_tab">Driver Information</a>
+                        <a href="javascript:void(0)" class="tablinks" id="vehicleinfo_tab">Vehicle Infromation</a>
+                        {% endif %}
+                      </div>
+
+                      <div id="basicinfo" class="tabcontent " style="display:block">
+                        <div class="boxhhhhh">
+                                  
+                                      <div class="row">
+                                          <div class="col-lg-6">
+                                              <div class="md-form">
+                                                  <input type="text" id="first_name" name="first_name" class="form-control required" autocomplete="off">
+                                                  <label for="first_name" >First Name
+                                                  <span style="color:red">*</span>
+                                                  </label>
+
+                                              </div>
+                                          </div>
+                                          <div class="col-lg-6">
+                                              <div class="md-form">
+                                                  <input type="text" id="last_name" name="last_name" class="form-control required" autocomplete="off">
+                                                  <label for="last_name">Last Name<span style="color:red">*</span></label>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          
+                                          {%  if app_name == "admin" %}
+                                          <div class="col-lg-6">
+                                              <div class="md-form">
+                                                 <input type="text" id="email_id" name="email_id" data-validation="email" class="form-control required not-editable " autocomplete="off" >
+                                                  <label for="email_id" >Email ID<span style="color:red">*</span></label>
+                                              </div>
+                                          </div>
+                                          {% else %}
+                                          <div class="col-lg-6">
+                                              <div class="md-form">
+                                                  <input type="text" id="email_id" name="email_id" data-validation="email" class="form-control not-editable " autocomplete="off" >
+                                                  <label for="email_id" >Email ID</label>
+                                              </div>
+                                          </div>
+                                          {% endif %}
+                                          <div class="col-lg-6">
+                                              <div class="md-form">
+                                                 <input type="text" id="phone_number" name="phone_number" class="form-control not-editable phone-number" autocomplete="off">
+                                                 <label for="phone_number" >Phone number</label>
+                                              </div>
+                                          </div>
+                                          
+                                      </div>
+                                      <!-- <div class="row">
+                                          <div class="col-lg-6">
+                                              <div class="md-form">
+                                              {%  if app_name == "admin" %}
+                                                  <input type="password" id="password" name="password" class="form-control required"  autocomplete="off">
+                                                  <i class="fa fa-eye" aria-hidden="true" style="cursor:pointer;" id="togglePasswordField"></i>
+                                                  <label for="password" >Password<span style="color:red">*</span></label>
+                                              {% else %}
+                                                  <input type="password" id="password" name="password" class="form-control"  autocomplete="off">
+                                                  <i class="fa fa-eye" aria-hidden="true" style="cursor:pointer;" id="togglePasswordField"></i>
+                                                  <label for="password" >Password</label>
+                                              {% endif %}
+                                              </div>
+                                          </div> 
+                                      </div> -->
+                                      {%  if app_name == "driver" %}
+                                      <div class="row">
+                                          <div class="col-lg-6">
+                                              <div class="md-form">
+                                                  <input type="text" id="dob" name="dob" class="date-picker form-control"  autocomplete="off">
+                                                  <label for="dob" >Date of Birth</label>
+                                              </div>
+                                          </div>   
+                                          <div class="col-lg-6">
+                                              <div class="md-form">
+                                                  <select name="gender" class="form-control">
+                                                    <option value="0"> -- Select Gender -- </option>
+                                                    <option value="Male">Male</option>
+                                                    <option value="Female">Female</option>
+                                                    <option value="Other">Other</option>
+                                                  </select>
+                                                 
+                                              </div>
+                                          </div>   
+                                         
+                                      </div> 
+                                      <div class="row">
+                                          <div class="col-lg-6">
+                                              <div class="md-form">
+                                                  <input type="password" id="password" name="password" class="form-control"  autocomplete="off">
+                                                  <i class="fa fa-eye" aria-hidden="true" style="cursor:pointer;" id="togglePasswordField"></i>
+                                                  <label for="password" >Password</label>
+                                              </div>
+                                          </div>   
+                                          <div class="col-lg-6">
+                                              <div class="md-form">
+                                                  <select name="country" id="country" class="form-control required"> 
+                                                        <option value="0">-- Select Country --</option>
+                                                        {% if countries %}
+                                                        {% for data in countries %}
+                                                            <option value={{data.id}}>{{ data.country_name }}</option>
+                                                        {% endfor %}
+                                                        {% endif %}
+                                                    </select>
+                                                 
+                                              </div>
+                                          </div>   
+                                         
+                                      </div> 
+                                      {%  endif %}
+                                      <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="file-field homeimageupld">
+                                               
+                                                {%  if app_name == "driver" %}
+                                                <div class="imageupload">                                                    
+                                                    <canvas id="canvas" style=" display: none;"></canvas>
+                                                    <!-- <img src="{% static 'images/avatar.jpg' %}" class="z-depth-1-half avatar-pic big-img-loader" id="users_av"> -->
+                                                    <img src="" class="z-depth-1-half big-img-loader" id="users_av" height="100px;" width="100px">
+                                                    <div id="jcrop"></div>
+                                                </div>
+                                                <div id="image-up">
+                                                    <div class="row align-items-center h-100">
+                                                        <div class="col-md-12 text-center">
+                                                            <div class="file-upload d-inline">
+                                                                <label for="profile_picture" class="btn btn-primary">Upload Image</label>
+                                                                <input type="file" id="profile_picture" onchange="readURL(this);" accept="image/gif, image/jpeg, image/png" multiple="true">
+                                                                <input type="hidden" name="profile_img_prev" id="profile_img_prev">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                {%  endif %}
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                                <div class="md-form">
+                                                    
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <!-- image upload end -->
+                                      
+                                  </div> 
+                                  {%  if app_name == "driver" %}
+                                  <div class="next-prev-div">
+                                    <a id="next" class="button-style tablinks btn btn-primary" href="javascript:void(0)" onclick="openTab(event, 'driverinfo')">Next >> </a>
+                                  </div>
+                                  {% else %}
+                                  <button type="Submit" class="btn btn-primary" id="submit-btn-form">Save</button>
+                                  {% endif %} 
+                      </div>
+                      {%  if app_name == "driver" %}
+                      <div id="driverinfo" class="tabcontent">
+                         
+                                    <div class="boxhhhhhh">
+                                    <div class="row">
+                                            <div class="col-lg-6">
+
+                                              <div class="md-form">
+                                                    <input type="text" name="driving_licence_expiry_date" id="driving_licence_expiry_date" class="form-control date-picker">
+                                                    <label>Driving licence expiry date<span style="color:red">*</span></label>
+                                                </div>
+                                      
+
+                                            </div>
+                                            <div class="col-lg-6">
+                                      
+                                            <div class="file-field row justify-content-center">
+                                                <div id="image-up" class="col-md-12 uploadimage-row">
+                                                    <div class="row align-items-center h-100">
+                                                        <div class="col-md-12 text-center">
+                                                            <div class="file-upload d-inline" >
+                                                                <label for="driver_licence" class="btn btn-primary">Upload Licence</label>
+                                                                <input type="file" id="driver_licence" accept="image/gif, image/jpeg, image/png" multiple="multiple">
+                                                                <p id="fp">
+                                                                </p>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                       
+                                    <!-- image upload end -->
+
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                        <div id="driver_licence_existing_files"></div>
+                                        <div id="driver_licence_files"></div>
+                                        <input type="hidden" id="count_of_driver_licence_existing_files">
+                                    </div>
+                                    <div class="next-prev-div">
+                                          <a id="prev" class="button-style tablinks btn btn-primary" href="javascript:void(0)"  onclick="openTab(event, 'basicinfo')"><< Prev</a>
+                                          &nbsp;<a id="next" class="button-style tablinks btn btn-primary" href="javascript:void(0)" onclick="openTab(event, 'vehicleinfo')">Next >></a>
+                                    </div>
+
+
+                      </div>
+
+                      <div id="vehicleinfo" class="tabcontent">
+                        <div class="boxhhh">
+                                        <!-- Image upload  -->
+                                      <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="file-field homeimageupld">
+                                                <div class="imageupload">
+                                                      <div>
+                                                        <img src="" class="rounded-circle z-depth-1-half big-img-loader"  id="vehicle_preview" height="80px" width="80px">
+                                                      </div>
+                                                    </div>
+                                                      <div id="image-up">
+                                                        <div class="">
+                                                            <div class="file-upload d-inline">
+                                                                <label for="image_file" class="btn btn-primary">Vehicle Image</label>
+                                                                <input type="file" id="image_file" onchange="readVehicleImgURL(this);" accept="image/gif, image/jpeg, image/png" multiple="true">
+                                                                <input type="hidden" name="image_file_show" id="image_file_base">
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- image upload end -->
+                                       <div class="row">&nbsp;</div>
+                                       <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="md-form">
+                                                    <select name="vehicle_type" id="vehicle_type" class="form-control"> 
+                                                        <option value="0">-- Vehicle type --</option>
+                                                        {% if vehicleTypes %}
+                                                        {% for vehicleType in vehicleTypes %}
+                                                            <option value={{vehicleType.id}}>{{ vehicleType.vehicle_type_name }}</option>
+                                                        {% endfor %}
+                                                        {% endif %}
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="md-form">
+                                                <input type="hidden" value="{{vehicleModel.id}}" id="existing_vehicle_model">
+                                                    <select name="vehicle_model" id="vehicle_model" class="form-control"> 
+                                                        <option value="0">-- Vehicle model --</option>
+                                                        {% if vehicleModels %}
+                                                        {% for vehicleModel in vehicleModels %}
+                                                            <option value={{vehicleModel.id}}>{{ vehicleModel.model_name }}</option>
+                                                        {% endfor %}
+                                                        {% endif %}
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+
+                                              <div class="md-form">
+                                                    <input type="text" name="plate_number" class="form-control">
+                                                    <label>Plate number</label>
+                                                </div>
+                                      
+
+                                            </div>
+                                            
+                                            
+                                        </div>  
+                                        <div class="row">
+                                            <div class="col-sm-4">
+
+                                              <div class="md-form">
+                                                    <input type="text" id="registration_expiry_date" name="registration_expiry_date" class="form-control date-picker">
+                                                    <label>Registration expiry date</label>
+                                                </div>
+                                      
+
+                                            </div>
+                                            <div class="col-sm-4">
+
+                                              <div class="md-form">
+                                                    <input type="text" name="insurance_expiry_date" class="form-control date-picker">
+                                                    <label>Insurance expiry date</label>
+                                                </div>
+                                      
+
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="md-form">
+                                                    
+                                                    <select id="year" name="year" class="form-control">
+                                                    <option value="0"> -- Year -- </option>
+                                                    {% for y in year_dropdown %}
+                                                        <option value="{{ y }}">{{ y }}</option>
+                                                    {% endfor %}
+                                                    </select>                                        
+                                                   
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                         <div class="row">
+                                            
+                                            <div class="col-sm-6">
+
+                                              <div class="md-form">
+                                                    <input type="checkbox" id="wheel_chair_support" class="form-control" value="yes">
+                                                    <label>Wheel chair support</label>
+                                                </div>
+                                      
+
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                              <div class="md-form">
+                                                    <input type="checkbox" id="booster_seat_support" class="form-control" value="yes">
+                                                    <label>Booster seat support</label>
+                                              </div>
+                                      
+
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                  
+                                      <div class="row">
+                                        <div class="col-md-12">
+                                         
+
+                                                            <div class="file-upload d-inline">
+                                                                <label for="vehicle_insurance" class="btn btn-primary">Upload Insurance</label>
+                                                                
+                                                                <input type="file" id="vehicle_insurance" accept="image/gif, image/jpeg, image/png" multiple="multiple">
+                                                                <p id="err_ins">
+                                                                </p>
+
+                                                               
+                                                            </div>
+                                                            <div id="vehicle_insurance_existing_files"></div>
+                                                            <div id="vehicle_insurance_files"></div>
+                                                            <input type="hidden" id="count_of_vehicle_insurance_existing_files">
+                                        </div>
+                                        <div class="col-md-12">
+
+                                                  <div class="file-upload d-inline">
+                                                      <label for="vehicle_registration" class="btn btn-primary">Vehicle Registration</label>
+                                                      
+                                                      <input type="file" id="vehicle_registration" accept="image/gif, image/jpeg, image/png" multiple="multiple">
+                                                     
+                                                      <p id="err_reg">
+                                                      </p>
+
+                                                     
+                                                  </div>
+                                                   <div id="vehicle_reg_existing_files"></div>
+                                                   <div id="vehicle_reg_files"></div>
+                                                   <input type="hidden" id="count_of_vehicle_reg_existing_files">
+                                          </div>
+                                                       
+                                        </div>
+                                    </div>
+                                    <div class="next-prev-div">
+                      
+                                      <a id="prev" class="button-style tablinks btn btn-primary" href="javascript:void(0)"  onclick="openTab(event, 'driverinfo')"><< Prev</a>
+                                      
+                                      <img src="{% static 'images/loader.gif'%}" class="btn-loader formloader">
+                                     <!--  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                                      <button type="Submit" class="btn btn-primary" id="submit-btn-form">Save</button>
+                                    </div>
+                                    
+                        
+                      </div>  
+                      {% endif %}            
+                                    <input type="hidden" name="id" id="user_id">
+                      </div> 
+
+                      
+
+                    
+                      
+                </div>
+                <!-- <div class="modal-footer bg-white">
+
+                    <input type="hidden" name="id">
+                    <img src="{% static 'images/loader.gif'%}" class="btn-loader formloader">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="Submit" class="btn btn-primary" id="submit-btn-form">Save</button>
+                </div> -->
+            </form>
+        </div>
+    </div>
+</div>  
+<!-- ================ Start Assign Promo code ================= -->
+{%  if app_name == "supplier" %}
+<div class="modal fade bd-example-modal-lg" id="assignPromoModal" tabindex="-1" role="dialog" aria-labelledby="modal_label" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document"> 
+        <div class="modal-content shadow-none">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal_label"></h5> 
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close-window">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+           
+            <form class="add_popupForm_promo" method="POST" enctype="multipart/form-data" autocomplete="on">
+            {% csrf_token %}
+                <div id="msg-res" class=""><span class="formResponse"></span></div>
+                <div class="edit-promocode-content"><img src="{% static 'images/edit-data-load.gif'%}"></div>
+                <div class="modal-body" id="modal_content" style="display: none;">
+                    <div class="fixed-width">
+                   
+
+                      <!-- <div id="basicinfo" class="tabcontent " style="display:block"> -->
+                        <div class="box">
+                                  
+                                      <div class="row">
+                                          <div class="col-lg-6">
+                                              <div class="md-form">
+                                                 <!--  <input type="text" id="coupon" name="coupon" class="form-control required" autocomplete="off">
+                                                  <label for="coupon" >Coupon
+                                                  <span style="color:red">*</span>
+                                                  </label> -->
+                                                  <select name="coupon" id="coupon" class="form-control"> 
+                                                        <option value="0">-- Select Promo Code --</option>
+                                                        {% if promotion_codes %}
+                                                        {% for data in promotion_codes %}
+                                                            <option value={{data.id}}>{{ data.promotion_code }} (Discount: {{ data.discount }})</option>
+                                                        {% endfor %}
+                                                        {% endif %}
+                                                    </select>
+
+                                              </div>
+                                          </div>
+                                          
+                                      </div>
+                                      
+                                     
+                                      
+                                      
+                                      
+                                  <!-- </div>  -->
+                             
+                                  <!-- <button type="Submit" class="btn btn-primary" id="submit-btn-form">Save</button> -->
+                                  
+                        </div>
+                      </div> 
+                </div>
+                <div class="modal-footer bg-white">
+
+                    <input type="hidden" name="sup_id">
+                    <img src="{% static 'images/loader.gif'%}" class="btn-loader formloader">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="Submit" class="btn btn-primary" id="submit-btn-form">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{%  endif %}
+<!-- ================ End Assign Promo code ================= -->
+{% endblock popup %}
+{% block css %}
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css" rel="stylesheet">
+  <link href="{% static 'css/jcrop.css'%}" rel="stylesheet">
+  <link href="https://cdn.datatables.net/responsive/2.0.2/css/responsive.bootstrap.css" rel="stylesheet">
+  
+{% endblock css %}
+{% block scripts %}
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="{% static 'js/jcrop.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.dataTables.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/dataTables.bootstrap.js'%}"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.0.2/js/dataTables.responsive.js"></script>
+    
+{% endblock scripts %}

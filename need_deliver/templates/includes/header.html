@@ -1,0 +1,47 @@
+<header>
+	{% load staticfiles %}
+	<div class="brand"><a href="#"><img src="{% static 'images/logo.png'%}" alt=""></a></div>
+	<!-- <div class="search-box">
+		<input type="text" value="" placeholder="Search">
+	</div> -->
+	<div class="top-nav">
+		<ul>
+			<li><i class="fa fa-user-circle-o mr-1" aria-hidden="true"></i> Hi {{ request.session.authSession.first_name }} {{ request.session.authSession.last_name }}</li>
+			<!-- <li><button class="btn btn-icon btn-transparent " type="button"><i class="fa fa-envelope" aria-hidden="true"></i></button><span class="counter">25</span></li>
+			<li><button class="btn btn-icon btn-transparent " type="button"><i class="fa fa-bell" aria-hidden="true"></i></button><span class="counter">22</span></li> -->
+			<li>
+				<div class="">
+					<button class="btn btn-icon btn-transparent " type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
+
+					<div class="dropdown-menu">
+						<a class="dropdown-item" id="change_password" href="javascript:void(0);">Change Password</a>
+						{% if 'authSession' in request.session  %}
+						<a class="dropdown-item" id="logout" href="javascript:void(0);">Log out</a>
+						{% endif %}
+						
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</header>
+<script type="text/javascript">
+	$(function(){
+    $( document ).on("click", "#logout", function(){
+        var url = "{{settings.WEBADMIN_URL}}"+"/logout";
+        serverCall(url, null, 'get', true, 'loader', null, null, function (res) {
+            // console.log(res);return false;
+            if (res.length>0) {
+                // var resp = $.parseJSON(data);alert(1);
+                $.each(res, function(key, val){
+                    $.each(val, function(key1, val1){
+                        if(key1 == 'status' && val1 == true){
+                           window.location.href = "{{settings.BASE_URL}}";
+                        } 
+                    });    
+                });
+            }
+        });
+    });
+});
+</script>

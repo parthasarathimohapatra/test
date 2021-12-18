@@ -1,0 +1,357 @@
+{% extends 'adminBase.html' %}
+{% load staticfiles %}
+{% block title %}
+<title> {{ title }} </title> 
+{% endblock title %}
+{% block body %}
+<section class="right-part  ">
+            <div class="row justify-content-between align-items-center mb-3 animated fadeIn">
+                <div class="col-md-auto">
+                    <h2>{{ page_title }}</h2>
+                </div>
+              
+                <div class="col-md-auto">
+                   
+                    <!-- <button type="button" data-operation="create_teacher" data-toggle="modal" class="btn-add-new btn btn-icon btn-lg btn-primary" data-placement="bottom" title="Add New">+</button> -->                    
+                </div>
+            </div>
+
+            <div id="msg-res" class=""><span class="formResponse"></span></div>
+                    <div class="fixed-width">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="box">
+                                <h4> Driver's Basic Info </h4>
+                                <hr/><br>
+                                  <div class="row">
+                                       
+                                        <div class="md-form">
+                                            <div class="col-lg-12">   
+                                            
+                                            {% if not details_data.profile_picture %}
+                                            
+                                                <img src="{% static 'images/avatar.jpg'%}" class="z-depth-1-half avatar-pic big-img-loader" id="users_av" height="200px" width="200px">
+
+                                            {% else %}
+                                                <img src="{{details_data.profile_picture}}" class="z-depth-1-half avatar-pic big-img-loader" id="users_av" height="200px" width="200px">
+                                            
+                                            {% endif %}
+                                            </div>
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="md-form">
+                                                <input type="text" id="first_name" name="first_name" class="form-control" disabled="" autocomplete="off" value="{{details_data.first_name}}">
+                                                <label for="first_name" >First name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="md-form">
+                                                <input type="text" id="last_name" name="last_name" value="{{details_data.last_name}}" class="form-control" disabled="" autocomplete="off">
+                                                <label for="last_name" >Last name</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                   
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="md-form">
+                                                <input type="text"  value="{{details_data.phone_number}}" class="form-control" disabled="" autocomplete="off">
+                                                <label for="phone_number" >Phone</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="md-form">
+                                                <input type="text"  value="{{details_data.email_id}}" class="form-control" disabled="" autocomplete="off">
+                                                <label>Email</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="md-form">
+                                                <input type="text"  value="{{ details_data.gender|default_if_none:"" }}" class="form-control" disabled="" autocomplete="off">
+                                                <label for="gender" >Gender</label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-lg-6">    
+                                            <div class="md-form">
+                                                <input type="text"  value="{{ details_data.dob|default_if_none:"" }}" class="form-control" disabled="" autocomplete="off">
+                                                <label for="dob" >Date of Birth</label>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                   
+                                    
+                                    
+                                </div>  
+                            </div>
+                            <div class="col-md-12">
+                                <div class="box">
+                                <h4> Driver's Documents </h4>
+                                
+                                <hr/><br>
+                                
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="md-form">
+                                                <input type="text"  value="{{ driver_details.driving_licence_expiry_date|default_if_none:"" }}" class="form-control" disabled="" autocomplete="off">
+                                                <label >Driving licence expiry date</label>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <!-- if driverAttachments.img|length > 0 or driverAttachments.pdf|length > 0   -->
+                                        <h5> Driver Licence </h5>
+                                        <hr/><br>
+                                        <div class="row">
+                                    
+                                    
+                                       
+                                       {% for key, value in driverAttachments %}
+                                            
+                                            {% if key == 'pdf'%}
+                                                {% for item in value%}
+                                                    <div class="col-lg-3">
+                                                        <div class="md-form">
+                                                            <a href="{{item }}" target="_blank">
+                                                            <img src="{% static 'images/pdf.png' %}" class="z-depth-1-half avatar-pic big-img-loader" height="100px" width="100px">
+                                                             </a>
+                                                        </div>
+                                                    </div>
+                                                {% endfor %}
+                                            {% endif %}
+                                            {% if key == 'img'%}
+                                                
+                                                {% for item in value%}
+                                                    <div class="col-lg-3">
+                                                        <div class="md-form">
+                                                            <a href="{{item}}" target="_blank">
+                                                            <img src="{{item }}" class="z-depth-1-half avatar-pic big-img-loader" height="100px" width="100px">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                {% endfor %}
+                                            {% endif %}
+                                       {% endfor %}
+                                       
+                                    
+                                        </div>
+                      
+                                                  
+                                    
+                                    
+                                 </div>  
+                            </div>
+                            <div class="col-md-12">
+                                <div class="box">
+                                <h4> Vehicle Info 
+                                  </h4> 
+                                <hr/><br>
+                               <!--  {{vehicle_details}} -->
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="md-form">
+                                                {% if vehicle_details.image_file %}
+                                                <img src="{{vehicle_details.image_file}}" class="z-depth-1-half avatar-pic big-img-loader" id="users_av" height="200px" width="200px">
+                                                {% else %}
+                                                <img src="{% static 'images/no_car_image.png' %}" class="rounded-circle" height="80px" width="80px" > 
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="md-form">
+                                                <input type="text" class="form-control" disabled="" autocomplete="off" value="{{vehicle_details.plate_number}}">
+                                                <label for="vehicles_type_name" >Plate number</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="md-form">
+                                                <input type="text"class="form-control" disabled="" autocomplete="off" value="{{ vehicle_details.registration_expiry_date|default_if_none:"" }}">
+                                                <label for="person_capcity" >Registration expiry date</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="md-form">
+                                                <input type="text"  class="form-control" disabled="" autocomplete="off" value="{{ vehicle_details.insurance_expiry_date|default_if_none:"" }}">
+                                                <label for="vehicles_type_name" >Insurance expiry date</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="md-form">
+                                                <input type="text"class="form-control" disabled="" autocomplete="off" value="{{ vehicle_details.vehicle_model.model_name|default_if_none:"" }}">
+                                                <label>Model name</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="md-form">
+                                            
+                                                <input type="text"  class="form-control" disabled="" autocomplete="off" value="{{driver_details.vehicle_type.vehicle_type_name}}">
+                                                <label for="vehicles_type_name" >Vehicle type name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="md-form">
+                                                <input type="text"class="form-control" disabled="" autocomplete="off" value="{{ driver_details.vehicle_type.person_capcity|default_if_none:"" }}">
+                                                <label for="person_capcity" >Person capacity</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="md-form">
+                                                <input type="text"  class="form-control" disabled="" autocomplete="off" value="{{vehicle_details.year}}">
+                                                <label for="vehicles_type_name" >Year</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="md-form">
+                                                <!-- <input type="text"class="form-control" disabled="" autocomplete="off" value="{{ vehicle_details.vehicle_model.vehicle_type.person_capcity|default_if_none:"" }}"> -->
+                                                <span>Wheel chair support</span>
+                                                
+                                                {% if vehicle_details.wheel_chair_support == True %}
+                                                <img src="{% static '/images/checked.png' %}" class="big-img-loader mCS_img_loaded" style="">
+                                                {% else %}
+                                                <img src="{% static 'images/error.png' %}" class="big-img-loader mCS_img_loaded" style="">
+                                                {% endif %}
+                                               
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="md-form">
+                                                <span>Booster seat support</span>
+                                                {% if vehicle_details.booster_seat_support == True %}
+                                                <img src="{% static '/images/checked.png' %}" class="big-img-loader mCS_img_loaded" style="">
+                                                {% else %}
+                                                <img src="{% static 'images/error.png' %}" class="big-img-loader mCS_img_loaded" style="">
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Vehicle registration -->
+                                    <!-- <div class="row">
+                                    <label>Vehicle Registration</label>
+                                    </div> -->
+                                    
+                                    <!--  if vehicleRegistration.img|length > 0 or vehicleRegistration.pdf|length > 0    -->
+                                    <h5> Vehicle Registration </h5>
+                                    <hr/><br>
+                                    <div class="row">
+                                   
+                                     
+                                       
+                                       {% for key, value in vehicleRegistration %}
+                                            
+                                            {% if key == 'pdf'%}
+                                                {% for item in value%}
+                                                    <div class="col-lg-3">
+                                                        <div class="md-form">
+                                                            <a href="{{item }}" target="_blank">
+                                                            <img src="{% static 'images/pdf.png' %}" class="z-depth-1-half avatar-pic big-img-loader" height="100px" width="100px">
+                                                             </a>
+                                                        </div>
+                                                    </div>
+                                                {% endfor %}
+                                            {% endif %}
+                                            {% if key == 'img'%}
+                                                
+                                                {% for item in value%}
+                                                    <div class="col-lg-3">
+                                                        <div class="md-form">
+                                                            <a href="{{item}}" target="_blank">
+                                                            <img src="{{item }}" class="z-depth-1-half avatar-pic big-img-loader" height="100px" width="100px">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                {% endfor %}
+                                            {% endif %}
+                                       {% endfor %}
+                                       
+                                   
+                                     </div>
+                                    <!-- endif  -->
+                                    <!-- Vehicle Insurance -->
+                                    <br>
+                                   <!--  if vehicleInsurance.img|length > 0 or vehicleInsurance.pdf|length > 0  -->
+                                    <h5> Vehicle Insurance </h5>
+                                    <hr/><br>
+                                      <div class="row">
+                                   
+                                     
+                                       
+                                       {% for key, value in vehicleInsurance %}
+                                            
+                                            {% if key == 'pdf'%}
+                                                {% for item in value%}
+                                                    <div class="col-lg-3">
+                                                        <div class="md-form">
+                                                            <a href="{{item }}" target="_blank">
+                                                            <img src="{% static 'images/pdf.png' %}" class="z-depth-1-half avatar-pic big-img-loader" height="100px" width="100px">
+                                                             </a>
+                                                        </div>
+                                                    </div>
+                                                {% endfor %}
+                                            {% endif %}
+                                            {% if key == 'img'%}
+                                                
+                                                {% for item in value%}
+                                                    <div class="col-lg-3">
+                                                        <div class="md-form">
+                                                            <a href="{{item}}" target="_blank">
+                                                            <img src="{{item }}" class="z-depth-1-half avatar-pic big-img-loader" height="100px" width="100px">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                {% endfor %}
+                                            {% endif %}
+                                       {% endfor %}
+                                       
+                                   
+                                      </div>
+                                    
+                                 </div>  
+                            </div>
+                            
+
+                            
+
+                                
+                           
+                        </div>
+                    </div>
+
+                    </section>
+      
+                
+
+{% endblock %}
+
+{% block css %}
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css" rel="stylesheet">
+  <link href="{% static 'css/jcrop.css'%}" rel="stylesheet">
+  <link href="https://cdn.datatables.net/responsive/2.0.2/css/responsive.bootstrap.css" rel="stylesheet">
+  
+{% endblock css %}
+{% block scripts %}
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="{% static 'js/jcrop.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.dataTables.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/dataTables.bootstrap.js'%}"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.0.2/js/dataTables.responsive.js"></script>
+    
+{% endblock scripts %}

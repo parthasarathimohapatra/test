@@ -1,0 +1,88 @@
+{% extends 'adminBase.html' %}
+{% load staticfiles %}
+{% block title %}
+<title> {{ title }} </title> 
+{% endblock title %}
+{% block body %}
+<section class="right-part  ">
+            <div class="row justify-content-between align-items-center mb-3 animated fadeIn">
+                <div class="col-md-auto">
+                    <h2>{{ page_title }}</h2>
+                </div>
+              
+                <div class="col-md-auto">
+                   
+                    <!-- <button type="button" data-operation="create_teacher" data-toggle="modal" class="btn-add-new btn btn-icon btn-lg btn-primary" data-placement="bottom" title="Add New">+</button> -->                    
+                </div>
+            </div>
+            <div class="acction">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-md-auto">
+                        <span class="text-primary">( <span id="selected_records">0</span> Selected items) </span><span class="text-primary mx-3 ">|</span>
+                        <label class="checkbox text-primary " for="groupCheck">
+                          <input  name="groupCheck" value="5" id="groupCheck" type="checkbox">
+                          <span class="check"></span>  Check All
+                        </label>
+                        <!-- <button type="button" class="btn text-primary btn-transparent single_action action editView" data-action='view' style="display: none;" id="pro_details"><i class="fa fa-eye" aria-hidden="true"></i> View</button>   -->  
+
+                        <!-- <button type="button" class="btn text-primary btn-transparent single_action action editView" data-action='edit' style="display: none;"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</button> -->
+                       
+                        <button type="button" class="btn text-primary btn-transparent multi_action action" style="display: none;" data-action="is_status"  data-title="Would you like to activate all selected records?" data-target="#upRecords" data-toggle="modal" data-value="1"><i class="fa fa-check" aria-hidden="true"></i> Active</button> 
+
+                        <button type="button" class="btn text-primary btn-transparent multi_action action" style="display: none;" data-action="is_status" data-title="Would you like to block all selected records?" data-target="#upRecords" data-toggle="modal" data-value="0"><i class="fa fa-ban"  aria-hidden="true"></i> Block</button> 
+
+                        <!-- <button type="button" class="btn text-primary btn-transparent multi_action action" style="display: none;" data-action="rm" data-value="1" data-title="Would you like to delete all selected records?" data-target="#upRecords" data-toggle="modal"><i class="fa fa-trash" aria-hidden="true"></i> Delete</button> -->
+                    </div>
+                    <!-- <div class="col-md-auto">
+                        <span class="h6">Active Member </span> <span class="text-success h4 all-active-member">{{ totalActive }}</span>
+                        <span class="h4 mx-3">|</span>
+                        <span class="h6">Blocked Member </span> <span class="text-danger h4 all-deactive-member">{{ totalDeactive }}</span>
+                    </div> -->
+                </div>
+            </div>   
+
+            <div class="table-box animated fadeInRight fix-height">
+                <div class="mCustomScrollbar content fluid light" data-mcs-theme="inset-2-dark">
+                    <table class="table dataTable table-striped table-bordered table-hover" id="tblCustomer">
+                    <thead>
+                        <tr>
+                            <th>
+                              
+                            </th> 
+                           <!--  <th>Logo</th> -->
+                            <th>Language</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                </table>                
+                </div>
+            </div>            
+        </section>
+
+        {{app_name}}
+<script type="text/javascript">
+  {% include './list.js' %}
+</script>
+{% endblock %}
+{% block popup %}
+
+
+
+
+ 
+{% endblock popup %}
+{% block css %}
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css" rel="stylesheet">
+  <link href="{% static 'css/jcrop.css'%}" rel="stylesheet">
+  <link href="https://cdn.datatables.net/responsive/2.0.2/css/responsive.bootstrap.css" rel="stylesheet">
+  
+{% endblock css %}
+{% block scripts %}
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="{% static 'js/jcrop.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.dataTables.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/dataTables.bootstrap.js'%}"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.0.2/js/dataTables.responsive.js"></script>
+    
+{% endblock scripts %}

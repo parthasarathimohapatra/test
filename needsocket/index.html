@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Hello world</title>
+   </head>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
+   
+ 
+<body>
+	
+
+	<p>
+		<input type="checkbox" class="set_customer_id_before_booking" id="id_195" name="set_customer_id_before_booking" value=154 >set_customer_id_before_booking
+		<input type="checkbox" class="driver_response" id="id_151" name="driver_response" value=155>driver_response
+	</p>
+	<p>
+		<input type="checkbox" class="update_driver_location" data-lat="22.520454" data-long="88.400925"  name="update_driver_location" value=255>update_driver_location1
+		<input type="checkbox" class="update_driver_location" data-lat="22.528027" data-long="88.362609"  name="update_driver_location" value=150>update_driver_location2
+		<input type="checkbox" class="update_driver_location" data-lat="22.524532" data-long="88.385684"  name="update_driver_location" value=151>update_driver_location3
+		<input type="checkbox" class="update_driver_location" data-lat="22.570106" data-long="88.413303"  name="update_driver_location" value=152>update_driver_location4
+	</p>
+	<p>
+		<input type="checkbox" class="change_available_status" data-lat="22.520454" data-long="88.400925"   name="change_available_status" value=155>change_available_status1
+		<input type="checkbox" class="change_available_status" data-lat="22.5462551" data-long="88.3870415" name="change_available_status" value=184>change_available_status2
+		<input type="checkbox" class="change_available_status" data-lat="22.524532" data-long="88.385684"  name="change_available_status" value=151>change_available_status3
+		<input type="checkbox" class="change_available_status" data-lat="22.570106" data-long="88.413303" name="change_available_status" value=152>change_available_status4
+	</p>
+	<p>
+		<input type="checkbox" class="closest_vehicle_list_generate"  name="closest_vehicle_list_generate" value=107>closest_vehicle_list_generate
+	</p>
+	<p>
+		<input type="checkbox" class="closest_vehicle_selection"  name="closest_vehicle_selection" value=1139>closest_vehicle_selection
+		
+	</p>
+	<p>
+		<input type="checkbox" class="current_location_after_booking_accpt"  name="current_location_after_booking_accpt" value=55>current_location_after_booking_accpt
+		
+	</p>
+	<p>
+		<input type="checkbox" class="driver_arrived_status" data-supplier_id=195  name="driver_arrived_status" value=55>driver_arrived_status
+		
+	</p>
+	<p>
+		<input type="checkbox" class="Log_dowload" data-supplier_id=195  name="download_log" value=55>download_log
+		
+	</p>
+	<ul id="driver_order"></ul>
+	<script>
+	     // var socket = io.connect('http://18.215.17.207:8002');
+		var socket = io.connect('http://192.168.0.164:8002');
+		// var socket = io.connect('http://129fe93d.ngrok.io');
+		
+	   socket.on('testing', function (data) {
+			 console.log(data)
+	   });
+	   socket.on('closest_vehicle_lists', function (data) {
+	   	$("#driver_order").empty();
+	   	for (var key in data) {
+		    if (data.hasOwnProperty(key)) {
+		    	$("#driver_order").append("<li>" +data[key]['distance'].toString() + "-------" + data[key]['driver_id'].toString() +"</li>")
+		        // console.log(data[key]);
+		    }
+		}
+
+	   });
+	   socket.on('change_driver_status', function (data) {
+	   	if(data==true){
+	   		$(".closest_vehicle_list_generate").click()
+	   	}
+	   });
+	   
+	   socket.on('closest_vehicles_before_booking', function (data) {
+	   	console.log(data)
+	  //  	console.log(data.selectedDriver)
+	  //  		$("#driver_order").empty();
+	  //  		if(data.driver_key !=""){
+		 //   		$("#driver_order").html(data.driver_key)
+			// }
+			// else{
+			// 	$("#driver_order").html("No driver is available")
+			// }
+	   });
+	   socket.on('searching_status', function (data) { 
+	   		if(data.status == true){
+	   			$("#driver_order").html('Order Confirmed')
+	   		}else{
+	   			$("#driver_order").html('Order Denied')
+	   		}
+	   });
+       // socket.emit('disconnect');
+	   socket.on('supplier_list_for_order', function (data) {
+	   	// alert(data)
+	      var txt = '';
+	        $('.change_status').attr('checked', false);
+	       	$(".all_img").attr("src" , "offline.png")
+	       	$.each(data, function(key, value){
+	       		$("#ab_" + value).attr('src', 'online.png');
+	       		$("#id_" + value).attr('checked', true);
+	       		// $("#" + value).attr('checked', true);
+				
+	       	})
+	       	
+	   });
+	   socket.on('get_arrived_status', function (data) {
+	   	console.log(data)
+	   });
+	   
+	   $(function(){
+	   		$(".set_customer_id_before_booking").click( function(){
+	   			socket.emit('set_customer_id_before_booking', {socketData:socket.id, user_id:($(this).val()), operation:true})
+			});
+	   		$(".driver_response").click( function(){
+	   			params = {"langC":"en", "session_user_id" : 2, "session_unique_uuid" :"bd71f6e7-2916-4d83-ae4d-90d1da30759d", "driver_id":$(this).val(), "response_type" : true, "order_id" : 443,  "supplier_id": 195, "latitude":"22.5425145", "longitude":"88.3858288","location":"86B/2, Seal Lane, Tangra, Kolkata, West Bengal 700046, India  India" ,  "socket_id":socket.id}
+	   			socket.emit('driver_response', params, function( res){
+	   				console.log(res)
+	   			})
+			});
+			$(".update_driver_location").click( function(){
+				var lat = $(this).attr('data-lat');
+				var long = $(this).attr('data-long');
+	   			params = {"driver_id":$(this).val(), "latitude":lat, "longitude":long, "vehicle_type": 9, "vehicle_image": "https://needdeliverdev.s3.amazonaws.com/static/vehicles/type/Moto-Taxi.png", 
+	   			"socket_id":socket.id,  "vehicle_type_name":"SUV" }
+	   			socket.emit('update_driver_location', params)
+			});
+			$(".change_available_status").click( function(){
+				if($(this).is(":checked")){
+					var lat = $(this).attr('data-lat');
+					var long = $(this).attr('data-long');
+					params = {"driver_id":$(this).val(), "latitude":lat, "longitude":long, "vehicle_type": 9,
+					 "vehicle_image": "https://needdeliverdev.s3.amazonaws.com/static/vehicles/type/Moto-Taxi.png", "socket_id":socket.id, 'is_online':true,  "vehicle_type_name":"SUV"}
+	   				socket.emit('change_available_status', params)
+				}else{
+					params = {"driver_id":$(this).val(), "socket_id":socket.id, 'is_online':false, "vehicle_type": 9,}
+	   				socket.emit('change_available_status', params)
+				}
+			});
+			$(".closest_vehicle_list_generate").click( function(){
+	   			params = {"supplier_id":$(this).val(), "latitude":"22.542718", "longitude":"88.385966", "radius" :500, "vehicle_type": 9,  "socket_id":socket.id}
+	   			socket.emit('closest_vehicle_list_generate', params)
+			});
+			$(".closest_vehicle_selection").click( function(){
+	   			params = {"supplier_id":$(this).val(), "latitude":"22.5460224", "longitude":"88.3867648","radius" :500,
+	   			"socket_id":socket.id, "vehicle_type" : 9, "order_id" : 1582, "tried_drivers" : [], "retry":false, "order_uid":"ND9396546", "booking_cost":5.22}
+	   			socket.emit('closest_vehicle_selection', params) 
+			});
+			$(".current_location_after_booking_accpt").click( function(){
+	   			params = {"supplier_id":$(this).val(), "supplier_latitude":"22.560670", "supplier_longitude":"88.352473", "driver_latitude":"22.520454", "driver_longitude":"88.400925", "vehicle_logo":"ddd"}
+	   			socket.emit('current_location_after_booking_accpt', params) 
+			});
+			$(".callback").click( function(){
+	   			params = {"supplier_id":$(this).val(), "supplier_latitude":"22.560670", "supplier_longitude":"88.352473", "driver_latitude":"22.520454", "driver_longitude":"88.400925", "vehicle_logo":"ddd"}
+	   			socket.emit('check_callBack', params, function(ress){
+	   				console.log(ress)
+	   			}) ;
+			});
+			$(".driver_arrived_status").click( function(){
+	   			params = {"order_id":$(this).val(), "supplier_id": $(this).attr("data-supplier_id"), "arrived_location":"pickup"}
+	   			socket.emit('driver_arrived_status', params, function(ress){
+	   				console.log(ress)
+	   			}) ;
+			});
+			$(".download_log").click( function(){
+	   			params = {"arrived_location":"pickup"}
+	   			socket.emit('download_log', params, function(ress){
+	   				console.log(ress)
+	   			}) ;
+			});
+			
+			
+	   })
+
+</script>	
+</body>
+</html>

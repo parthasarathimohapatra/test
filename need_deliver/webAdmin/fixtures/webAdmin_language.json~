@@ -1,0 +1,18 @@
+[
+  {
+    "model": "webAdmin.NdLanguages",
+    "pk": 1,
+    "fields": {
+      "lang_name": "Cambodian",
+      "image_file": "uploaded_images/lang_logo/logo.png"
+    }
+  },
+  {
+    "model": "webAdmin.NdLanguages",
+    "pk": 2,
+    "fields": {
+      "lang_name": "English",
+      "image_file": "uploaded_images/lang_logo/logo.png"
+    }
+  }
+]

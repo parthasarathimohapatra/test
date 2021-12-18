@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+<style>
+.login-box {
+	min-height: 400px;
+}
+</style>
+ 
+<div class="login-bg "  >
+	<div class="login-box animated flipInX">
+		<div class="logo"><img src="{% static 'images/logo.png'%}" alt=""> </div>
+		<div id="login-blk">
+			<!-- <p>Sign in with Need Developer system</p> -->
+			<form class="loginForm" method="POST" id="loginForm" autocomplete="on">
+				{% csrf_token %}
+				<div id="msg-res-login" class=""><span class="formResponse"></span></div>
+				<div class="md-form">
+					<input type="text" id="email_id" name="email_id" class="form-control" autocomplete="off" value="">
+					<label for="email_id" >User Id / Email </label>
+				</div>
+				<div class="md-form">
+					<input type="password" id="password" name="password" data-validation="password" class="form-control" autocomplete="off" value="">
+					<label for="password" >Password</label>
+				</div>
+				<div class="row justify-content-between align-items-center" >
+					<div class="col-md-auto">
+						<input type="hidden" name="role" value="1">
+						<img src="{% static 'images/loader.gif'%}" class="btn-loader formloader">
+						<button type="submit" class="btn btn-primary" id="signInButtId">Sign in</button>
+					</div>
+					<div class="col-md-auto"><a href="javascript:void(0);" class="forgot-password-sign-in-btn">Forgot Password</a></div>
+				</div>
+			</form>	
+		</div>
+		<div id="forgot-blk" style="display: none;">
+			<!-- <p>Forgot Password in with flooant system</p> -->
+			<form class="forgotPassForm" method="POST" id="forgotPassForm" autocomplete="on">
+			{% csrf_token %}
+				<div id="msg-res-forgot" class=""><span class="formResponse"></span></div>
+				<div class="md-form">
+					<input type="text" id="forgot_username" name="forgot_username" data-validation="email" class="form-control" autocomplete="off">
+
+					<label for="forgot_username" > Email </label>
+				</div>
+				<div class="row justify-content-between align-items-center" >
+					<div class="col-md-auto">
+						<img src="{% static 'images/loader.gif'%}" class="btn-loader formloader" id="forgot_loading">
+						<button type="submit" class="btn btn-primary"  id="forgotPassButtId">Send</button>
+					</div> 
+					<div class="col-md-auto"><a href="javascript:void(0);" class="forgot-password-sign-in-btn">Sign in</a></div>
+				</div>
+			</form>	
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	{% include './login.js' %}
+</script>
+{% endblock %}

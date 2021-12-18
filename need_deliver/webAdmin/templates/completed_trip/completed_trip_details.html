@@ -1,0 +1,304 @@
+{% extends 'adminBase.html' %}
+{% load staticfiles %}
+{% block title %}
+<title> {{ title }} </title> 
+
+{% endblock title %}
+{% block body %}
+
+<section class="right-part  ">
+            <div class="row justify-content-between align-items-center mb-3 animated fadeIn">
+                <div class="col-md-auto">
+                    <h2>{{ page_title }}</h2>
+                </div>
+              
+                <div class="col-md-auto">
+                   
+                    <!-- <button type="button" data-operation="create_teacher" data-toggle="modal" class="btn-add-new btn btn-icon btn-lg btn-primary" data-placement="bottom" title="Add New">+</button> -->                    
+                </div>
+            </div>
+
+            <div id="msg-res" class=""><span class="formResponse"></span></div>
+                    <div class="fixed-width">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="box">
+                                <h4> Pick up request </h4>
+                                <hr/><br>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="md-form">
+                                                <input type="text" id="order_uid" name="order_uid" class="form-control" disabled="" autocomplete="off" value="{{order_details.order_uid}}">
+                                                <input type="hidden" id="order_id" name="order_id" class="form-control" disabled="" autocomplete="off" value="{{order_details.id}}">
+                                                <label for="order_uid" >Order id</label>
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="col-lg-6">
+                                            <div class="md-form">
+                                         
+                                          
+                                                <input type="text" id="booking_time" name="booking_time" value='{{ booking_date }}' class="form-control" disabled="" autocomplete="off">
+                                                <label for="location" >Booking Date</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                   
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="md-form">
+                                                <input type="text"  value="{{order_details.contact_name}}" class="form-control" disabled="" autocomplete="off">
+                                                <label for="supplier_name" >Contact Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="md-form">
+                                                <input type="text"  value="{{order_details.contact_number}}" class="form-control" disabled="" autocomplete="off">
+                                                <label>Contact Number</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="md-form">
+                                                <input type="text"  value="{{order_details.note_to_driver}}" class="form-control" disabled="" autocomplete="off">
+                                                <label for="supplier_name" >Note to driver</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="md-form">
+                                                <input type="text"  value="{{order_details.base_price}}" class="form-control" disabled="" autocomplete="off">
+                                                <label>Base Price</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        
+                                        <div class="col-lg-12">
+                                            <div class="md-form">
+                                                <input type="text" id="location" name="location" value="{{order_details.location}}" class="form-control" disabled="" autocomplete="off">
+                                                <label for="location" >Pickup Location</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>  
+                            </div>
+                            <div class="col-md-12">
+                                <div class="box">
+                                <h4> Supplier & Driver Info </h4>
+                                <hr/><br>
+
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="md-form">
+                                                <input type="text"  value="{{order_details.supplier.first_name}} {{order_details.supplier.last_name}}" class="form-control" disabled="" autocomplete="off">
+                                                <label for="supplier_name" >Supplier Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="md-form">
+                                                <input type="text"  value="{{order_details.supplier.phone_number}}" disabled="" class="form-control" autocomplete="off">
+                                                <label>Supplier Phone</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="md-form">
+                                            
+                                                <input type="text"  value="{{order_details.driver.first_name|default_if_none:""}} {{order_details.driver.last_name|default_if_none:""}}" class="form-control" disabled="" autocomplete="off">
+                                                <label for="supplier_name" >Driver Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="md-form">
+                                                <input type="text"  value="{{order_details.driver.phone_number|default_if_none:""}}" class="form-control" disabled="" autocomplete="off">
+                                                <label>Driver Phone</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                 </div>  
+                            </div>
+                            <div class="col-md-12">
+                                <div class="box">
+                                <h4> Vehicle Info </h4>
+                               
+                                <hr/><br>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="md-form">
+                                                <input type="text" id="plate_number" name="plate_number" class="form-control" disabled="" autocomplete="off" value="{{vehicle_details.plate_number|default_if_none:""}}">
+                                                <label>Vehicles number</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="md-form">
+                                                <input type="text"class="form-control" disabled="" autocomplete="off" value="{{vehicle_details.vehicle_model.model_name|default_if_none:""}}">
+                                                <label >Model Name</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="md-form">
+                                                <input type="text" id="vehicles_type_name" name="vehicles_type_name" class="form-control" disabled="" autocomplete="off" value="{{vehicle_details.vehicle_model.vehicle_type.vehicle_type_name|default_if_none:""}}">
+                                                <label for="vehicles_type_name" >Vehicles type</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="md-form">
+                                                <input type="text"class="form-control" disabled="" autocomplete="off" value="{{vehicle_details.vehicle_model.vehicle_type.person_capcity|default_if_none:""}}">
+                                                <label for="person_capcity" >Person capacity</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                 </div>  
+                            </div>
+                            <div class="col-md-12">
+                                <div class="box">
+                                <h4> Dropoff locations </h4>
+                                <hr/><br>
+                                        <table class="table table-striped table-bordered table-hover no-footer">
+                                            <thead>
+                                                <tr>
+                                                    <th>Location</th>
+                                                    <th>Item Name</th>
+                                                    <th>Contact name</th>
+                                                    <th>Contact number</th>
+                                                    <th>Cash Collection</th>
+                                                    <th>Note to driver</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                
+                                                {% for single_data in order_drop_off_locations %}
+
+                                                <tr>
+                                                    <td>{{ single_data.location }}
+                                                    <input type="text" id="drop_location_{{ forloop.counter }}"
+                                                    value="{{ single_data.location }}" disabled="" >
+                                                    </td>
+                                                   
+                                                    <td>{{ single_data.item_name }}</td>
+                                                    <td>{{ single_data.contact_name }}</td>
+                                                    <td><a href="tel:+{{ single_data.contact_number }}">{{ single_data.contact_number }}</a></td>
+                                                    <td>{{ single_data.cash_collection }}</td>
+                                                    <td>{{ single_data.note_to_driver }}</td>
+                                                </tr>
+
+                                              {% endfor %}
+                                            </tbody>
+                                        </table>
+                                 </div>  
+                            </div>
+
+
+                            {% for location_data in location_wise_parcel_data %}
+
+                                <div class="col-md-12">
+                                    <div class="box">
+                                    <h4> Parcel Details for {{location_data.drop_off_location_details.item_name}}</h4>
+                                    <hr/><br>
+
+                                            <div class="row">
+                                                  {% for single_data in location_data.parcel_files %}
+                                                        <div class="col-lg-2">
+                                                            <div class="card w-100">
+
+                                                                <img src="{{ single_data.parcel_file }}" class="card-img-top p-3">
+                                                            
+                                                            </div>
+                                                        </div>
+                                                  {% endfor %}
+                                             </div>
+                                                
+                                     </div>  
+                                </div>
+                            {% endfor %}
+                            
+                            <div class="col-md-12">
+                                <div class="box">
+                                    <h4> Route Map </h4>
+                                    <hr/><br>
+                                        <b> Travelled distance: </b> {{actual_distance}}km<br>
+                                        <input type="hidden" id="central_lat">
+                                        <input type="hidden" id="central_lng">
+
+                                        <input type="hidden" id="start_lat">
+                                        <input type="hidden" id="start_lng">
+
+                                        <input type="hidden" id="firstDrop_lat">
+                                        <input type="hidden" id="firstDrop_lng">
+
+                                        <input type="hidden" id="secondDrop_lat">
+                                        <input type="hidden" id="secondDrop_lng">
+                                       <div id="map" ></div> 
+                                 </div>  
+                            </div>
+                            <!-- <div id="map"></div> -->
+
+                        </div>
+                    </div>
+                     
+
+                    </section>
+
+
+      
+
+
+
+
+ 
+
+   
+<script type="text/javascript">
+  {% include './completed_trip.js' %}
+</script>
+
+{% endblock %}
+
+        
+  
+
+
+{% block css %}
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css" rel="stylesheet">
+  <link href="{% static 'css/jcrop.css'%}" rel="stylesheet">
+  <link href="https://cdn.datatables.net/responsive/2.0.2/css/responsive.bootstrap.css" rel="stylesheet">
+  <style>
+    /* Always set the map height explicitly to define the size of the div
+    * element that contains the map. */
+    #map {
+    height: 400px !important;
+    }
+    /* Optional: Makes the sample page fill the window. */
+    html, body {
+    height: 100% !important;
+    margin: 0;
+    padding: 0;
+    }
+  </style>
+  
+{% endblock css %}
+{% block scripts %}
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="{% static 'js/jcrop.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.dataTables.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/dataTables.bootstrap.js'%}"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.0.2/js/dataTables.responsive.js"></script>
+    
+{% endblock scripts %}
+
+{% block footercontent %}
+<script>
+   {% include './map.js' %}
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOZCiwPSXUm58TOjViGXwbsfKYkP6t0jw&callback=initMap">
+</script>
+{% endblock footercontent %}

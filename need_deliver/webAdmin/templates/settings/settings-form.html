@@ -1,0 +1,84 @@
+{% extends 'adminBase.html' %}
+{% load staticfiles %}
+{% block title %}
+<title> {{ title }} </title> 
+{% endblock title %}
+{% block body %}
+<section class="right-part  ">
+            <div class="row justify-content-between align-items-center mb-3 animated fadeIn">
+                <div class="col-md-auto">
+                    
+                </div>
+              
+                <div class="col-md-auto">
+                   
+                    <!-- <button type="button" data-operation="create_teacher" data-toggle="modal" class="btn-add-new btn btn-icon btn-lg btn-primary" data-placement="bottom" title="Add New">+</button> -->                    
+                </div>
+            </div>
+             <form class="addForm" method="POST" enctype="multipart/form-data" autocomplete="on">
+            {% csrf_token %}
+                <div id="msg-res" class=""><span class="formResponse"></span></div>
+            
+                    <div class="fixed-width">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="box">
+                                <h4> Settings </h4>
+                                <hr/><br>
+                                    {% if details_data_list %}
+                                    {% for details_data in details_data_list %}
+                                    <div class="row">
+                                            <div class="col-lg-3">
+                                                <div class="md-form">
+                                                    {{details_data.field_name|capfirst}}
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="md-form">
+                                                    <input type="text" id="{{details_data.field_name}}" name="{{details_data.field_name}}" class="form-control" autocomplete="off" value="{{details_data.field_val}}">
+                                                    
+                                                </div>
+                                            </div>
+                                       
+                                        <!-- <div class="col-lg-6">
+                                            <div class="md-form">
+                                                <input type="text" id="last_name" name="last_name" value="{{details_data.last_name}}" class="form-control" disabled="" autocomplete="off">
+                                                <label for="last_name" >Last name</label>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    {% endfor %}
+                                    <button type="Submit" class="btn btn-primary" id="submit-btn-form">Save</button>
+                                    {% endif %}
+                                </div>  
+                            </div>
+                            
+                            
+                           
+                        </div>
+                    </div>
+            </form>
+
+</section>
+      
+<script type="text/javascript">
+  {% include './settings-form.js' %}
+</script>                
+  
+{% endblock %}
+
+{% block css %}
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css" rel="stylesheet">
+  <link href="{% static 'css/jcrop.css'%}" rel="stylesheet">
+  <link href="https://cdn.datatables.net/responsive/2.0.2/css/responsive.bootstrap.css" rel="stylesheet">
+  
+{% endblock css %}
+{% block scripts %}
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="{% static 'js/jcrop.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.dataTables.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/dataTables.bootstrap.js'%}"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.0.2/js/dataTables.responsive.js"></script>
+    
+{% endblock scripts %}

@@ -1,0 +1,129 @@
+{% extends 'adminBase.html' %}
+{% load staticfiles %}
+{% block title %}
+<title> {{ title }} </title> 
+{% endblock title %}
+{% block body %}
+<section class="right-part  ">
+            <div class="row justify-content-between align-items-center mb-3 animated fadeIn">
+                <div class="col-md-auto">
+                    <h2>{{ page_title }}</h2>
+                </div>
+              
+                
+            </div>
+            <div class="acction">
+                <div class="row justify-content-between align-items-center">
+                    
+                        <div class="col-lg-3">
+                            <div class="md-form">
+                                <b>Name: </b>{{user_details.first_name}} {{user_details.last_name}}
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="md-form">
+                            <b>Phone: </b>
+                                {{user_details.phone_number}}
+                            </div>
+                        </div>
+                    
+                   
+                </div>
+            </div>   
+
+            <div class="table-box animated fadeInRight fix-height">
+                <div class="mCustomScrollbar content fluid light" data-mcs-theme="inset-2-dark">
+                <div class="col-md-12">
+                                <div class="box">
+                                   
+                                    <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="md-form">
+                                                        
+                                                    <h5> Cancel date  </h5> 
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="md-form">
+                                                        
+                                                    <h5> Cancel time </h5> 
+                                                    </div>
+                                                </div>
+                                            
+                                         </div>  
+                                   {% for values in details_data %}
+                                       
+                                        <hr/>
+                                        <div class="row">
+                                        <!-- {% if forloop.counter|divisibleby:2 %} &nbsp;{% else %}<div class="row">{% endif %} -->
+                                        
+                                               
+                                                        
+                                                {% for single_field in values %}
+                                                <div class="col-lg-3">
+                                                    <div class="md-form">
+                                                       {{ single_field }}
+                                                    </div>
+                                                </div>
+                                                {% endfor %}
+                                                   
+                                               
+                                            
+                                        </div>
+                                          <!-- {% if forloop.counter|divisibleby:2 %} </div>   {% else %}&nbsp;{% endif %} -->
+                                   {% endfor %}
+                                       
+                                    
+                                        
+                      
+                                                  
+                                    
+                                    
+                                 </div>  
+                            </div>
+                  
+                </div>
+            </div>            
+        </section>
+
+        
+<script type="text/javascript">
+
+  {% include './driver_cancelled_trip.js' %}
+ 
+</script>
+{% endblock %}
+{% block popup %}
+
+<div class="modal fade bd-example-modal-lg" id="createModal" tabindex="-1" role="dialog" aria-labelledby="modal_label" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document"> 
+        <div class="modal-content shadow-none">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal_label"></h5> 
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close-window">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+           
+           
+        </div>
+    </div>
+</div>  
+
+{% endblock popup %}
+{% block css %}
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css" rel="stylesheet">
+  <link href="{% static 'css/jcrop.css'%}" rel="stylesheet">
+  <link href="https://cdn.datatables.net/responsive/2.0.2/css/responsive.bootstrap.css" rel="stylesheet">
+  
+{% endblock css %}
+{% block scripts %}
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="{% static 'js/jcrop.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.dataTables.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/dataTables.bootstrap.js'%}"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.0.2/js/dataTables.responsive.js"></script>
+    
+{% endblock scripts %}

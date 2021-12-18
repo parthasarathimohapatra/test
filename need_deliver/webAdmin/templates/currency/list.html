@@ -1,0 +1,84 @@
+{% extends 'adminBase.html' %}
+{% load staticfiles %}
+{% block title %}
+<title> {{ title }} </title> 
+{% endblock title %}
+{% block body %}
+<section class="right-part  ">
+            <div class="row justify-content-between align-items-center mb-3 animated fadeIn">
+                <div class="col-md-auto">
+                    <h2>{{ page_title }}</h2>
+                </div>
+                <div class="col-md-auto">
+                   
+                    <!-- <button type="button" data-operation="create_teacher" data-toggle="modal" class="btn-add-new btn btn-icon btn-lg btn-primary" data-placement="bottom" title="Add New">+</button> -->                    
+                </div>
+            </div>
+            
+            <div id="msg-res" class=""><span class="formResponse"></span></div>
+            
+            <div class="table-box animated fadeInRight fix-height">
+                <div class="mCustomScrollbar content fluid light" data-mcs-theme="inset-2-dark">
+                <table class="table dataTable table-striped table-bordered table-hover">
+                <tr><th>Currency Name</th><th>Currency</th><th>Rate </th><th></th></tr>
+                {% for list_data in totalRecords %}
+                    <form method="post" name="cur_conv_form_{{list_data.id}}">
+                    {% csrf_token %}
+
+                        <tr>
+                            <td>{{list_data.currency_name}}</td>
+                            
+                             <td><input type="text" name="currency_{{list_data.id}}" class="form-control" value="{{list_data.currency}}" {% if list_data.default_currency %} readonly {% endif %}></td>
+                            <td><input type="text" name="conv_rate_{{list_data.id}}" class="form-control" value="{{list_data.conversion_rate}}" {% if list_data.default_currency %} readonly {% endif %}></td>
+                            <td>
+                            {% if not list_data.default_currency %}
+                            <input type="button" value="Save" onclick="conv_rate_save({{list_data.id}})">
+                            {% endif %}
+                            </td>
+                        </tr>
+                    </form>
+                {% endfor %}
+                </table>
+                   <!--  <table class="table dataTable table-striped table-bordered table-hover" id="tblCustomer">
+                    <thead>
+                        <tr>
+                            <th>
+                              
+                            </th> 
+                          
+                            <th>Language 123</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                </table>      -->           
+                </div>
+            </div>            
+        </section>
+
+        {{app_name}}
+<script type="text/javascript">
+  {% include './list.js' %}
+</script>
+{% endblock %}
+{% block popup %}
+
+
+
+
+ 
+{% endblock popup %}
+{% block css %}
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css" rel="stylesheet">
+  <link href="{% static 'css/jcrop.css'%}" rel="stylesheet">
+  <link href="https://cdn.datatables.net/responsive/2.0.2/css/responsive.bootstrap.css" rel="stylesheet">
+  
+{% endblock css %}
+{% block scripts %}
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="{% static 'js/jcrop.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.dataTables.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/dataTables.bootstrap.js'%}"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.0.2/js/dataTables.responsive.js"></script>
+   
+{% endblock scripts %}
